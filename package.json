@@ -1,0 +1,31 @@
+{
+  "name": "aem-sites-template-basic",
+  "version": "1.0.0",
+  "description": "Basic AEM site template",
+  "license": "MIT License, Copyright (c) 2020 Adobe",
+  "scripts": {
+    "build": "run-s build:theme build:clientlib build:template build:package",
+    "deploy": "curl -u admin:admin -F 'file=@starterkit.zip' http://localhost:4502/conf/global/starterkits.import.html",
+    "build:theme": "cd site.theme && npm install && npm run prod && cd ..",
+    "build:clientlib": "clientlib --verbose",
+    "build:template": "cd site.template && mvn clean install && cd ..",
+    "build:package": "run-s starterkit:create copy zip starterkit:clear",
+    "starterkit:create": "mkdir -p starterkit",
+    "starterkit:clear": "rm -rf starterkit",
+    "copy": "run-s copy:files copy:previews copy:properties copy:template",
+    "copy:files": "cp -r files starterkit",
+    "copy:previews": "cp -r previews starterkit",
+    "copy:properties": "cp -r properties.json starterkit",
+    "copy:template": "cp -r site.template/target/aem-sites-starterkit-wknd.site.template-0.0.1-SNAPSHOT.zip starterkit/site-template.zip",
+    "zip": "run-s zip:clear zip:theme zip:starterkit",
+    "zip:clear": "rm -rf starterkit.zip",
+    "zip:theme": "cd site.theme && zip ../starterkit/theme-sources.zip $(git ls-files) && cd ..",
+    "zip:starterkit": "cd starterkit && bestzip ../starterkit.zip * && cd .."
+  },
+  "devDependencies": {
+    "aem-clientlib-generator": "^1.4.3",
+    "bestzip": "^2.1.6",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,12 @@
+{
+  "name": "aem-sites-template-basic",
+  "title": "Basic Site Template",
+  "description": "This most basic template serves as a clean starting point.",
+  "version": "0.0.1",
+  "createdBy": "Adobe",
+  "useCases": [],
+  "docsUrl": "",
+  "showcaseUrl": "",
+  "sourceRepositoryUrl": "",
+  "license": "MIT License, Copyright (c) 2020 Adobe"
+}

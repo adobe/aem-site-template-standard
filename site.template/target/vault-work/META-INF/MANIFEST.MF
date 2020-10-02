@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.2
+Build-Jdk-Spec: 11
+Implementation-Title: WKND Sites StarterKit - Site Template
+Implementation-Version: 0.0.1-SNAPSHOT
+Content-Package-Type: content
+Content-Package-Id: com.adobe.aem.guides:aem-sites-starterkit-wknd.site.
+ template:0.0.1-SNAPSHOT
+Content-Package-Description: Site template content package of WKND Sites
+  StarterKit
+Content-Package-Roots: /conf/aem-sites-template-basic,/content/aem-sites
+ -template-basic,/content/dam/aem-sites-template-basic,/content/experien
+ ce-fragments/aem-sites-template-basic
+
