@@ -21,7 +21,7 @@
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
     <groupId>com.adobe.aem.guides</groupId>
-    <artifactId>aem-sites-starterkit-wknd.site.template</artifactId>
+    <artifactId>aem-sites-template-basic.site.template</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>content-package</packaging>
     <name>WKND Sites StarterKit - Site Template</name>
@@ -42,7 +42,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <group>com.adobe.aem.guides</group>
-                    <name>aem-sites-starterkit-wknd.site.template</name>
+                    <name>aem-sites-template-basic.site.template</name>
                     <packageType>content</packageType>
                     <accessControlHandling>merge</accessControlHandling>
                     <properties>

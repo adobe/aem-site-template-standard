@@ -1,39 +1,27 @@
-# WKND Sites Starter Kit
+# Basic Sites Template
 
-This is the Sites Starter Kit for the WKND Reference site: [https://www.wknd.site/](https://www.wknd.site/)
+This is the basic AEM site template.
 
 ## What does the Starter Kit contain?
 
-<img src="https://user-images.githubusercontent.com/143527/89645292-c1313b80-d8b9-11ea-9ec4-3af8e8b1c92b.png" />
-
 #### Site Template
 
-Content sources for the WKND Stater Kit. It contains:
+Content sources for the site templates:
 - sample pages,
 - templates,
 - CA configurations,
 - DAM assets,
 - experience fragments.
 
-#### Site Theme
-
-Theme sources for the WKND Stater Kit. It contains styling (CSS) and behavior (JS) for the Core Components and the build system (webpack).
-
-#### Files
-
-Folder containing UI Kit related to the WKND Starter Kit.
-
-#### Previews
-
-Folder including images previewing WKND Starter Kit which are visible in the AEM Site Wizard.
-
-## Starter kit
-
-To package and deploy starter kit to AEM instance you need to:
-
 ### Prerequisite
 
 Install Maven (to be able to use the packaging script).
+
+Then initialize the project with following command at the project root:
+
+```
+npm run install
+```
 
 ### Build
 
@@ -42,7 +30,8 @@ To build the starter kit, run following command at the project root:
 ```
 npm run build
 ```
-This commands generates the starter kit zip file `starterkit.zip` below the project root.
+
+This commands generates the starter kit zip file `site-template.zip` below the project root.
 
 #### Build step by step
 
@@ -64,7 +53,7 @@ npm run build:clientlib
 npm run build:template
 ```
 
-4. Package everything into starterkit.zip:
+4. Package everything into site-template.zip:
 ```
 npm run build:package
 ```
