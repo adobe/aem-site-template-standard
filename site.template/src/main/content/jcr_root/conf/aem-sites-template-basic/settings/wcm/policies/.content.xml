@@ -14,8 +14,7 @@
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Generic Page"
                                 sling:resourceType="wcm/core/components/policy/policy"
-                                clientlibs="[aem-maven-archetype.dependencies,aem-maven-archetype.site]"
-                                clientlibsJsHead="aem-maven-archetype.dependencies">
+                                clientlibs="[aem-sites-template-basic.theme]">
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
                             </policy_default>
                         </page>
@@ -120,7 +119,7 @@
                                 </cq:authoring>
                             </policy_default>
                             <policy_main
-                                cq:styleDefaultElement="main"
+                                cq:styleDefaultClasses="main"
                                 jcr:description="Sets a &lt;main> element on the page content area."
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Page Main"
@@ -164,7 +163,7 @@
                     <v1 jcr:primaryType="nt:unstructured">
                         <experiencefragment jcr:primaryType="nt:unstructured">
                             <policy_header
-                                cq:styleDefaultElement="header"
+                                cq:styleDefaultClasses="header"
                                 jcr:description="Sets a &lt;header> element on the page header experience fragment."
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Page Header"
@@ -172,7 +171,7 @@
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
                             </policy_header>
                             <policy_footer
-                                cq:styleDefaultElement="footer"
+                                cq:styleDefaultClasses="footer"
                                 jcr:description="Sets a &lt;footer> element on the page footer experience fragment."
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Page Footer"

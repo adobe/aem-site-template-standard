@@ -3,10 +3,10 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:allowedTemplates="[/conf/aem-sites-template-basic/settings/wcm/templates/(?!xf-).*]"
-        cq:conf="/conf/aem-maven-archetype"
+        cq:conf="/conf/aem-sites-template-basic"
         jcr:primaryType="cq:PageContent"
         jcr:title="My Site"
-        sling:configRef="/conf/aem-maven-archetype"
+        sling:configRef="/conf/aem-sites-template-basic"
         sling:redirect="{Boolean}true"
         sling:redirectStatus="{Long}302"
         sling:resourceType="foundation/components/redirect"

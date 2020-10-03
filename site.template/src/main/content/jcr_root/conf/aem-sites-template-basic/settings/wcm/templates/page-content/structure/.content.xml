@@ -13,7 +13,7 @@
             <experiencefragment-header
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="core/wcm/components/experiencefragment/v1/experiencefragment"
-                fragmentVariationPath="/content/experience-fragments/aem-maven-archetype/en/site/header/master"/>
+                fragmentVariationPath="/content/experience-fragments/aem-sites-template-basic/en/site/header/master"/>
             <container
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="core/wcm/components/container/v1/container"
@@ -30,7 +30,7 @@
             <experiencefragment-footer
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="core/wcm/components/experiencefragment/v1/experiencefragment"
-                fragmentVariationPath="/content/experience-fragments/aem-maven-archetype/en/site/footer/master"/>
+                fragmentVariationPath="/content/experience-fragments/aem-sites-template-basic/en/site/footer/master"/>
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">
