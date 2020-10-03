@@ -14,7 +14,7 @@
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Generic Page"
                                 sling:resourceType="wcm/core/components/policy/policy"
-                                clientlibs="[aem-sites-template-basic.theme]">
+                                clientlibs="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v2,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.commons.datalayer.v1,aem-sites-template-basic.theme]">
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
                             </policy_default>
                         </page>
