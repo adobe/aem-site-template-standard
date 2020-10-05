@@ -20,7 +20,7 @@ Install Maven (to be able to use the packaging script).
 Then initialize the project with following command at the project root:
 
 ```
-npm run install
+npm install
 ```
 
 ### Build
