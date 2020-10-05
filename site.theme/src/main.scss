@@ -1,5 +1,4 @@
 
-@import 'site/variables';
-@import 'site/base';
-@import 'components/**/*.scss';
-@import 'site/styles/*.scss';
+@import './site/variables';
+@import './site/base';
+@import './components/*/*';
