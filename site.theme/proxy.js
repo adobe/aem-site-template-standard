@@ -47,7 +47,16 @@ var app = connect();
 // Create proxy server
 
 var proxy = httpProxy.createProxyServer({
-  target: CONFIG.url
+  target: CONFIG.url,
+  secure: false,
+  autoRewrite: true,
+  protocolRewrite: "http",
+  preserveHeaderKeyCase: true,
+  headers: {
+    "Host": CONFIG.host,
+    "Referer" : CONFIG.url,
+    "Origin": CONFIG.url
+  }
 });
 
 const routeMap = new Map([
@@ -57,8 +66,14 @@ const routeMap = new Map([
 
 app.use(
   function (req, res) {
-    if (routeMap.has(req.url)) {
-      fileSystem.createReadStream(routeMap.get(req.url)).pipe(res);
+    console.log(req.url);
+    for (let [key, value] of routeMap)
+    {
+      console.log(key);
+      if (req.url.match(key)) {
+        console.log("match");
+        fileSystem.createReadStream(value).pipe(res);
+      }
     }
     proxy.web(req, res);
   }
