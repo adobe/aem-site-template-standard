@@ -2,9 +2,9 @@
 
 This is the basic site template for Adobe Experience Manager (AEM).
 
-It that can serve as a most basic starting point for creating a new sites, or as a staring point for creating custom site templates.
-
 <img src="previews/site.png?raw=true" alt="Basic site preview" width="50%">
+
+It that can serve as a most basic starting point for creating a new sites, or as a staring point for creating custom site templates.
 
 ## Structure
 
