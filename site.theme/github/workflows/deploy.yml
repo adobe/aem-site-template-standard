@@ -1,0 +1,27 @@
+# This is a basic workflow to help you deploy theme changes
+
+name: Deploy theme changes
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install NPM dependencies
+        run: npm install
+
+      - name: Build artifacts for production
+        run: npm run prod
+
+      - name: Deploy artifacts to production
+        env:
+          URL: ${{ secrets.URL }}
+          AEM_USER: ${{ secrets.AEM_USER }}
+          AEM_PASS: ${{ secrets.AEM_PASS }}
+          SITE: ${{ secrets.SITE }}
+        run: npm run deploy
