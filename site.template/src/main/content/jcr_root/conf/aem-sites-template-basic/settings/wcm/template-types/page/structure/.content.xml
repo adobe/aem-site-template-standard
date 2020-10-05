@@ -3,12 +3,12 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:template="/conf/aem-sites-template-basic/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="core/wcm/components/page/v2/page">
         <root
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="core/wcm/components/container/v1/container">
+            sling:resourceType="core/wcm/components/container/v1/container"
+            layout="simple">
             <container
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="core/wcm/components/container/v1/container"
