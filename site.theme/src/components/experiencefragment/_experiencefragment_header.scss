@@ -104,7 +104,7 @@
         margin: -3px 0;
     }
     .cmp-search__input {
-        height: 26px;
+        box-sizing: border-box;
     }
 
     //== XF Content Fix
