@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "description": "Basic AEM site theme",
     "private": true,
-    "main": "src/main/webpack/site/main.ts",
+    "main": "src/main.ts",
     "license": "MIT License, Copyright (c) 2020 Adobe",
     "scripts": {
         "dev": "webpack -d --env dev --config ./webpack.dev.js",
