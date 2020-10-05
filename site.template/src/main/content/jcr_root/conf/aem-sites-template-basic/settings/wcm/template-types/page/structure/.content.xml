@@ -21,10 +21,6 @@
                     jcr:primaryType="nt:unstructured"
                     title="Smaller Screen"
                     width="{Long}768"/>
-                <tablet
-                    jcr:primaryType="nt:unstructured"
-                    title="Tablet"
-                    width="{Long}1200"/>
             </breakpoints>
         </cq:responsive>
     </jcr:content>
