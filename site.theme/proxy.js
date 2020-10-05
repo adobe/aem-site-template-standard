@@ -66,8 +66,7 @@ const routeMap = new Map([
 
 app.use(
   function (req, res) {
-    for (let [key, value] of routeMap)
-    {
+    for (let [key, value] of routeMap) {
       if (req.url.match(key)) {
         fileSystem.createReadStream(value).pipe(res);
       }
