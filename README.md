@@ -1,67 +1,66 @@
 # Basic Sites Template
 
-This is the basic AEM site template.
+This is the basic site template for Adobe Experience Manager (AEM).
 
-## What does the Starter Kit contain?
+It that can serve as a most basic starting point for creating a new sites, or as a staring point for creating custom site templates.
 
-#### Site Template
+## Structure
 
-Content sources for the site templates:
-- sample pages,
-- templates,
-- CA configurations,
-- DAM assets,
-- experience fragments.
+* `files`: Folder with the UI kit XD file and possibly other files.
+* `previews`: Folder with screenshots of the site template.
+* `site.template`: Content package of the content that will be copied for each site created from this template (templates, pages, etc.).
+* `site.theme`: Sources of the template theme to modify how the site looks (CSS, JS, etc.).
 
-### Prerequisite
+## Build
 
-Install Maven (to be able to use the packaging script).
+1. Install Maven (to be able to use the packaging script).
 
-Then initialize the project with following command at the project root:
+2. Initialize the project with following command executed at the template root:
 
 ```
 npm install
 ```
 
-### Build
-
-To build the starter kit, run following command at the project root:
+3. To build the site template, run following command executed at the template root:
 
 ```
 npm run build
 ```
 
-This commands generates the starter kit zip file `site-template.zip` below the project root.
+4. The site template ZIP file is now located below the template root: `site-template.zip`.
 
-#### Build step by step
+5. Deploy
+  * Upload the `site-template.zip` file in AEM's site creation wizard to create a new site from that template.
+  * Alternatively, run the deployment script:
 
-If you want to build `startetkit.zip` step by step here are the full instructions. This is what the full build does behind the scenes.
-All the commands need to be run at the project root.
+```
+npm run deploy
+```
 
-1. Compile the Starter Kit theme:
+### Build step by step
+
+If you want to build `site-template.zip` step by step, here are the full instructions.
+
+1. Compile the site template theme:
+
 ```
 npm run build:theme
 ```
 
-2. Create a theme clientlib and put it into template:
+2. Create a theme clientlib and put it into the site.template:
+
 ```
 npm run build:clientlib
 ```
 
 3. Create a content package from site.template:
+
 ```
 npm run build:template
 ```
 
 4. Package everything into site-template.zip:
+
 ```
 npm run build:package
-```
-
-### Deploy
-
-Deploy `startekit.zip` to a local AEM instance.
-
-```
-npm run deploy
 ```
