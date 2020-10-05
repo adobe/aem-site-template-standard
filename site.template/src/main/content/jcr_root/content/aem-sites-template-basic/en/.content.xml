@@ -4,7 +4,7 @@
     <jcr:content
         pageTitle="My Site"
         jcr:primaryType="cq:PageContent"
-        jcr:title="en"
+        jcr:title="My Site"
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
         cq:template="/conf/aem-sites-template-basic/settings/wcm/templates/page-content"
