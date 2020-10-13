@@ -49,19 +49,13 @@ If you want to build `site-template.zip` step by step, here are the full instruc
 npm run build:theme
 ```
 
-2. Create a theme clientlib and put it into the site.template:
-
-```
-npm run build:clientlib
-```
-
-3. Create a content package from site.template:
+2. Create a content package from site.template:
 
 ```
 npm run build:template
 ```
 
-4. Package everything into site-template.zip:
+3. Package everything into site-template.zip:
 
 ```
 npm run build:package
