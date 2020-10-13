@@ -13,9 +13,9 @@
         "proxy:wait": "sleep 1 && npm run proxy",
         "prod": "webpack -p --config ./webpack.prod.js",
         "zip": "run-s zip:clear zip:build",
-        "zip:build": "cd dist && bestzip ../compiled-theme.zip * && cd ..",
-        "zip:clear": "rm -rf compiled-theme.zip",
-        "deploy": "npm run zip && dotenv -- cross-var curl -u %AEM_USER%:%AEM_PASS% -F 'file=@compiled-theme.zip' %URL%/conf/%SITE%.importtheme.html"
+        "zip:build": "cd dist && bestzip ../site-theme.zip * && cd ..",
+        "zip:clear": "rm -rf site-theme.zip",
+        "deploy": "npm run zip && dotenv -- cross-var curl -u %AEM_USER%:%AEM_PASS% -F 'file=@site-theme.zip' %URL%/conf/%SITE%.importtheme.html"
     },
     "devDependencies": {
         "autoprefixer": "^9.2.1",

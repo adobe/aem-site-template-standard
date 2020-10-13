@@ -4,10 +4,9 @@
   "description": "Basic AEM site template",
   "license": "MIT License, Copyright 2020 Adobe Systems Incorporated",
   "scripts": {
-    "build": "run-s build:theme build:clientlib build:template build:package",
+    "build": "run-s build:theme build:template build:package",
     "deploy": "curl -u admin:admin -F 'file=@site-template.zip' http://localhost:4502/conf/global/site-templates.import.html",
     "build:theme": "cd site.theme && npm install && npm run prod && cd ..",
-    "build:clientlib": "clientlib --verbose",
     "build:template": "cd site.template && mvn clean install && cd ..",
     "build:package": "run-s site-template:create copy zip site-template:clear",
     "site-template:create": "mkdir -p site-template",
@@ -17,13 +16,13 @@
     "copy:previews": "cp -r previews site-template",
     "copy:properties": "cp -r properties.json site-template",
     "copy:template": "cp -r site.template/target/aem-sites-template-basic.site.template-0.0.1-SNAPSHOT.zip site-template/site-template.zip",
-    "zip": "run-s zip:clear zip:theme zip:site-template",
+    "zip": "run-s zip:clear zip:theme zip:theme-sources zip:site-template",
     "zip:clear": "rm -rf site-template.zip",
-    "zip:theme": "cd site.theme && zip ../site-template/theme-sources.zip $(git ls-files) && cd ..",
+    "zip:theme": "cd site.theme/dist && zip -r ../../site-template/site-theme.zip * && cd ../..",
+    "zip:theme-sources": "cd site.theme && zip ../site-template/theme-sources.zip $(git ls-files) && cd ..",
     "zip:site-template": "cd site-template && bestzip ../site-template.zip * && cd .."
   },
   "devDependencies": {
-    "aem-clientlib-generator": "^1.4.3",
     "bestzip": "^2.1.6",
     "npm-run-all": "^4.1.5"
   },
