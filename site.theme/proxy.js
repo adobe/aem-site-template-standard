@@ -53,9 +53,17 @@ var proxy = httpProxy.createProxyServer({
   protocolRewrite: "http",
   preserveHeaderKeyCase: true,
   headers: {
-    "Host": CONFIG.host,
+    "Host": CONFIG.url.replace(/(^\w+:|^)\/\//, ''),
     "Referer" : CONFIG.url,
     "Origin": CONFIG.url
+  }
+});
+
+// Remove the `secure` attribute from cookies to support Chrome
+
+proxy.on('proxyRes', function(proxyRes, req, res) {
+  if (proxyRes.headers['set-cookie']) {
+    proxyRes.headers['set-cookie'] = proxyRes.headers['set-cookie'].map(val => val.replace('Secure;', ''))
   }
 });
 
@@ -77,4 +85,4 @@ app.use(
 
 http.createServer(app).listen(CONFIG.port);
 
-console.log('Go to http://localhost:7000 to see your live preview.');
+console.log(`Go to http://localhost:${CONFIG.port} to see your live preview.`);
