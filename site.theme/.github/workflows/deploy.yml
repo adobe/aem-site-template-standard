@@ -22,3 +22,11 @@ jobs:
         with:
           name: site-theme
           path: ${{ github.workspace }}/dist/**/*
+
+      - name: Updated theme path
+        env:
+          URL: ${{ secrets.URL }}
+          AEM_USER: ${{ secrets.AEM_USER }}
+          AEM_PASS: ${{ secrets.AEM_PASS }}
+          SITE: ${{ secrets.SITE }}
+        run: echo "TODO - update theme path"
