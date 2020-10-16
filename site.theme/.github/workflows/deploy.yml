@@ -1,6 +1,6 @@
 # This is a basic workflow to help you deploy theme changes
 
-name: Deploy theme changes
+name: Build and deploy to Github artifacts
 
 on:
   workflow_dispatch:
@@ -18,10 +18,7 @@ jobs:
       - name: Build artifacts for production
         run: npm run prod
 
-      - name: Deploy artifacts to production
-        env:
-          URL: ${{ secrets.URL }}
-          AEM_USER: ${{ secrets.AEM_USER }}
-          AEM_PASS: ${{ secrets.AEM_PASS }}
-          SITE: ${{ secrets.SITE }}
-        run: npm run deploy
+      - uses: actions/upload-artifact@v2
+        with:
+          name: site-theme
+          path: ${{ github.workspace }}/dist/**/*
