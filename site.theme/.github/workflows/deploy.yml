@@ -29,4 +29,8 @@ jobs:
           AEM_USER: ${{ secrets.AEM_USER }}
           AEM_PASS: ${{ secrets.AEM_PASS }}
           SITE: ${{ secrets.SITE }}
-        run: echo "TODO - update theme path"
+          GIT_ORG: ${{ secrets.GIT_ORG }}
+          GIT_REPO: ${{ secrets.GIT_REPO }}
+          GIT_ARTIFACT_ID: ${{ secrets.GIT_ARTIFACT_ID }}
+          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
+        run: npm run deploy
