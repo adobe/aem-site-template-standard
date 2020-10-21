@@ -12,10 +12,7 @@
         "proxy": "node proxy.js",
         "proxy:wait": "sleep 1 && npm run proxy",
         "prod": "webpack -p --config ./webpack.prod.js",
-        "zip": "run-s zip:clear zip:build",
-        "zip:build": "cd dist && bestzip ../compiled-theme.zip * && cd ..",
-        "zip:clear": "rm -rf compiled-theme.zip",
-        "deploy": "npm run zip && dotenv -- cross-var curl -u %AEM_USER%:%AEM_PASS% -F 'file=@compiled-theme.zip' %URL%/conf/%SITE%.importtheme.html"
+        "deploy": "dotenv -- cross-var curl -u %AEM_USER%:%AEM_PASS% -d 'prefixPath=/%GIT_ORG%/%GIT_REPO%/%GIT_ARTIFACT_ID%' -d 'githubToken=%GIT_TOKEN%' %URL%/conf/%SITE%.updatetheme.html"
     },
     "devDependencies": {
         "autoprefixer": "^9.2.1",
