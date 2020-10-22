@@ -29,6 +29,10 @@ jobs:
 
       - name: Build Site Template
         run: npm run build
+
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d-%HH-%MM')"
       
       - name: Create Release
         id: create_release
@@ -36,10 +40,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: v${{ steps.date.outputs.date }}
+          release_name: v${{ steps.date.outputs.date }}
           draft: false
-          prerelease: false
+          prerelease: true
       
       - name: Upload Release Asset
         id: upload-release-asset 
