@@ -12,11 +12,11 @@ module.exports = {
   url: normalizeUrl(url),
   css: {
     "dist": "./dist/css/theme.css",
-    "url": `/conf/${env.SITE}/settings/wcm/clientlibs/theme.*.css`
+    "url": `/content/${env.SITE}.theme/.*/css/theme.css`
   },
   js: {
     "dist": "./dist/js/theme.js",
-    "url": `/conf/${env.SITE}/settings/wcm/clientlibs/theme.*.js`
+    "url": `/content/${env.SITE}.theme/.*/js/theme.js`
   },
   port: 7000
 };
