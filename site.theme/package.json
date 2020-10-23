@@ -9,10 +9,10 @@
         "dev": "webpack -d --env dev --config ./webpack.dev.js",
         "dev-watch": "watch 'npm run dev' src",
         "live": "npm-run-all -p dev-watch proxy:wait",
-        "proxy": "node proxy.js",
+        "proxy": "aem-site-theme-builder live --config='proxy.config.js'",
         "proxy:wait": "sleep 1 && npm run proxy",
         "prod": "webpack -p --config ./webpack.prod.js",
-        "deploy": "dotenv -- cross-var curl -u %AEM_USER%:%AEM_PASS% -d 'prefixPath=/%GIT_ORG%/%GIT_REPO%/%GIT_ARTIFACT_ID%' -d 'githubToken=%GIT_TOKEN%' %URL%/conf/%SITE%.updatetheme.html"
+        "deploy": "aem-site-theme-builder deploy"
     },
     "devDependencies": {
         "autoprefixer": "^9.2.1",
@@ -48,5 +48,9 @@
     "browserslist": [
         "last 2 version",
         "> 1%"
-    ]
+    ],
+    "comments": {
+    	"dependencies": "When we have AEM Site Theme Builder released as a npm package then we should update dependencies list by item:",
+    	"@adobe/aem-site-theme-builder": "0.0.1"
+    }
 }
