@@ -1,0 +1,34 @@
+name: Update theme config on AEM with artifact id
+
+on:
+  repository_dispatch:
+    types: update_theme_config
+
+jobs:
+  update_config:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install NPM dependencies
+        run: npm install
+
+      - name: Compute env vars
+        id: env_vars 
+        run: |
+          echo ::set-output name=ARTIFACT_ID::$(curl ${{ github.api_url }}/repos/${{ github.repository }}/actions/runs/${{ github.event.client_payload.deployed_theme_run_id }}/artifacts -H 'Authorization: token ${{ secrets.GITHUB_TOKEN }}' | jq -r '.artifacts[0].id')
+          echo ::set-output name=GIT_ORG::$(echo "${{ github.repository }}" | awk -F / '{print $1}')
+          echo ::set-output name=GIT_REPO::$(echo "${{ github.repository }}" | awk -F / '{print $2}')
+
+      - name: Updated theme path
+        env:
+          GIT_ARTIFACT_ID: ${{ steps.env_vars.outputs.ARTIFACT_ID }}
+          GIT_ORG: ${{ steps.env_vars.outputs.GIT_ORG }}
+          GIT_REPO: ${{ steps.env_vars.outputs.GIT_REPO }}
+          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
+          URL: ${{ secrets.URL }}
+          AEM_USER: ${{ secrets.AEM_USER }}
+          AEM_PASS: ${{ secrets.AEM_PASS }}
+          SITE: ${{ secrets.SITE }}
+        run: npm run deploy
