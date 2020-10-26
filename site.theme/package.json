@@ -9,7 +9,7 @@
         "dev": "webpack -d --env dev --config ./webpack.dev.js",
         "dev-watch": "watch 'npm run dev' src",
         "live": "npm-run-all -p dev-watch proxy:wait",
-        "proxy": "aem-site-theme-builder live --config='proxy.config.js'",
+        "proxy": "aem-site-theme-builder live",
         "proxy:wait": "sleep 1 && npm run proxy",
         "prod": "webpack -p --config ./webpack.prod.js",
         "deploy": "aem-site-theme-builder deploy"
