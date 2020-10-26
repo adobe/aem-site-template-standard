@@ -10,7 +10,6 @@
   "devDependencies": {},
   "dependencies": {},
   "comments": {
-    "dependencies": "When we have AEM Site Template Builder released as a npm package then we should update dependencies list by item:",
-    "@adobe/aem-site-template-builder": "0.0.1"
+    "@adobe/aem-site-template-builder": "0.1.4"
   }
 }
