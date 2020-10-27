@@ -15,7 +15,7 @@ It can serve as a most basic starting point for creating a new site, or as a sta
 
 ## Install on AEMaaCS
 
-* Go to [releases/latest](./releases/latest) and download `site-template.zip`
+* Go to <https://github.com/adobe/aem-site-template-basic/releases/latest> and download `site-template.zip`
 * Upload `site-template.zip` in AEMaaCS's site creation wizard to create a new site from that template.
 
 ## Build locally
