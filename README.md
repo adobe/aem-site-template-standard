@@ -41,3 +41,11 @@ Alternatively you can build `site-template.zip` locally.
 ## Develop Site Template
 
 See: https://github.com/adobe/aem-site-template-builder
+
+## Contributing
+
+Contributions are welcomed! Read the [Contributing Guide](.github/CONTRIBUTING.md) for more information.
+
+## Licensing
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE.md) for more information.
