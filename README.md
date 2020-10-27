@@ -1,10 +1,10 @@
 # Basic Sites Template
 
-This is the basic site template for Adobe Experience Manager (AEM).
+This is the basic site template for Adobe Experience Manager as a Cloud Service (AEMaaCS).
 
 <img src="previews/site.png?raw=true" alt="Basic site preview" width="50%">
 
-It that can serve as a most basic starting point for creating a new sites, or as a staring point for creating custom site templates.
+It can serve as a most basic starting point for creating a new site, or as a staring point for creating custom site templates.
 
 ## Structure
 
@@ -13,44 +13,31 @@ It that can serve as a most basic starting point for creating a new sites, or as
 * `site.template`: Content package of the content that will be copied for each site created from this template (templates, pages, etc.).
 * `site.theme`: Sources of the template theme to modify how the site looks (CSS, JS, etc.).
 
-## Build
+## Install on AEMaaCS
+
+* Go to https://github.com/gabrielwalt/aem-sites-template-basic/releases/latest and download `site-template.zip`
+* Upload `site-template.zip` in AEMaaCS's site creation wizard to create a new site from that template.
+
+## Build locally
+
+Alternatively you can build `site-template.zip` locally.
 
 1. Install Maven (to be able to use the packaging script).
+1. Initialize the project with following command executed at the template root:
 
-2. Initialize the project with following command executed at the template root:
+   ```
+   npm install
+   ```
 
-```
-npm install
-```
+1. To build the site template, run following command executed at the template root:
 
-3. To build the site template, run following command executed at the template root:
+   ```
+   npm run build
+   ```
 
-```
-npm run build
-```
+1. The site template ZIP file is now located below the template root: `site-template.zip`.
+1. Install on AEMaaCS or on a local cloudready instance by running `npm run deploy`.
 
-4. The site template ZIP file is now located below the template root: `site-template.zip`.
+## Develop Site Template
 
-5. Upload the `site-template.zip` file in AEMaaCS's site creation wizard to create a new site from that template. For local development on a cloudready instance, you can alternatively run `npm run deploy`.
-
-### Build step by step
-
-If you want to build `site-template.zip` step by step, here are the full instructions.
-
-1. Compile the site template theme:
-
-```
-npm run build:theme
-```
-
-2. Create a content package from site.template:
-
-```
-npm run build:template
-```
-
-3. Package everything into site-template.zip:
-
-```
-npm run build:package
-```
+See: https://github.com/adobe/aem-site-template-builder
