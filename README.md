@@ -31,13 +31,7 @@ npm run build
 
 4. The site template ZIP file is now located below the template root: `site-template.zip`.
 
-5. Deploy
-  * Upload the `site-template.zip` file in AEM's site creation wizard to create a new site from that template.
-  * Alternatively, run the deployment script:
-
-```
-npm run deploy
-```
+5. Upload the `site-template.zip` file in AEMaaCS's site creation wizard to create a new site from that template. For local development on a cloudready instance, you can alternatively run `npm run deploy`.
 
 ### Build step by step
 
