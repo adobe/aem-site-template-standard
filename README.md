@@ -1,4 +1,4 @@
-# Basic Sites Template
+# Basic Site Template
 
 This is the basic site template for Adobe Experience Manager as a Cloud Service (AEMaaCS).
 
