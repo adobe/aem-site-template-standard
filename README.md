@@ -1,4 +1,4 @@
-# Basic Sites Template
+# Basic Site Template
 
 This is the basic site template for Adobe Experience Manager as a Cloud Service (AEMaaCS).
 
@@ -15,7 +15,7 @@ It can serve as a most basic starting point for creating a new site, or as a sta
 
 ## Install on AEMaaCS
 
-* Go to https://github.com/gabrielwalt/aem-sites-template-basic/releases/latest and download `site-template.zip`
+* Go to <https://github.com/adobe/aem-site-template-basic/releases/latest> and download `site-template.zip`
 * Upload `site-template.zip` in AEMaaCS's site creation wizard to create a new site from that template.
 
 ## Build locally
@@ -25,13 +25,13 @@ Alternatively you can build `site-template.zip` locally.
 1. Install Maven (to be able to use the packaging script).
 1. Initialize the project with following command executed at the template root:
 
-   ```
+   ```bash
    npm install
    ```
 
 1. To build the site template, run following command executed at the template root:
 
-   ```
+   ```bash
    npm run build
    ```
 
@@ -40,7 +40,7 @@ Alternatively you can build `site-template.zip` locally.
 
 ## Develop Site Template
 
-See: https://github.com/adobe/aem-site-template-builder
+See: <https://github.com/adobe/aem-site-template-builder>
 
 ## Contributing
 
