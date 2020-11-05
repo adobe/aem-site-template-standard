@@ -85,4 +85,4 @@ node_modules
 npm-debug.log
 package-lock.json
 
-site-template.zip
+*.zip
