@@ -1,7 +1,7 @@
 {
   "name": "aem-site-template-basic",
   "version": "1.0.0",
-  "description": "Basic AEM site template",
+  "description": "Basic AEM site template that serves as a clean starting point.",
   "license": "MIT License, Copyright 2020 Adobe Systems Incorporated",
   "scripts": {
     "build": "aem-site-template-builder",
@@ -9,5 +9,12 @@
   },
   "devDependencies": {
     "@adobe/aem-site-template-builder": "0.2.0"
+  },
+  "site_template": {
+    "createdBy": "Adobe",
+    "useCases": [],
+    "docsUrl": "",
+    "showcaseUrl": "",
+    "sourceRepositoryUrl": "https://github.com/adobe/aem-sites-template-basic"
   }
 }
