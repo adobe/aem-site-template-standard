@@ -15,12 +15,12 @@ It can serve as a most basic starting point for creating a new site, or as a sta
 
 ## Install on AEMaaCS
 
-* Go to <https://github.com/adobe/aem-site-template-basic/releases/latest> and download `site-template.zip`
-* Upload `site-template.zip` in AEMaaCS's site creation wizard to create a new site from that template.
+* Go to <https://github.com/adobe/aem-site-template-basic/releases/latest> and download `aem-site-template-basic-{version}.zip`
+* Upload `aem-site-template-basic-{version}.zip` in AEMaaCS's site creation wizard to create a new site from that template.
 
 ## Build locally
 
-Alternatively you can build `site-template.zip` locally.
+Alternatively you can build `aem-site-template-basic-{version}.zip` locally.
 
 1. Install Maven (to be able to use the packaging script).
 1. Initialize the project with following command executed at the template root:
@@ -35,7 +35,7 @@ Alternatively you can build `site-template.zip` locally.
    npm run build
    ```
 
-1. The site template ZIP file is now located below the template root: `site-template.zip`.
+1. The site template ZIP file is now located below the template root: `aem-site-template-basic-{version}.zip`.
 1. Install on AEMaaCS or on a local cloudready instance by running `npm run deploy`.
 
 ## Develop Site Template

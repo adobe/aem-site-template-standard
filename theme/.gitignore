@@ -6,5 +6,4 @@ npm-debug.log
 package-lock.json
 install.js
 dist/
-.env
 compiled-theme.zip
