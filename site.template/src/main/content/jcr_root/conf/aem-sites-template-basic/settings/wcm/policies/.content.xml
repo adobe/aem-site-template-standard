@@ -60,7 +60,7 @@
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Page Root"
                                 sling:resourceType="wcm/core/components/policy/policy"
-                                components="[.core-wcm,/libs/core/wcm/components/form/container/v2/container]">
+                                components="[group:Core Content]">
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
                                 <cq:authoring jcr:primaryType="nt:unstructured">
                                     <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -92,7 +92,7 @@
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Page Content"
                                 sling:resourceType="wcm/core/components/policy/policy"
-                                components="[/libs/core/wcm/components/accordion/v1/accordion,/libs/core/wcm/components/button/v1/button,/libs/core/wcm/components/container/v1/container,/libs/core/wcm/components/contentfragment/v1/contentfragment,/libs/core/wcm/components/contentfragmentlist/v1/contentfragmentlist,/libs/core/wcm/components/download/v1/download,/libs/core/wcm/components/embed/v1/embed,/libs/core/wcm/components/experiencefragment/v1/experiencefragment,/libs/core/wcm/components/image/v2/image,/libs/core/wcm/components/list/v2/list,/libs/core/wcm/components/pdfviewer/v1/pdfviewer,/libs/core/wcm/components/progressbar/v1/progressbar,/libs/core/wcm/components/separator/v1/separator,/libs/core/wcm/components/sharing/v1/sharing,/libs/core/wcm/components/tabs/v1/tabs,/libs/core/wcm/components/teaser/v1/teaser,/libs/core/wcm/components/text/v2/text,/libs/core/wcm/components/title/v2/title,/libs/core/wcm/components/form/container/v2/container]"
+                                components="[group:Core Content]"
                                 layoutDisabled="false">
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
                                 <cq:authoring jcr:primaryType="nt:unstructured">
@@ -131,7 +131,7 @@
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="XF Root"
                                 sling:resourceType="wcm/core/components/policy/policy"
-                                components="[group:My Site - Content,/apps/core/wcm/components/form/container/v2/container]">
+                                components="[group:Core Content]">
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
                                 <cq:authoring jcr:primaryType="nt:unstructured">
                                     <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -377,7 +377,7 @@
                                     jcr:primaryType="nt:unstructured"
                                     jcr:title="Content Form"
                                     sling:resourceType="wcm/core/components/policy/policy"
-                                    components="[/apps/core/wcm/components/form/button/v2/button,/apps/core/wcm/components/form/hidden/v2/hidden,/apps/core/wcm/components/form/options/v2/options,/apps/core/wcm/components/form/text/v2/text]">
+                                    components="[group:Core Form]">
                                     <jcr:content jcr:primaryType="nt:unstructured"/>
                                 </policy_default>
                             </container>
