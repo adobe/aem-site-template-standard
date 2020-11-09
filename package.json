@@ -10,11 +10,11 @@
   "devDependencies": {
     "@adobe/aem-site-template-builder": "0.2.0"
   },
-  "site_template": {
+  "siteTemplate": {
     "createdBy": "Adobe",
     "useCases": [],
     "docsUrl": "",
     "showcaseUrl": "",
-    "sourceRepositoryUrl": "https://github.com/adobe/aem-sites-template-basic"
+    "sourceRepositoryUrl": "https://github.com/adobe/aem-site-template-basic"
   }
 }
