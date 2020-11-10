@@ -2,21 +2,22 @@
 
 name: Build and release Site Template
 
-on:
+on: 
   workflow_dispatch:
-  push:
-    branches: [ main ]
+    inputs:
+      semantic_version:
+        description: 'Semantic version (major | minor | patch)'
+        required: true
+        default: 'patch'
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  build_and_release:
+    name: Build and release
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    if: github.ref == 'refs/heads/main'
+
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
       - name: Set up Java
@@ -29,6 +30,18 @@ jobs:
 
       - name: Build Site Template
         run: npm run build
+
+      - name: Bump version and commit
+        run: |
+          git config --local user.email "${{ github.actor }}@users.noreply.github.com"
+          git config --local user.name "Release action on behalf of ${{ github.actor }}"
+          npm version ${{ github.event.inputs.semantic_version }} -m 'Release %s'
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+          tags: false 
 
       - name: Read package.json
         id: package
