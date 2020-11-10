@@ -1,6 +1,6 @@
 {
   "name": "aem-site-template-basic",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Basic AEM site template",
   "license": "MIT License, Copyright 2020 Adobe Systems Incorporated",
   "scripts": {
@@ -8,6 +8,6 @@
     "deploy": "curl -u admin:admin -F 'file=@site-template.zip' http://localhost:4502/conf/global/site-templates.import.html"
   },
   "devDependencies": {
-    "@adobe/aem-site-template-builder": "0.2.0"
+    "@adobe/aem-site-template-builder": "0.3.0"
   }
 }
