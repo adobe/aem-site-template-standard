@@ -42,6 +42,10 @@ Alternatively you can build `aem-site-template-basic-{version}.zip` locally.
 
 See: <https://github.com/adobe/aem-site-template-builder>
 
+## Release
+
+Run the "Build and release" GitHub workflow and provide the semantic version you're about to release.
+
 ## Contributing
 
 Contributions are welcomed! Read the [Contributing Guide](.github/CONTRIBUTING.md) for more information.
