@@ -28,9 +28,6 @@ jobs:
       - name: Install NPM dependencies
         run: npm install
 
-      - name: Build Site Template
-        run: npm run build
-
       - name: Bump version and commit
         run: |
           git config --local user.email "${{ github.actor }}@users.noreply.github.com"
@@ -42,6 +39,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
           tags: false 
+
+      - name: Build Site Template (using bumped version)
+        run: npm run build
 
       - name: Read package.json
         id: package
