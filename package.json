@@ -11,6 +11,7 @@
     "@adobe/aem-site-template-builder": "1.0.0"
   },
   "siteTemplate": {
+    "title": "Basic Site Template",
     "createdBy": "Adobe",
     "useCases": [],
     "docsUrl": "",
