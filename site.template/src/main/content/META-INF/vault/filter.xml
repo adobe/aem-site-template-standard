@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<workspaceFilter version="1.0">
-    <filter root="/conf/aem-sites-template-basic" mode="merge"/>
-    <filter root="/content/aem-sites-template-basic" mode="merge"/>
-    <filter root="/content/dam/aem-sites-template-basic" mode="merge"/>
-    <filter root="/content/experience-fragments/aem-sites-template-basic" mode="merge"/>
-</workspaceFilter>
