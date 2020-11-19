@@ -20,19 +20,17 @@ jobs:
           echo ::set-output name=ARTIFACT_ID::$(curl ${{ github.api_url }}/repos/${{ github.repository }}/actions/runs/${{ github.event.client_payload.deployed_theme_run_id }}/artifacts -H 'Authorization: token ${{ secrets.GITHUB_TOKEN }}' | jq -r '.artifacts[0].id')
           echo ::set-output name=GIT_ORG::$(echo "${{ github.repository }}" | awk -F / '{print $1}')
           echo ::set-output name=GIT_REPO::$(echo "${{ github.repository }}" | awk -F / '{print $2}')
-          echo ::set-output name=GIT_TOKEN::$(echo "${{ secrets.GIT_TOKEN }}")
           echo ::set-output name=SALT::$(LC_ALL=C tr -dc 'A-Za-z0-9' </dev/urandom | head -c 16 ; echo)
 
       - name: Compute hash var
         id: hash_var
         run: |
-          echo ::set-output name=HASH::$(echo -n "${{ steps.env_vars.outputs.GIT_ORG }}${{ steps.env_vars.outputs.GIT_REPO }}${{ steps.env_vars.outputs.GIT_TOKEN }}${{ steps.env_vars.outputs.SALT }}" | shasum -a 256 | cut -d " " -f 1)
+          echo ::set-output name=HASH::$(echo -n "${{ steps.env_vars.outputs.GIT_ORG }}${{ steps.env_vars.outputs.GIT_REPO }}${{ secrets.GIT_TOKEN }}${{ steps.env_vars.outputs.SALT }}" | shasum -a 256 | cut -d " " -f 1)
 
       - name: Update theme path
         env:
           SITE: ${{ secrets.SITE }}
           GIT_ARTIFACT_ID: ${{ steps.env_vars.outputs.ARTIFACT_ID }}
-          GIT_TOKEN: ${{ steps.env_vars.outputs.GIT_TOKEN }}
           SALT: ${{ steps.env_vars.outputs.SALT }}
           HASH: ${{ steps.hash_var.outputs.HASH }}
           URL: ${{ secrets.URL }}
