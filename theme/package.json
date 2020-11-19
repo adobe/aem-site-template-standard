@@ -8,11 +8,9 @@
     "scripts": {
         "dev": "webpack -d --env dev --config ./webpack.dev.js",
         "dev-watch": "watch 'npm run dev' src",
-        "live": "npm-run-all -p dev-watch proxy:wait",
+        "live": "npm-run-all -p dev-watch proxy browsersync",
         "proxy": "aem-site-theme-builder live",
-        "proxy:wait": "sleep 1 && npm run proxy",
         "prod": "webpack -p --config ./webpack.prod.js",
-        "deploy": "aem-site-theme-builder deploy",
         "browsersync": "browser-sync start --proxy 'localhost:%AEM_SITE_PROXY_PORT%' --files 'dist'"
     },
     "devDependencies": {
