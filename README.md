@@ -10,8 +10,8 @@ It can serve as a most basic starting point for creating a new site, or as a sta
 
 * `files`: Folder with the UI kit XD file and possibly other files.
 * `previews`: Folder with screenshots of the site template.
-* `site.template`: Content package of the content that will be copied for each site created from this template (templates, pages, etc.).
-* `site.theme`: Sources of the template theme to modify how the site looks (CSS, JS, etc.).
+* `site`: Content package of the content that will be copied for each site created from this template (templates, pages, etc.).
+* `theme`: Sources of the template theme to modify how the site looks (CSS, JS, etc.).
 
 ## Install on AEMaaCS
 
@@ -41,6 +41,10 @@ Alternatively you can build `aem-site-template-basic-{version}.zip` locally.
 ## Develop Site Template
 
 See: <https://github.com/adobe/aem-site-template-builder>
+
+## Release
+
+Run the "Build and release" GitHub workflow and provide the semantic version you're about to release.
 
 ## Contributing
 
