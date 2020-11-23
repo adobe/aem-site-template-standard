@@ -34,4 +34,4 @@ jobs:
           SALT: ${{ steps.env_vars.outputs.SALT }}
           HASH: ${{ steps.hash_var.outputs.HASH }}
           URL: ${{ secrets.URL }}
-        run: npm run deploy
+        run: npx aem-site-theme-builder deploy
