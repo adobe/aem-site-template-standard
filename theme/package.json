@@ -11,7 +11,7 @@
         "live": "npm-run-all -p dev-watch proxy browsersync",
         "proxy": "aem-site-theme-builder live",
         "prod": "webpack -p --config ./webpack.prod.js",
-        "browsersync": "browser-sync start --proxy 'localhost:%AEM_SITE_PROXY_PORT%' --files 'dist'"
+        "browsersync": "browser-sync start --proxy 'localhost:7000' --files 'dist'"
     },
     "devDependencies": {
         "@adobe/aem-site-theme-builder": "1.0.0",
