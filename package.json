@@ -8,7 +8,8 @@
     "deploy": "curl -u admin:admin -F 'file=@site-template.zip' http://localhost:4502/conf/global/site-templates.import.html"
   },
   "devDependencies": {
-    "@adobe/aem-site-template-builder": "1.0.0"
+    "@adobe/aem-site-template-builder": "1.0.0",
+    "normalize.css": "^8.0.1"
   },
   "siteTemplate": {
     "title": "Basic AEM Site Template",
