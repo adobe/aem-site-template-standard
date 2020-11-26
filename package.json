@@ -1,6 +1,6 @@
 {
   "name": "aem-site-template-basic",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Basic AEM Site Template that serves as a clean starting point.",
   "license": "MIT License, Copyright 2020 Adobe Systems Incorporated",
   "scripts": {
