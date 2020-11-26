@@ -17,7 +17,7 @@ jobs:
       - name: Compute env vars
         id: env_vars
         run: |
-          echo ::set-output name=ARTIFACT_ID::$(curl ${{ github.api_url }}/repos/${{ github.repository }}/actions/runs/${{ github.event.client_payload.deployed_theme_run_id }}/artifacts -H 'Authorization: token ${{ secrets.GITHUB_TOKEN }}' | jq -r '.artifacts[0].id')
+          echo ::set-output name=ARTIFACT_ID::$(curl ${{ github.api_url }}/repos/${{ github.repository }}/actions/runs/${{ github.event.client_payload.deployed_theme_run_id }}/artifacts -H 'Authorization: token ${{ secrets.GIT_TOKEN }}' | jq -r '.artifacts[0].id')
           echo ::set-output name=GIT_ORG::$(echo "${{ github.repository }}" | awk -F / '{print $1}')
           echo ::set-output name=GIT_REPO::$(echo "${{ github.repository }}" | awk -F / '{print $2}')
           echo ::set-output name=EXPIRATION::$(date -d "+10 minutes" +%s000)
