@@ -36,7 +36,7 @@ Alternatively you can build `aem-site-template-basic-{version}.zip` locally.
    ```
 
 1. The site template ZIP file is now located below the template root: `aem-site-template-basic-{version}.zip`.
-1. Install on AEMaaCS or on a local cloudready instance by running `npm run deploy`.
+1. Upload to an AEM instance's site creation wizard. For Installing on a default local development instance use `npm run deploy`.
 
 ## Develop Site Template
 
