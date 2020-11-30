@@ -44,7 +44,11 @@ See: <https://github.com/adobe/aem-site-template-builder>
 
 ## Release
 
-Run the "Build and release" GitHub workflow and provide the semantic version you're about to release.
+Run `Build and release` GitHub workflow and provide the semantic version you're about to release. The workflow executes the following steps:
+
+* Build Site Template
+* Release latest version on github
+* Commit, build and release latest Site Theme related changes in [Site Theme E2E Repo](https://github.com/adobe/aem-site-template-basic-theme-e2e).
 
 ## Contributing
 
