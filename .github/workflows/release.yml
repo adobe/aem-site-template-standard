@@ -76,3 +76,11 @@ jobs:
           asset_path: ./${{ steps.packageJson.outputs.NAME }}-${{ steps.packageJson.outputs.VERSION }}.zip
           asset_name: ${{ steps.packageJson.outputs.NAME }}-${{ steps.packageJson.outputs.VERSION }}.zip
           asset_content_type: application/zip
+          
+      - name: Update Site Theme E2E Repo
+        run: |
+          curl -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: token ${{ secrets.SITE_THEME_REPO_WRITE_TOKEN }}" \
+            --request POST \
+            --data '{"event_type": "fetch_latest_changes", "client_payload": { "site_template_version": "${{ steps.packageJson.outputs.VERSION }}" } }' \
+            ${{ github.api_url }}/repos/adobe/aem-site-template-basic-theme-e2e/dispatches
