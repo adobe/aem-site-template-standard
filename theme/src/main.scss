@@ -1,5 +1,5 @@
-@import '~normalize.css/normalize.css';
-@import './site/variables';
-@import './site/grid';
-@import './site/base';
+@import 'normalize.css/normalize.css';
+@import './site/_variables.scss';
+@import './site/_grid.scss';
+@import './site/_base.scss';
 @import './components/*/*';

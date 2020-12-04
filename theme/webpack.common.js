@@ -17,6 +17,8 @@ const TSLintPlugin            = require('tslint-webpack-plugin');
 const CopyWebpackPlugin       = require('copy-webpack-plugin');
 const { CleanWebpackPlugin }  = require('clean-webpack-plugin');
 
+const styleParser = require(path.resolve(__dirname, 'style-parser.js'));
+
 const SOURCE_ROOT = __dirname + '/src';
 
 module.exports = {
@@ -70,11 +72,13 @@ module.exports = {
                         {
                             loader: 'postcss-loader',
                             options: {
-                                plugins() {
-                                    return [
-                                        require('autoprefixer')
-                                    ];
-                                }
+                                postcssOptions: {
+                                    plugins: [
+                                        [
+                                            'autoprefixer'
+                                        ],
+                                    ],
+                                },
                             }
                         },
                         {
@@ -82,6 +86,25 @@ module.exports = {
                             options: {
                                 url: false
                             }
+                        },
+                        {
+                            loader: "postcss-loader",
+                            options: {
+                                postcssOptions: {
+                                    parser: 'postcss-scss',
+                                    plugins: [
+                                        [
+                                            'postcss-import'
+                                        ],
+                                        [
+                                            styleParser,
+                                            {
+                                                // Options
+                                            },
+                                        ],
+                                    ],
+                                },
+                            },
                         },
                         {
                             loader: "webpack-import-glob-loader",

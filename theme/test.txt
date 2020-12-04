@@ -1,0 +1,3 @@
+@property Total Dialog Width
+width=100%
+.aem-Grid
