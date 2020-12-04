@@ -27,11 +27,4 @@ npm install
 npm run live
 ```
 
-4. Deploy
-  ** Once your work completed, check your changes into GitHub, and execute the deployment action on GitHub.
-  ** Alternatively, run the deployment script:
-
-```
-npm run dev
-npm run deploy
-```
+4. Once your work completed, check your changes into GitHub, and execute the deployment action on GitHub.
