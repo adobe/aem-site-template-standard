@@ -1,5 +1,5 @@
-# AEM URL
-URL=<site URL>
+# AEM url
+AEM_URL=<site URL>
 
 # Credentials and download-location for deploy
 AEM_USER=<username>
@@ -10,5 +10,5 @@ GIT_ARTIFACT_ID=<gitartifactid>
 GIT_TOKEN=<gittoken>
 AEM_SITE_PROXY_PORT=7000
 
-# Web site name
-SITE=<site name>
+# AEM site name
+AEM_SITE=<site name>
