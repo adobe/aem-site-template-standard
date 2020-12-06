@@ -1,14 +1,28 @@
-
 //== Base
+
+// :root {
+//     @include prop("font-size", $font-size, "Font Size");
+//     @include prop("color-foreground", $color-foreground, "Foreground Color");
+//     @include prop("color-background", $color-background, "Background Color");
+//     @include prop("color-link", $color-link, "Link Color");
+// }
+
+@include defineTheme(
+    $fontSize: ($font-size, "Font Size"),
+    $colorForeground: ($color-foreground, "Foreground Color"),
+    $colorBackground: ($color-background, "Background Color"),
+    $teaserBorderWidth: (0px, "Teaser / Border Width"),
+    $teaserBorderColor: (#000000, "Teaser / Border Color")
+    );
 
 html,
 body {
     margin: 0;
-    font-size:   $font-size;
+    font-size:   ref("fontSize");
     font-family: $font-family;
     line-height: $font-height;
-    color:       $color-foreground;
-    background:  $color-background;
+    color:       ref("colorForeground");
+    background:  ref("colorBackground");
 }
 
 

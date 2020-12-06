@@ -70,6 +70,18 @@ module.exports = {
                             }
                         },
                         {
+                            loader: "postcss-loader",
+                            options: {
+                                postcssOptions: {
+                                    plugins: [
+                                        styleParser({
+                                            metadataPath: path.resolve(__dirname, 'dist/theme.json')
+                                        }),
+                                    ],
+                                },
+                            },
+                        },
+                        {
                             loader: 'postcss-loader',
                             options: {
                                 postcssOptions: {
@@ -83,28 +95,10 @@ module.exports = {
                         },
                         {
                             loader: "sass-loader",
-                            options: {
-                                url: false
+                            options: {  
+                                url: false,
+                                outputStyle: 'expanded'
                             }
-                        },
-                        {
-                            loader: "postcss-loader",
-                            options: {
-                                postcssOptions: {
-                                    parser: 'postcss-scss',
-                                    plugins: [
-                                        [
-                                            'postcss-import'
-                                        ],
-                                        [
-                                            styleParser,
-                                            {
-                                                // Options
-                                            },
-                                        ],
-                                    ],
-                                },
-                            },
                         },
                         {
                             loader: "webpack-import-glob-loader",
@@ -126,7 +120,7 @@ module.exports = {
             ]
         },
         plugins: [
-            new CleanWebpackPlugin(),
+            new CleanWebpackPlugin({cleanOnceBeforeBuildPatterns: ["**/*", "!theme.json"]}),
             new webpack.NoEmitOnErrorsPlugin(),
             new MiniCssExtractPlugin({
                 filename: 'css/theme.css',

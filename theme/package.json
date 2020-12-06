@@ -25,12 +25,15 @@
         "dotenv": "^8.2.0",
         "dotenv-cli": "^3.2.0",
         "html-webpack-plugin": "^3.2.0",
+        "js-yaml": "^3.14.0",
         "mini-css-extract-plugin": "^0.4.4",
         "node-sass": "^4.11.0",
         "normalize.css": "8.0.1",
         "npm-run-all": "^4.1.5",
         "optimize-css-assets-webpack-plugin": "^5.0.1",
+        "postcss-import": "^13.0.0",
         "postcss-loader": "^4.1.0",
+        "postcss-scss": "^3.0.2",
         "sass-loader": "^7.1.0",
         "terser-webpack-plugin": "^1.4.1",
         "ts-loader": "^5.3.3",
@@ -42,13 +45,9 @@
         "webpack-cli": "^3.1.2",
         "webpack-dev-server": "^3.9.0",
         "webpack-import-glob-loader": "^1.6.3",
-        "webpack-merge": "^4.2.1",
-        "postcss-scss": "^3.0.2",
-        "postcss-import": "^13.0.0"
+        "webpack-merge": "^4.2.1"
     },
-    "dependencies": {
-        "postcss-omit-import-tilde": "^1.0.1"
-    },
+    "dependencies": {},
     "peerDependencies": {
         "postcss": "^8.1.13"
     },

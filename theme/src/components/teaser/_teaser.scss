@@ -1,4 +1,6 @@
-.cmp-teaser {}
+.cmp-teaser {
+    border: ref("teaserBorderWidth") solid ref("teaserBorderColor");
+}
 .cmp-teaser__image {}
 .cmp-teaser__content {}
 .cmp-teaser__pretitle {}

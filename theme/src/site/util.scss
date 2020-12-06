@@ -1,0 +1,12 @@
+@mixin defineTheme($vars...) {
+    :root {
+        @each $name, $params in keywords($vars) {
+            /* @label "#{nth($params, 2)}" @type "#{type-of(nth($params, 1))}" */
+            --#{$name}: #{inspect(nth($params, 1))};
+        }
+    }
+}
+
+@function ref($var) {
+    @return var(--#{$var});
+}

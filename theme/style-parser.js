@@ -1,38 +1,38 @@
-
 const fs = require('fs');
-const writer = fs.createWriteStream('test.txt');
+const path = require('path');
+const yaml = require('js-yaml');
+
+const regexp = /.*@label.*"(.+)".*@type.*"(.+)".*/;
 
 module.exports = (opts = {}) => {
+
+    const decls = {};
+
     return {
         postcssPlugin: 'style-parser',
-        Once(root) {
-//            writer.write("root");
-//            console.log(root);
-        },
         OnceExit(root) {
-            writer.close();
-        },
-        Comment(comment) {
-            if (comment.text.indexOf('@property') != -1) {
-                writer.write(comment.text);
-                writer.write('\n');
-                const next = comment.next()
-                writer.write(next.prop);
-                writer.write('=');
-                writer.write(next.value);
-                writer.write('\n');
-                const parent = comment.parent
-                writer.write(parent.selector);
-                // writer.write('\n');
-                // writer.write(parent.value);
-                writer.write('\n');
+            const metadataPath = opts.metadataPath;
+            fs.mkdirSync(path.dirname(metadataPath), { recursive: true });
+            if (path.extname(metadataPath) === 'yml') {
+                fs.writeFileSync(metadataPath, yaml.safeDump(decls), 'utf8');
+            } else {
+                fs.writeFileSync(metadataPath, JSON.stringify(decls, null, 2), 'utf8');
             }
         },
-        Rule(rule) {
-//            writer.write(rule.toString());
-        },
-        Declaration(decl) {
-//            writer.write(decl.toString());
+        Comment(comment) {
+            const parent = comment.parent
+            if (!parent || parent.selector !== ':root') {
+                return;
+            }
+            const next = comment.next()
+            if (next.type !== 'decl') {
+                return;
+            }
+            const match = comment.text.match(regexp);
+            if (!match) {
+                return;
+            }   
+            decls[next.prop] = { label: match[1], type: match[2], value: next.value };                  
         }
     }
 }
