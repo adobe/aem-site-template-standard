@@ -1,12 +1,5 @@
 //== Base
 
-// :root {
-//     @include prop("font-size", $font-size, "Font Size");
-//     @include prop("color-foreground", $color-foreground, "Foreground Color");
-//     @include prop("color-background", $color-background, "Background Color");
-//     @include prop("color-link", $color-link, "Link Color");
-// }
-
 @include defineTheme(
     $fontSize: ($font-size, "Font Size"),
     $colorForeground: ($color-foreground, "Foreground Color"),
