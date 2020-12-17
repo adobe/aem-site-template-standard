@@ -10,7 +10,7 @@
         "live": "watch 'webpack -d --env dev --config ./webpack.dev.js' src & aem-site-theme-builder live & browser-sync start --proxy 'localhost:7000' --files 'dist'"
     },
     "devDependencies": {
-        "@adobe/aem-site-theme-builder": "4.0.0",
+        "@adobe/aem-site-theme-builder": "4.0.1",
         "autoprefixer": "^9.2.1",
         "bestzip": "^2.1.6",
         "browser-sync": "^2.26.13",
