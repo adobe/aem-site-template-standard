@@ -7,7 +7,11 @@
     "license": "MIT License, Copyright 2020 Adobe Systems Incorporated",
     "scripts": {
         "build": "webpack -p --config ./webpack.prod.js",
-        "live": "watch 'webpack -d --env dev --config ./webpack.dev.js' src & aem-site-theme-builder live & browser-sync start --proxy 'localhost:7000' --files 'dist'"
+        "compile": "webpack -d --env dev --config ./webpack.dev.js",
+        "browser-sync": "browser-sync start --proxy 'localhost:7000' --files 'dist'",
+        "proxy": "aem-site-theme-builder live",
+        "watch": "watch \"npm run compile\" src",
+        "live": "npm-run-all -p watch proxy browser-sync"
     },
     "devDependencies": {
         "@adobe/aem-site-theme-builder": "4.0.1",
