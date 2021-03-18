@@ -5,10 +5,10 @@
   "license": "MIT License, Copyright 2020 Adobe Systems Incorporated",
   "scripts": {
     "build": "aem-site-template-builder",
-    "deploy": "curl -u admin:admin -F 'file=@aem-site-template-basic-latest.zip' http://localhost:4502/conf/global/site-templates.import.html"
+    "deploy": "curl -u admin:admin -F file=@aem-site-template-basic-latest.zip http://localhost:4502/conf/global/site-templates.import.html"
   },
   "devDependencies": {
-    "@adobe/aem-site-template-builder": "2.0.1"
+    "@adobe/aem-site-template-builder": "2.1.0"
   },
   "siteTemplate": {
     "title": "Basic AEM Site Template",
