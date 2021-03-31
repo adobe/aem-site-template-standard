@@ -1,4 +1,56 @@
-.cmp-form-text {}
-.cmp-form-text__help-block {}
-.cmp-form-text__textarea {}
-.cmp-form-text__text {}
+.cmp-form-text {
+  display: grid;
+  margin: 0.5em 0.5em;
+  & label {
+    margin-bottom: 0.5625rem;
+    color: $grey3;
+    font-size: 0.625em;
+    text-transform: uppercase;
+  }
+}
+.cmp-form-text__help-block {
+}
+.cmp-form-text__textarea {
+  height: 10em;
+  padding: 0.5625em 1em 0.6875em 1em;
+  font-size: 1em;
+  background-color: $grey1;
+  border: 0.125em solid $grey1;
+  border-radius: 0.25em;
+  &:hover {
+    background-color: $color-background;
+  }
+  &:focus {
+    border-color: $accent-focus;
+  }
+  &:active {
+    color: $text;
+  }
+}
+.cmp-form-text__text {
+  height: 1.25em;
+  padding: 0.5625em 1em 0.6875em 1em;
+  font-size: 1em;
+  background-color: $grey1;
+  border-color: $grey1;
+  border-style: solid;
+  border-width: 0.125em;
+  border-radius: 0.25em;
+  &:hover {
+    background-color: $color-background;
+  }
+  &:focus {
+    border-color: $accent-focus;
+  }
+  &:active {
+    color: $text;
+  }
+  //&:invalid {
+  //  border-color: $error;
+  //  color: $text;
+  //}
+  //&:valid {
+  //  border-color: $success;
+  //  color: $text;
+  //}
+}

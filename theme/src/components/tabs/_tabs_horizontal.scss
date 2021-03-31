@@ -1,0 +1,17 @@
+.horizontal {
+  .cmp-tabs {}
+
+  .cmp-tabs__tablist {
+    border-bottom: 0.125em solid $grey1;
+  }
+  .cmp-tabs__tab {}
+  .cmp-tabs__tab--active {
+    border-bottom: 0.125em solid $grey4;
+    &:focus {
+      border-bottom: 0.125em solid $grey4;
+    }
+  }
+
+  .cmp-tabs__tabpanel {}
+  .cmp-tabs__tabpanel--active {}
+}

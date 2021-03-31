@@ -1,0 +1,36 @@
+.primary {
+  .cmp-button {
+    background-color: $color-background;
+    border-color: $grey4;
+    &:hover {
+      background-color: $grey4;
+      border-color: $grey4;
+      & .cmp-button__text {
+        color: $text-on-background;
+      }
+    }
+    &:focus {
+      background-color: $grey4;
+      border-color: $color-background;
+      outline: none;
+      box-shadow: 0 0 0 0.125em $accent-focus;
+      & .cmp-button__text {
+        color: $text-on-background;
+      }
+    }
+    &:disabled {
+      background-color: $color-background;
+      border-color: $grey1;
+      & .cmp-button__text {
+        color: $grey2;
+      }
+    }
+  }
+
+  .cmp-button__text {
+    color: $grey4;
+  }
+
+  .cmp-button__icon {
+  }
+}

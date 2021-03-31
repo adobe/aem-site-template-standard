@@ -3,8 +3,8 @@
     jcr:primaryType="cq:Template">
     <jcr:content
         cq:templateType="/conf/aem-site-template-basic/settings/wcm/template-types/page"
-        jcr:description="My Site Page Template"
+        jcr:description="My homepage Template"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Content Page"
+        jcr:title="Home Page"
         status="enabled"/>
 </jcr:root>
