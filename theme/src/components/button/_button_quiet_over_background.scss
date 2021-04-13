@@ -1,0 +1,33 @@
+.quiet-over-background {
+  .cmp-button {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    &:hover {
+      background-color: $color-background;
+      border-color: $color-background;
+      & .cmp-button__text {
+        color: $text;
+      }
+    }
+    &:focus {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: rgba(0, 0, 0, 0);
+      outline: none;
+      box-shadow: 0 0 0 0.125em $accent-focus;
+    }
+    &:disabled {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: rgba(0, 0, 0, 0);
+      & .cmp-button__text {
+        color: $grey3;
+      }
+    }
+  }
+
+  .cmp-button__text {
+    color: $text-on-background;
+  }
+
+  .cmp-button__icon {
+  }
+}

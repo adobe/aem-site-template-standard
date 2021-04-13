@@ -1,0 +1,30 @@
+.quiet {
+  .cmp-button {
+    background-color: $color-background;
+    border-color: $color-background;
+    &:hover {
+      background-color: $grey1;
+      border-color: $grey1;
+    }
+    &:focus {
+      background-color: $grey1;
+      border-color: $grey1;
+      outline: none;
+      box-shadow: 0 0 0 0.125em $accent-focus;
+    }
+    &:disabled {
+      background-color: $color-background;
+      border-color: $color-background;
+      & .cmp-button__text {
+        color: $grey2;
+      }
+    }
+  }
+
+  .cmp-button__text {
+    color: $grey4;
+  }
+
+  .cmp-button__icon {
+  }
+}

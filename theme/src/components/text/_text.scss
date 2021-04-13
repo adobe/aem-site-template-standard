@@ -1,2 +1,43 @@
-.cmp-text {}
-.cmp-text__paragraph {}
+.cmp-text {
+  margin: 0.75rem 0 0 0;
+  color: $text;
+  font-weight: normal;
+  font-size: 1em;
+  & b {
+    font-weight: bold;
+  }
+  & p a {
+    color: $accent;
+    text-decoration: none;
+    border: 0.125em solid $transparent;
+    border-radius: 0.25em;
+    &:hover {
+      color: $accent-hover;
+      text-decoration: underline;
+      text-decoration-thickness: 0.125em;
+      text-decoration-color: $accent-hover;
+      text-decoration-style: solid;
+    }
+    &:focus {
+      text-decoration: underline;
+      border-color: $accent;
+      outline: none;
+      text-decoration-thickness: 0.125em;
+      text-decoration-color: $accent;
+      text-decoration-style: solid;
+    }
+  }
+  & blockquote {
+    margin: 0.75rem 0;
+    font-size: 1.75em;
+    font-family: titleFont, serif;
+    font-style: italic;
+    line-height: 2.375rem;
+    margin-inline: 0;
+  }
+  & ul li::marker {
+    content: '-  ';
+  }
+}
+.cmp-text__paragraph {
+}

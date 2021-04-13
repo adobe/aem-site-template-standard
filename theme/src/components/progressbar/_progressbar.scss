@@ -1,4 +1,23 @@
-.cmp-progressbar {}
-.cmp-progressbar__label--completed {}
-.cmp-progressbar__label--remaining {}
-.cmp-progressbar__bar {}
+.cmp-progressbar {
+  display: block;
+  margin: 0.625em 0.5em;
+  overflow: hidden;
+  text-align: center;
+  background-color: $grey-bar;
+  border-radius: 1.31em;
+}
+.cmp-progressbar__label--completed {
+  display: none;
+}
+.cmp-progressbar__label--remaining {
+  display: none;
+}
+.cmp-progressbar__bar {
+  color: $transparent;
+  background-color: $accent;
+}
+
+.cmp-progressbar-completedPercentage {
+  font-size: 1.125em;
+  text-align: center;
+}

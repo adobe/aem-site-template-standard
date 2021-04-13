@@ -1,0 +1,72 @@
+.h1_style {
+  .cmp-title {
+  }
+  .cmp-title__text {
+    font-weight: lighter;
+    font-size: 3em;
+    font-family: titleFont, serif;
+    line-height: 4.125rem;
+  }
+  .cmp-title__link {
+  }
+}
+
+.h2_style {
+  .cmp-title {
+  }
+  .cmp-title__text {
+    font-weight: normal;
+    font-size: 2.25em;
+    font-family: titleFont, serif;
+    line-height: 3.0625rem;
+  }
+  .cmp-title__link {
+  }
+}
+
+.h3_style {
+  .cmp-title {
+  }
+  .cmp-title__text {
+    font-weight: normal;
+    font-size: 1.75em;
+    line-height: 2.25rem;
+  }
+  .cmp-title__link {
+  }
+}
+
+.h4_style {
+  .cmp-title {
+  }
+  .cmp-title__text {
+    font-weight: normal;
+    font-size: 1.125em;
+  }
+  .cmp-title__link {
+  }
+}
+
+.h5_style {
+  .cmp-title {
+  }
+  .cmp-title__text {
+    font-weight: normal;
+    font-size: 1em;
+  }
+  .cmp-title__link {
+  }
+}
+
+.h6_style {
+  .cmp-title {
+  }
+  .cmp-title__text {
+    color: $grey3;
+    font-weight: normal;
+    font-size: 0.625em;
+    text-transform: uppercase;
+  }
+  .cmp-title__link {
+  }
+}

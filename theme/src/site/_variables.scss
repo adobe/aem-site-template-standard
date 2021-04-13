@@ -1,15 +1,32 @@
-
 //== Font
 
-$font-family:           "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-size:             16px;
-$font-height:           1.5;
+$font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-title: 'Source Serif Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-size: 16px;
+$font-height: 20px;
+//20px
 
 //== Color
 
-$color-foreground:      #202020;
-$color-background:      #FFFFFF;
-$color-link:            #2020E0;
+$color-foreground: #202020;
+$color-background: #ffffff;
+$color-link: #2020e0;
+$accent: #2954ff;
+$accent-focus: #436eff;
+$accent-hover: #103be6;
+$text: #000000;
+$text-on-background: #ffffff;
+$grey-bar: #eaebeb;
+$grey1: #eceff1;
+$grey2: #cfd8dc;
+$grey3: #607d8b;
+$grey4: #455a65;
+$color-shadow: #00000029;
+$error: #d7373f;
+$error-hover: #be1e26;
+$success: #268e6c;
+$success-hover: #0d7553;
+$transparent: rgba(0, 0, 0, 0);
 
 //== Grid
 

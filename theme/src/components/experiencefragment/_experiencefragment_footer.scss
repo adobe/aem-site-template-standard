@@ -1,12 +1,62 @@
-
 //== XF Footer style, used on page template
 
 .experiencefragment.footer {
-    padding: .5em 1em;
-    border-top: 1px solid $color-foreground;
+  margin-top: 5em;
+  padding: 1.625em 0 1.5625em 0;
+  border-top: 0.125em solid $grey1;
 
-    .cmp-separator__horizontal-rule {
-        margin: 0;
-        border: 0;
+  & div {
+    height: 100%;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .cmp-container {
+    display: flex;
+  }
+
+  .image,
+  .text {
+    margin: 0 1em;
+  }
+
+  & .cmp-image {
+    margin: 0;
+  }
+
+  .cmp-image__image {
+    display: block;
+    width: 9.2em;
+    margin: 0 auto;
+  }
+
+  .cmp-title {
+    margin: 0.5em 1em;
+    text-align: center;
+    @media only screen and (max-width: 768px) {
+      margin: 1em 1em;
     }
+  }
+
+  .cmp-text {
+    margin: 0;
+    text-align: center;
+    & p {
+      margin-block: 0;
+      & a {
+        color: $accent;
+        text-decoration: none;
+        &:focus {
+          color: $accent-focus;
+          border: 0.125em solid $accent-focus;
+          border-radius: 0.25em;
+        }
+        &:hover {
+          color: $accent-hover;
+        }
+      }
+    }
+  }
 }

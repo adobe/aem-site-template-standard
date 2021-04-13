@@ -1,0 +1,29 @@
+.vertical {
+  .cmp-tabs {
+    display: flex;
+  }
+
+  .cmp-tabs__tablist {
+    display: block;
+    order: 1;
+    width: fit-content;
+    height: fit-content;
+    border-left: 0.125em solid $grey1;
+  }
+  .cmp-tabs__tab {
+  }
+  .cmp-tabs__tab--active {
+    border-left: 0.125em solid $grey4;
+    &:focus {
+      border-left: 0.125em solid $grey4;
+    }
+  }
+
+  .cmp-tabs__tabpanel {
+    flex: 1;
+    order: 2;
+    height: 100%;
+  }
+  .cmp-tabs__tabpanel--active {
+  }
+}

@@ -1,19 +1,63 @@
-
 //== Base
 
-html,
-body {
-    margin: 0;
-    font-size:   $font-size;
-    font-family: $font-family;
-    line-height: $font-height;
-    color:       $color-foreground;
-    background:  $color-background;
+@mixin fontface($name, $file, $weight: normal, $style: normal) {
+  @font-face {
+    font-weight: $weight;
+    font-family: '#{$name}';
+    font-style: $style;
+    src: url('../resources/fonts/#{$file}.ttf') format('truetype');
+  }
 }
 
+@include fontface(defaultFont, 'SourceSansPro/SourceSansPro-Black', bolder) @include
+    fontface(defaultFont, 'SourceSansPro/SourceSansPro-BlackItalic', bolder, italic) @include
+    fontface(defaultFont, 'SourceSansPro/SourceSansPro-Bold', bolder) @include
+    fontface(defaultFont, 'SourceSansPro/SourceSansPro-BoldItalic', bolder, italic) @include
+    fontface(defaultFont, 'SourceSansPro/SourceSansPro-ExtraLight', lighter) @include
+    fontface(defaultFont, 'SourceSansPro/SourceSansPro-ExtraLightItalic', lighter, italic) @include
+    fontface(defaultFont, 'SourceSansPro/SourceSansPro-Italic', normal, italic) @include
+    fontface(defaultFont, 'SourceSansPro/SourceSansPro-Light', lighter) @include
+    fontface(defaultFont, 'SourceSansPro/SourceSansPro-LightItalic', lighter, italic) @include
+    fontface(defaultFont, 'SourceSansPro/SourceSansPro-Regular', normal) @include
+    fontface(defaultFont, 'SourceSansPro/SourceSansPro-SemiBold', bold) @include
+    fontface(defaultFont, 'SourceSansPro/SourceSansPro-SemiBoldItalic', bold, italic) @include
+    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-Black', bolder) @include
+    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-BlackItalic', bolder, italic) @include
+    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-Bold', bolder) @include
+    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-BoldItalic', bolder, italic) @include
+    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-ExtraLight', lighter) @include
+    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-ExtraLightItalic', lighter, italic) @include
+    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-Italic', normal, italic) @include
+    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-Light', lighter) @include
+    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-LightItalic', lighter, italic) @include
+    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-Regular', normal) @include
+    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-SemiBold', bold) @include
+    fontface(titleFont, 'SourceSerifPro/SourceSerifPro-SemiBoldItalic', bold, italic) html,
+  body {
+  margin: 0;
+  color: $color-foreground;
+  font-size: $font-size;
+  font-family: defaultFont, serif;
+  line-height: $font-height;
+  background: $color-background;
+}
 
 a {
-    color: $color-link;
+  color: $color-link;
+}
+
+p {
+  margin-block: 0.75rem;
+  line-height: 28px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-block: 0;
 }
 
 button,
@@ -21,19 +65,19 @@ input,
 optgroup,
 select,
 textarea {
-    font: inherit;
+  font: inherit;
 }
 
 //== Grid
 
 // Default breakpoint
 .aem-Grid {
-    @include generate-grid(default, $max_col);
+  @include generate-grid(default, $max_col);
 }
 
 // Phone breakpoint
 @media (max-width: 768px) {
-    .aem-Grid {
-        @include generate-grid(phone, $max_col);
-    }
+  .aem-Grid {
+    @include generate-grid(phone, $max_col);
+  }
 }

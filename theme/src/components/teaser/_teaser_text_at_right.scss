@@ -1,0 +1,115 @@
+.textAtRight {
+  .cmp-teaser {
+    position: static;
+    display: flex;
+    margin: 0.75em 0.5em;
+  }
+  .cmp-teaser__image {
+    flex: 3;
+    & img {
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 22em;
+      object-fit: cover;
+    }
+  }
+  .cmp-teaser__content {
+    position: static;
+    top: 0;
+    left: 0;
+    flex: 2;
+    margin: 0;
+    padding: 1rem 0 1rem 1rem;
+    transform: none;
+  }
+  .cmp-teaser__pretitle {
+    color: $grey3;
+    font-weight: 300;
+    font-size: 0.625em;
+    line-height: 1.125rem;
+    letter-spacing: 0.025rem;
+    text-align: start;
+    text-transform: uppercase;
+  }
+  .cmp-teaser__title {
+    margin-top: 0.625rem;
+    margin-bottom: 1.1875rem;
+    color: $text;
+    font-size: 1.75em;
+    font-family: defaultFont, serif;
+    line-height: 2.25rem;
+    text-align: start;
+    text-decoration: none;
+  }
+  .cmp-teaser__title-link {
+    color: $text;
+    font-weight: 400;
+    line-height: 2.25rem;
+    text-decoration: none;
+  }
+  .cmp-teaser__description {
+    color: $text;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.75em;
+    text-align: start;
+  }
+  .cmp-teaser__action-container {
+    display: flex;
+    justify-content: start;
+    margin: 1rem 0;
+    padding: 0.125rem;
+  }
+  .cmp-teaser__action-link {
+    margin-right: 0.8em;
+    padding: 0.5625em 1em 0.6875em 1em;
+    color: $text-on-background;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 1.56em;
+  }
+
+  .cmp-teaser__action-link:first-child {
+    background-color: $accent;
+    border: 0.125em solid $accent;
+
+    &:hover {
+      background-color: $accent-hover;
+      border-color: $accent-hover;
+    }
+    &:focus {
+      background-color: $accent-focus;
+      border-color: $color-background;
+      outline: none;
+      box-shadow: 0 0 0 0.125em $accent-focus;
+    }
+    &:disabled {
+      background-color: $grey1;
+      border-color: $grey1;
+    }
+  }
+
+  .cmp-teaser__action-link:not(:first-child) {
+    color: $grey4;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0.125em solid $grey4;
+
+    &:hover {
+      color: $text-on-background;
+      background-color: $grey4;
+    }
+    &:focus {
+      color: $grey4;
+      background-color: $color-background;
+      border: 0.125em solid $grey4;
+      outline: none;
+      box-shadow: none;
+    }
+    &:disabled {
+      color: $grey1;
+      border-color: $grey1;
+    }
+  }
+}

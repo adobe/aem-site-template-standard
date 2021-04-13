@@ -1,11 +1,191 @@
-.cmp-form-options {}
-.cmp-form-options__legend {}
-.cmp-form-options__field-label {}
-.cmp-form-options__field {}
-.cmp-form-options__field--checkbox {}
-.cmp-form-options__field--radio {}
-.cmp-form-options__field-description {}
-.cmp-form-options__label {}
-.cmp-form-options__drop-down-field {}
-.cmp-form-options__multi-drop-down-field {}
-.cmp-form-options__help-message {}
+.cmp-form-options {
+  display: grid;
+  border: none;
+}
+
+// == hide legend and help message
+.cmp-form-options__legend {
+  display: none;
+}
+.cmp-form-options__help-message {
+  display: none;
+}
+
+// =============== Drop Down Styles =================
+// == text above drop down
+.cmp-form-options__label {
+  margin-bottom: 0.5625rem;
+  color: $grey3;
+  font-size: 0.625em;
+  text-transform: uppercase;
+}
+
+// == drop down
+.cmp-form-options--drop-down {
+  position: relative;
+  margin: 0.75em 0.5em 0.5em 0.5em;
+  padding: 0;
+}
+
+.cmp-form-options__field--drop-down {
+  display: none;
+}
+
+.select-selected {
+  height: 1.25em;
+  padding: 0.5625em 1em 0.6875em 1em;
+  color: $grey4;
+  background-color: $color-background;
+  border: 0.0625em solid $grey2;
+  border-radius: 0.25em;
+  cursor: pointer;
+  &:after {
+    display: inline-block;
+    float: right;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    vertical-align: -25%;
+    background-color: $grey2;
+    content: '';
+    mask: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZGVmcz48c3R5bGU+LmEsLmJ7ZmlsbDojNjA3ZDhiO30uYXtvcGFjaXR5OjA7fTwvc3R5bGU+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01NjUgLTgwKSI+PHJlY3QgY2xhc3M9ImEiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTY1IDgwKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNLjI5MywxMy4wMjFhMSwxLDAsMCwxLDAtMS40MTRsNC45NS00Ljk1TC4yOTMsMS43MDdBMSwxLDAsMCwxLDEuNzA3LjI5M0w3LjM2NCw1Ljk1YTEsMSwwLDAsMSwwLDEuNDE1TDEuNzA3LDEzLjAyMWExLDEsMCwwLDEtMS40MTUsMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU4My44MjkgODguMTcxKSByb3RhdGUoOTApIi8+PC9nPjwvc3ZnPg==');
+    mask-size: cover;
+  }
+  &:hover {
+    margin: -0.0625em;
+    border-width: 0.125em;
+    &:after {
+      background-color: $grey3;
+    }
+  }
+}
+
+.select-arrow-active {
+  margin: -0.0625em;
+  border: 0.125em solid $accent-hover;
+  &:after {
+    display: inline-block;
+    float: right;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    vertical-align: -25%;
+    background-color: $grey3;
+    content: '';
+    mask: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZGVmcz48c3R5bGU+LmEsLmJ7ZmlsbDojNjA3ZDhiO30uYXtvcGFjaXR5OjA7fTwvc3R5bGU+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01MjUgLTgwKSI+PHJlY3QgY2xhc3M9ImEiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTI1IDgwKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNLjI5MywxMy4wMjFhMSwxLDAsMCwxLDAtMS40MTVsNC45NS00Ljk1TC4yOTMsMS43MDdBMSwxLDAsMCwxLDEuNzA3LjI5M0w3LjM2NCw1Ljk1YTEsMSwwLDAsMSwwLDEuNDE0TDEuNzA3LDEzLjAyMWExLDEsMCwwLDEtMS40MTUsMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUzMC41MTUgOTUuODI4KSByb3RhdGUoLTkwKSIvPjwvZz48L3N2Zz4=');
+    mask-size: cover;
+  }
+}
+
+.select-items {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  margin-top: 0.5em;
+  padding: 0.25em 0;
+  overflow: hidden;
+  background-color: $color-background;
+  border-radius: 0.25em;
+  box-shadow: 0 0.25em 0.5em 0.2em $color-shadow;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div {
+  height: 1.25em;
+  padding: 0.5625em 1em 0.6875em 1em;
+  cursor: pointer;
+  &:not(.same-as-selected) {
+    &:hover {
+      background-color: $grey1;
+    }
+  }
+}
+
+.same-as-selected {
+  color: $text-on-background;
+  background-color: $accent;
+  &::after {
+    display: inline-block;
+    float: right;
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5em;
+    vertical-align: -25%;
+    background-color: $text-on-background;
+    content: '';
+    mask: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZGVmcz48c3R5bGU+LmEsLmJ7ZmlsbDojMjY4ZTZjO30uYXtvcGFjaXR5OjA7fTwvc3R5bGU+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MDMgLTgwKSI+PHJlY3QgY2xhc3M9ImEiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzAzIDgwKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNNC45MzIsMjY5LjlhMSwxLDAsMCwxLS44NjQtLjQ2N0wuNzA3LDI2Ni4wNzJhMSwxLDAsMSwxLDEuNDE0LTEuNDE1bDIuODExLDIuODExLDcuNzYxLTcuNzYxYTEsMSwwLDEsMSwxLjQxNCwxLjQxNUw1LjgsMjY5LjQzMmExLDEsMCwwLDEtLjg0Ny40NjhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3MDcuNTg2IC0xNzIuNjU3KSIvPjwvZz48L3N2Zz4=');
+    mask-size: cover;
+  }
+}
+
+// =============== Check Box Styles =================
+.cmp-form-options--checkbox {
+  margin: 0;
+  padding: 0;
+}
+// == entire checkbox/radio with text
+.cmp-form-options__field-label {
+  width: fit-content;
+  height: 2.5em;
+  margin: 0.5em 0.5em;
+  &:hover {
+    .cmp-form-options__field--checkbox {
+      background-color: $color-background;
+      border-color: $grey2;
+    }
+    .cmp-form-options__field--radio {
+      background-color: $color-background;
+      border-color: $grey2;
+    }
+  }
+  &:checked {
+    .cmp-form-options__field--checkbox {
+      background-color: $color-background;
+      border-color: $grey2;
+    }
+    .cmp-form-options__field--radio {
+      background-color: $color-background;
+      border-color: $grey2;
+    }
+  }
+}
+
+// == square checkbox
+// TODO: background color is not working
+.cmp-form-options__field--checkbox {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0.5em 0.375em 0.5em 1em;
+  background-color: $grey1;
+  border-color: $grey1;
+  border-width: 0.25em;
+  border-radius: 0.25em;
+}
+
+// == radio checkbox
+.cmp-form-options__field--radio {
+  width: 1.5em;
+  height: 1.5em;
+  background-color: $grey1;
+  border-color: $grey1;
+  border-width: 0.25em;
+  border-radius: 0.25em;
+}
+
+// == text next to checkbox
+.cmp-form-options__field-description {
+  margin: 0.5625em 1em 0.6875em 0.375em;
+  color: $text;
+  vertical-align: super;
+}
+
+.cmp-form-options__drop-down-field {
+}
+
+.cmp-form-options__multi-drop-down-field {
+}
