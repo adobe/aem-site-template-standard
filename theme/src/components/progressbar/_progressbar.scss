@@ -3,7 +3,7 @@
   margin: 0.625em 0.5em;
   overflow: hidden;
   text-align: center;
-  background-color: $grey-bar;
+  background-color: $color-shade-1;
   border-radius: 1.31em;
 }
 .cmp-progressbar__label--completed {
@@ -13,8 +13,8 @@
   display: none;
 }
 .cmp-progressbar__bar {
-  color: $transparent;
-  background-color: $accent;
+  color: $color-transparent;
+  background-color: $color-accent;
 }
 
 .cmp-progressbar-completedPercentage {

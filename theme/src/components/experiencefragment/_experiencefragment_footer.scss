@@ -3,7 +3,7 @@
 .experiencefragment.footer {
   margin-top: 5em;
   padding: 1.625em 0 1.5625em 0;
-  border-top: 0.125em solid $grey1;
+  border-top: 0.125em solid $color-shade-1;
 
   & div {
     height: 100%;
@@ -46,15 +46,15 @@
     & p {
       margin-block: 0;
       & a {
-        color: $accent;
+        color: $color-accent;
         text-decoration: none;
         &:focus {
-          color: $accent-focus;
-          border: 0.125em solid $accent-focus;
+          color: $color-accent-lighter;
+          border: 0.125em solid $color-accent-lighter;
           border-radius: 0.25em;
         }
         &:hover {
-          color: $accent-hover;
+          color: $color-accent-darker;
         }
       }
     }

@@ -6,26 +6,26 @@
       background-color: $color-background;
       border-color: $color-background;
       & .cmp-button__text {
-        color: $text;
+        color: $color-text;
       }
     }
     &:focus {
       background-color: rgba(0, 0, 0, 0);
       border-color: $color-background;
       outline: none;
-      box-shadow: 0 0 0 0.125em $accent-focus;
+      box-shadow: 0 0 0 0.125em $color-accent-lighter;
     }
     &:disabled {
       background-color: rgba(0, 0, 0, 0);
-      border-color: $grey3;
+      border-color: $color-shade-3;
       & .cmp-button__text {
-        color: $grey3;
+        color: $color-shade-3;
       }
     }
   }
 
   .cmp-button__text {
-    color: $text-on-background;
+    color: $color-text-inverted;
   }
 
   .cmp-button__icon {

@@ -4,24 +4,24 @@
   height: fit-content;
   margin-top: 0.5em;
   padding: 0.5em 1em;
-  color: $text-on-background;
-  background-color: $accent;
-  border: 0.125em solid $accent;
+  color: $color-text-inverted;
+  background-color: $color-accent;
+  border: 0.125em solid $color-accent;
   border-radius: 1.56em;
 
   &:hover {
-    background-color: $accent-hover;
-    border-color: $accent-hover;
+    background-color: $color-accent-darker;
+    border-color: $color-accent-darker;
     cursor: pointer;
   }
   &:focus {
-    background-color: $accent-focus;
+    background-color: $color-accent-lighter;
     border-color: $color-background;
     outline: none;
-    box-shadow: 0 0 0 0.125em $accent-focus;
+    box-shadow: 0 0 0 0.125em $color-accent-lighter;
   }
   &:disabled {
-    background-color: $grey1;
-    border-color: $grey1;
+    background-color: $color-shade-1;
+    border-color: $color-shade-1;
   }
 }
