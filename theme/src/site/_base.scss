@@ -5,7 +5,7 @@
     font-weight: $weight;
     font-family: '#{$name}';
     font-style: $style;
-    src: url('../resources/fonts/#{$file}.ttf') format('truetype');
+    src: url('resources/fonts/#{$file}.ttf') format('truetype');
   }
 }
 

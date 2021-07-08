@@ -61,43 +61,28 @@ module.exports = {
                     test: /\.scss$/,
                     use: [
                         MiniCssExtractPlugin.loader,
-                        {
-                            loader: "css-loader",
-                            options: {
-                                url: false
-                            }
-                        },
+                        'css-loader',
                         {
                             loader: 'postcss-loader',
                             options: {
-                                plugins() {
-                                    return [
-                                        require('autoprefixer')
-                                    ];
+                                postcssOptions: {
+                                    plugins: [
+                                        [
+                                            'autoprefixer',
+                                        ],
+                                    ],
                                 }
                             }
                         },
-                        {
-                            loader: "sass-loader",
-                            options: {
-                                url: false
-                            }
-                        },
-                        {
-                            loader: "webpack-import-glob-loader",
-                            options: {
-                                url: false
-                            }
-                        }
+                        "sass-loader",
+                        "webpack-import-glob-loader"
                     ]
                 },
                 {
                     test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
-                    use: {
-                      loader: 'file-loader',
-                      options: {
-                        name: '[path][name].[ext]'
-                      }
+                    type: 'asset/resource',
+                    generator: {
+                      filename: '[path][name].[ext]'
                     }
                 },
             ]
@@ -108,9 +93,11 @@ module.exports = {
             new MiniCssExtractPlugin({
                 filename: 'css/theme.css',
             }),
-            new CopyWebpackPlugin([
-                { from: path.resolve(__dirname, SOURCE_ROOT + '/resources'), to: './resources' }
-            ]),
+            new CopyWebpackPlugin({
+                patterns: [
+                    { from: path.resolve(__dirname, SOURCE_ROOT + '/resources'), to: './resources' }
+                ]
+            }),
             new webpack.optimize.LimitChunkCountPlugin({
                 maxChunks: 1
             })
