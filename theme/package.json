@@ -8,13 +8,12 @@
     "scripts": {
         "build": "webpack --config ./webpack.prod.js",
         "compile": "webpack --config ./webpack.dev.js",
-        "browser-sync": "browser-sync start --proxy 'localhost:7000' --files 'dist'",
         "proxy": "aem-site-theme-builder live",
         "watch": "chokidar \"src\" -c \"npm run compile\"",
-        "live": "npm-run-all -p watch proxy browser-sync"
+        "live": "npm-run-all -p watch proxy"
     },
     "devDependencies": {
-        "@adobe/aem-site-theme-builder": "4.0.1",
+        "@adobe/aem-site-theme-builder": "5.0.0",
         "autoprefixer": "^10.3.0",
         "browser-sync": "^2.26.13",
         "chokidar-cli": "^2.1.0",
