@@ -31,8 +31,7 @@ module.exports = merge(common, {
                         discardEmpty: true,
                         mergeRules: true,
                         normalizeCharset: true,
-                        reduceInitial: true,
-                        svgo: true
+                        reduceInitial: true
                     },
                 ]
             }
