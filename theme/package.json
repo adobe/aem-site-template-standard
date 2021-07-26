@@ -8,15 +8,13 @@
     "scripts": {
         "build": "webpack --config ./webpack.prod.js",
         "compile": "webpack --config ./webpack.dev.js",
-        "proxy": "aem-site-theme-builder live",
-        "watch": "chokidar \"src\" -c \"npm run compile\"",
-        "live": "npm-run-all -p watch proxy"
+        "proxy": "aem-site-theme-builder proxy",
+        "live": "npm-run-all -p compile proxy"
     },
     "devDependencies": {
         "@adobe/aem-site-theme-builder": "5.0.0",
         "autoprefixer": "^10.3.0",
         "browser-sync": "^2.26.13",
-        "chokidar-cli": "^2.1.0",
         "clean-webpack-plugin": "^3.0.0",
         "copy-webpack-plugin": "9.0.1",
         "cross-var": "^1.1.0",
