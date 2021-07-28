@@ -8,7 +8,7 @@
     "scripts": {
         "build": "webpack --config ./webpack.prod.js",
         "compile": "webpack --config ./webpack.dev.js",
-        "proxy": "aem-site-theme-builder proxy",
+        "proxy": "aem-site-theme-builder live",
         "live": "npm-run-all -p compile proxy"
     },
     "devDependencies": {
