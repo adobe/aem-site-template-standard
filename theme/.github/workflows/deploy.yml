@@ -1,33 +1,54 @@
-# This is a basic workflow to help you deploy theme changes
+name: Build and deploy to Azure Blob Storage
 
-name: Build and deploy to Github artifacts
-
+# Controls when the action will run. 
 on:
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build_and_deploy:
-    name: Build and deploy artifact
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Install NPM dependencies
-        run: npm install
-
-      - name: Build artifacts for production
-        run: npm run build
-
-      - uses: actions/upload-artifact@v2
-        with:
-          name: site-theme
-          path: ${{ github.workspace }}/dist/**/*
-
-      - name: Dispatch completed event (this is a workaround in order to access the artifact id)
+      - name: Create package-lock if none exists
         run: |
-          curl -H "Accept: application/vnd.github.everest-preview+json" \
-            -H "Authorization: token ${{ secrets.GIT_TOKEN }}" \
-            --request POST \
-            --data '{"event_type": "update_theme_config", "client_payload": { "deployed_theme_run_id": "${{ github.run_id }}" } }' \
-            ${{ github.api_url }}/repos/${{ github.repository }}/dispatches
+          if [ ! -f package-lock.json ]
+          then 
+            echo "WARNING: No Package Lock provided, will use the latest dependencies which could fail on audit or not work."
+            npm -progress false  install --package-lock-only
+          fi
+
+      - name: NPM audit
+        run: |
+           npm -progress false audit
+
+      - name: NPM install
+        run: |
+           npm -progress false install
+
+      - name: Build
+        run: |
+           npm -progress false run build
+
+      - name: Package output and copy to AZ storage
+        run: |
+          # Get package name and version
+          package_name=$(jq -r .name package.json)
+          package_version=$(jq -r .version package.json)
+          # Get git revision
+          git_revision=$(git rev-parse --short HEAD)
+          date_time=$(date +%s)
+          # Assemble build artifact name
+          artifact_name=${package_name}-${package_version}-${date_time}-${git_revision}
+          # Create tarball
+          cd dist && tar cvzf ../${artifact_name}.tar.gz * && cd ..
+          # Upload to AZ storage
+          az storage blob upload --file ${artifact_name}.tar.gz --name ${artifact_name}.tar.gz --container-name ${{ secrets.CONTAINER }} --account-name ${{ secrets.ACCOUNT }} --account-key ${{ secrets.KEY }}
+          az storage blob upload --file package.json --name ${artifact_name}.json --container-name ${{ secrets.CONTAINER }} --account-name ${{ secrets.ACCOUNT }} --account-key ${{ secrets.KEY }}
