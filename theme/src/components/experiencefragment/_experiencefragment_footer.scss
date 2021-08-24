@@ -1,19 +1,15 @@
 //== XF Footer style, used on page template
 
-.experiencefragment.footer {
+#main-footer {
   margin-top: 5em;
   padding: 1.625em 0 1.5625em 0;
   border-top: 0.125em solid $grey1;
-
-  & div {
-    height: 100%;
-  }
 
   .separator {
     display: none;
   }
 
-  .cmp-container {
+  & .cmp-container {
     display: flex;
   }
 

@@ -687,4 +687,19 @@
             </components>
         </wcm>
     </core>
+    <cq jcr:primaryType="nt:unstructured">
+        <experience-fragments jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <xfpage jcr:primaryType="nt:unstructured">
+                    <policy_default
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="XF pZage"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        clientlibs="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v2,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.commons.datalayer.v1]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_default>
+                </xfpage>
+            </components>
+        </experience-fragments>
+    </cq>
 </jcr:root>

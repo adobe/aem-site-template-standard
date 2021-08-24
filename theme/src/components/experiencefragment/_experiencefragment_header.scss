@@ -1,6 +1,6 @@
 //== XF Header style, used on page template
 
-.experiencefragment.header {
+#main-header {
   padding: 1.25rem 0;
   border-bottom: 0.125em solid $grey1;
 
@@ -10,7 +10,7 @@
 
   //=================== Grid layout ===================
 
-  .cmp-container {
+  & .cmp-container {
     display: flex;
     & .aem-Grid {
       display: inherit;
