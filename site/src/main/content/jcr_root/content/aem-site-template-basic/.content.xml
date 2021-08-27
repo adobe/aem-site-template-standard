@@ -5,7 +5,7 @@
         cq:allowedTemplates="[/conf/aem-site-template-basic/settings/wcm/templates/(?!xf-).*]"
         cq:conf="/conf/aem-site-template-basic"
         cq:redirectTarget="/content/aem-site-template-basic/en"
-        cq:template="/conf/aem-site-template-basic/settings/wcm/templates/page-content"
+        cq:template="/conf/aem-site-template-basic/settings/wcm/templates/home-page"
         jcr:primaryType="cq:PageContent"
         jcr:title="My Site"
         sling:configRef="/conf/aem-site-template-basic"
