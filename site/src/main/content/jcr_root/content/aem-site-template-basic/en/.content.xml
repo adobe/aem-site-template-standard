@@ -5,7 +5,7 @@
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
         cq:redirectTarget="/content/aem-site-template-basic/en/home"
-        cq:template="/conf/aem-site-template-basic/settings/wcm/templates/page-content"
+        cq:template="/conf/aem-site-template-basic/settings/wcm/templates/home-page"
         jcr:primaryType="cq:PageContent"
         jcr:title="English"
         sling:resourceType="core/wcm/components/page/v2/page"
