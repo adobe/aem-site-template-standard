@@ -1,7 +1,7 @@
 {
   "name": "aem-site-template-standard",
   "version": "5.1.2",
-  "description": "Standard AEM Site Template that serves as a clean starting point.",
+  "description": "Standard AEM Site Template used as a starter template for general purposes websites",
   "license": "MIT License, Copyright 2020 Adobe Systems Incorporated",
   "scripts": {
     "build": "aem-site-template-builder",
@@ -13,7 +13,9 @@
   "siteTemplate": {
     "title": "Standard AEM Site Template",
     "createdBy": "Adobe",
-    "useCases": [],
+    "useCases": [
+      "General purpose sites, corporate marketing sites, landing pages, blog sites, content marketing"
+    ],
     "docsUrl": "",
     "showcaseUrl": "",
     "sourceRepositoryUrl": "https://github.com/adobe/aem-site-template-standard"
