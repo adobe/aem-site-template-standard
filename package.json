@@ -1,21 +1,21 @@
 {
-  "name": "aem-site-template-basic",
+  "name": "aem-site-template-standard",
   "version": "5.1.2",
-  "description": "Basic AEM Site Template that serves as a clean starting point.",
+  "description": "Standard AEM Site Template that serves as a clean starting point.",
   "license": "MIT License, Copyright 2020 Adobe Systems Incorporated",
   "scripts": {
     "build": "aem-site-template-builder",
-    "deploy": "curl -u admin:admin -F file=@aem-site-template-basic-latest.zip http://localhost:4502/conf/global/site-templates.import.html"
+    "deploy": "curl -u admin:admin -F file=@aem-site-template-standard-latest.zip http://localhost:4502/conf/global/site-templates.import.html"
   },
   "devDependencies": {
     "@adobe/aem-site-template-builder": "2.2.1"
   },
   "siteTemplate": {
-    "title": "Basic AEM Site Template",
+    "title": "Standard AEM Site Template",
     "createdBy": "Adobe",
     "useCases": [],
     "docsUrl": "",
     "showcaseUrl": "",
-    "sourceRepositoryUrl": "https://github.com/adobe/aem-site-template-basic"
+    "sourceRepositoryUrl": "https://github.com/adobe/aem-site-template-standard"
   }
 }
