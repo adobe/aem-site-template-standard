@@ -1,7 +1,7 @@
 {
-    "name": "aem-site-template-basic-theme",
+    "name": "aem-site-template-standard-theme",
     "version": "0.0.1",
-    "description": "Basic AEM site theme",
+    "description": "Standard AEM site theme",
     "private": true,
     "main": "src/main.ts",
     "license": "MIT License, Copyright 2020 Adobe Systems Incorporated",
