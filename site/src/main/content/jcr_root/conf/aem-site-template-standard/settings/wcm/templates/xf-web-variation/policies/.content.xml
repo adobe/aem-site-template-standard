@@ -55,7 +55,7 @@
                         <image jcr:primaryType="nt:unstructured">
                             <v2 jcr:primaryType="nt:unstructured">
                                 <image
-                                    cq:policy="core/wcm/components/image/v1/image/policy_default"
+                                    cq:policy="core/wcm/components/image/v2/image/policy_default"
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="wcm/core/components/policies/mappings"/>
                             </v2>

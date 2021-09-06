@@ -55,7 +55,7 @@
                                 <title jcr:primaryType="nt:unstructured">
                                     <v2 jcr:primaryType="nt:unstructured">
                                         <title
-                                            cq:policy="core/wcm/components/title/v1/title/policy_default"
+                                            cq:policy="core/wcm/components/title/v2/title/policy_default"
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="wcm/core/components/policies/mappings"/>
                                     </v2>
@@ -63,7 +63,7 @@
                                 <text jcr:primaryType="nt:unstructured">
                                     <v2 jcr:primaryType="nt:unstructured">
                                         <text
-                                            cq:policy="core/wcm/components/text/v1/text/policy_default"
+                                            cq:policy="core/wcm/components/text/v2/text/policy_default"
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="wcm/core/components/policies/mappings"/>
                                     </v2>
@@ -71,7 +71,7 @@
                                 <image jcr:primaryType="nt:unstructured">
                                     <v2 jcr:primaryType="nt:unstructured">
                                         <image
-                                            cq:policy="core/wcm/components/image/v1/image/policy_default"
+                                            cq:policy="core/wcm/components/image/v2/image/policy_default"
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="wcm/core/components/policies/mappings"/>
                                     </v2>
