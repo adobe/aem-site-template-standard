@@ -2,9 +2,9 @@
 
 This is the standard site template for Adobe Experience Manager as a Cloud Service (AEMaaCS).
 
-<img src="previews/site.png?raw=true" alt="Standard site preview" width="50%">
+<img src="previews/StandardSiteTemplate.png?raw=true" alt="Standard site preview" width="50%">
 
-It can serve as a standard starting point for creating a new site, or as a staring point for creating custom site templates.
+It can serve as a standard starting point for creating a new site, or as a starting point for creating custom site templates.
 
 ## Structure
 
