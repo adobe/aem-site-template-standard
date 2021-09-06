@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:policy="core/wcm/components/page/v2/page/article_page"
+        cq:policy="core/wcm/components/page/v2/page/policy_article"
         jcr:primaryType="nt:unstructured"
         sling:resourceType="wcm/core/components/policies/mappings">
         <root
@@ -47,7 +47,7 @@
                                 <separator jcr:primaryType="nt:unstructured">
                                     <v1 jcr:primaryType="nt:unstructured">
                                         <separator
-                                            cq:policy="core/wcm/components/separator/v1/separator/policy_1612910943565"
+                                            cq:policy="core/wcm/components/separator/v1/separator/policy_default"
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="wcm/core/components/policies/mapping"/>
                                     </v1>
@@ -63,7 +63,7 @@
                                 <tabs jcr:primaryType="nt:unstructured">
                                     <v1 jcr:primaryType="nt:unstructured">
                                         <tabs
-                                            cq:policy="core/wcm/components/tabs/v1/tabs/policy_1613264545561"
+                                            cq:policy="core/wcm/components/tabs/v1/tabs/policy_default"
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="wcm/core/components/policies/mapping"/>
                                     </v1>
@@ -71,7 +71,7 @@
                                 <button jcr:primaryType="nt:unstructured">
                                     <v1 jcr:primaryType="nt:unstructured">
                                         <button
-                                            cq:policy="core/wcm/components/button/v1/button/policy_1613070338830"
+                                            cq:policy="core/wcm/components/button/v1/button/policy_default"
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="wcm/core/components/policies/mapping"/>
                                     </v1>
@@ -79,7 +79,7 @@
                                 <breadcrumb jcr:primaryType="nt:unstructured">
                                     <v2 jcr:primaryType="nt:unstructured">
                                         <breadcrumb
-                                            cq:policy="core/wcm/components/breadcrumb/v2/breadcrumb/policy_1612951364064"
+                                            cq:policy="core/wcm/components/breadcrumb/v2/breadcrumb/policy_default"
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="wcm/core/components/policies/mapping"/>
                                     </v2>
@@ -93,7 +93,7 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wcm/core/components/policies/mapping"/>
                 <breadcrumb
-                    cq:policy="core/wcm/components/breadcrumb/v2/breadcrumb/policy_1612951364064"
+                    cq:policy="core/wcm/components/breadcrumb/v2/breadcrumb/policy_default"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wcm/core/components/policies/mapping"/>
             </container>

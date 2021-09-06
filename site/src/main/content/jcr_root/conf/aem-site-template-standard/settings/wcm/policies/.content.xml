@@ -18,7 +18,7 @@
                                 clientlibs="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v2,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.commons.datalayer.v1]">
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
                             </policy_default>
-                            <contact_us
+                            <policy_contact_us
                                 cq:styleDefaultClasses="contactus-page"
                                 jcr:description="Includes the required client libraries."
                                 jcr:primaryType="nt:unstructured"
@@ -26,8 +26,8 @@
                                 sling:resourceType="wcm/core/components/policy/policy"
                                 clientlibs="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v2,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.commons.datalayer.v1]">
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
-                            </contact_us>
-                            <article_page
+                            </policy_contact_us>
+                            <policy_article
                                 cq:styleDefaultClasses="article-page"
                                 jcr:description="Includes the required client libraries."
                                 jcr:primaryType="nt:unstructured"
@@ -35,15 +35,15 @@
                                 sling:resourceType="wcm/core/components/policy/policy"
                                 clientlibs="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v2,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.commons.datalayer.v1]">
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
-                            </article_page>
-                            <policy_1612895037723
+                            </policy_article>
+                            <policy_home
                                 cq:styleDefaultClasses="home-page"
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Home page"
                                 sling:resourceType="wcm/core/components/policy/policy"
                                 clientlibs="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v2,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.commons.datalayer.v1]">
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
-                            </policy_1612895037723>
+                            </policy_home>
                         </page>
                     </v2>
                 </page>
@@ -549,7 +549,7 @@
                 <separator jcr:primaryType="nt:unstructured">
                     <v1 jcr:primaryType="nt:unstructured">
                         <separator jcr:primaryType="nt:unstructured">
-                            <policy_1612910943565
+                            <policy_default
                                 cq:styleDefaultClasses="standard"
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Content Separator"
@@ -573,14 +573,14 @@
                                         </cq:styles>
                                     </item0>
                                 </cq:styleGroups>
-                            </policy_1612910943565>
+                            </policy_default>
                         </separator>
                     </v1>
                 </separator>
                 <breadcrumb jcr:primaryType="nt:unstructured">
                     <v2 jcr:primaryType="nt:unstructured">
                         <breadcrumb jcr:primaryType="nt:unstructured">
-                            <policy_1612951364064
+                            <policy_default
                                 cq:styleDefaultClasses="standard"
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Content Breadcrumb"
@@ -603,14 +603,14 @@
                                         </cq:styles>
                                     </item0>
                                 </cq:styleGroups>
-                            </policy_1612951364064>
+                            </policy_default>
                         </breadcrumb>
                     </v2>
                 </breadcrumb>
                 <button jcr:primaryType="nt:unstructured">
                     <v1 jcr:primaryType="nt:unstructured">
                         <button jcr:primaryType="nt:unstructured">
-                            <policy_1613070338830
+                            <policy_default
                                 cq:styleDefaultClasses="call-to-action"
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Content Button"
@@ -649,14 +649,14 @@
                                         </cq:styles>
                                     </item0>
                                 </cq:styleGroups>
-                            </policy_1613070338830>
+                            </policy_default>
                         </button>
                     </v1>
                 </button>
                 <tabs jcr:primaryType="nt:unstructured">
                     <v1 jcr:primaryType="nt:unstructured">
                         <tabs jcr:primaryType="nt:unstructured">
-                            <policy_1613264545561
+                            <policy_default
                                 cq:styleDefaultClasses="horizontal"
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Content Tabs"
@@ -680,7 +680,7 @@
                                         </cq:styles>
                                     </item0>
                                 </cq:styleGroups>
-                            </policy_1613264545561>
+                            </policy_default>
                         </tabs>
                     </v1>
                 </tabs>
