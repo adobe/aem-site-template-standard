@@ -1,8 +1,8 @@
 # Site Theme
 
-This is the theme of the basic site template for Adobe Experience Manager (AEM).
+This is the theme of the standard site template for Adobe Experience Manager (AEM).
 
-This theme can be modified to customize the visual appearance of sites created from the basic site template.
+This theme can be modified to customize the visual appearance of sites created from the standard site template.
 
 ## Structure
 

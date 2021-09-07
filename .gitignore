@@ -83,6 +83,5 @@ buildNumber.properties
 
 node_modules
 npm-debug.log
-package-lock.json
 
-aem-site-template-basic-*.zip
+aem-site-template-standard-*.zip
