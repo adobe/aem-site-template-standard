@@ -1,4 +1,5 @@
-//== Base
+
+//== Font loading
 
 @mixin fontface($name, $file, $weight: normal, $style: normal) {
   @font-face {
@@ -34,9 +35,11 @@
 @include fontface(titleFont, 'SourceSerifPro/SourceSerifPro-SemiBold', bold);
 @include fontface(titleFont, 'SourceSerifPro/SourceSerifPro-SemiBoldItalic', bold, italic);
 
+//== Defaults
+
 html, body {
   margin: 0;
-  color: $color-foreground;
+  color: $color-text;
   font-size: $font-size;
   font-family: defaultFont, serif;
   line-height: $font-height;
@@ -70,6 +73,8 @@ textarea {
 }
 
 //== Grid
+
+$max_col: 12;
 
 // Default breakpoint
 .aem-Grid {

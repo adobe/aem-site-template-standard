@@ -2,13 +2,13 @@
   .cmp-tabs {}
 
   .cmp-tabs__tablist {
-    border-bottom: 0.125em solid $grey1;
+    border-bottom: 0.125em solid $color-shade-1;
   }
   .cmp-tabs__tab {}
   .cmp-tabs__tab--active {
-    border-bottom: 0.125em solid $grey4;
+    border-bottom: 0.125em solid $color-shade-4;
     &:focus {
-      border-bottom: 0.125em solid $grey4;
+      border-bottom: 0.125em solid $color-shade-4;
     }
   }
 

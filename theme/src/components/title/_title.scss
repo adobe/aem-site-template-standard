@@ -6,22 +6,22 @@
   margin: 0;
 }
 .cmp-title__link {
-  color: $accent;
+  color: $color-accent;
   text-decoration: none;
-  border: 0.125rem solid $transparent;
+  border: 0.125rem solid $color-transparent;
   border-radius: 0.25rem;
   &:hover {
-    color: $accent-hover;
+    color: $color-accent-darker;
     text-decoration: underline;
-    text-decoration-color: $accent-hover;
+    text-decoration-color: $color-accent-darker;
     text-decoration-thickness: 0.125rem;
   }
   &:focus {
-    color: $accent;
+    color: $color-accent;
     text-decoration: underline;
-    border-color: $accent-focus;
+    border-color: $color-accent-lighter;
     outline: none;
-    text-decoration-color: $accent-focus;
+    text-decoration-color: $color-accent-lighter;
     text-decoration-thickness: 0.125rem;
   }
 }

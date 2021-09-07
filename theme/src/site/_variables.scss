@@ -1,33 +1,30 @@
+
 //== Font
 
 $font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family-title: 'Source Serif Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-size: 16px;
 $font-height: 20px;
-//20px
 
 //== Color
 
-$color-foreground: #202020;
 $color-background: #ffffff;
+$color-foreground: #000000;
 $color-link: #2020e0;
-$accent: #2954ff;
-$accent-focus: #436eff;
-$accent-hover: #103be6;
-$text: #000000;
-$text-on-background: #ffffff;
-$grey-bar: #eaebeb;
-$grey1: #eceff1;
-$grey2: #cfd8dc;
-$grey3: #607d8b;
-$grey4: #455a65;
-$color-shadow: #00000029;
+$color-accent: #2954ff;
+$color-accent-lighter: #436eff;
+$color-accent-darker: #103be6;
+$color-shade-1: #eceff1;
+$color-shade-2: #cfd8dc;
+$color-shade-3: #607d8b;
+$color-shade-4: #455a64;
+
 $error: #d7373f;
-$error-hover: #be1e26;
+$error-darker: #be1e26;
 $success: #268e6c;
-$success-hover: #0d7553;
-$transparent: rgba(0, 0, 0, 0);
+$success-darker: #0d7553;
 
-//== Grid
-
-$max_col: 12;
+$color-text: $color-foreground;
+$color-text-inverted: $color-background;
+$color-shadow: rgba(0, 0, 0, 0.16);
+$color-transparent: rgba(0, 0, 0, 0);

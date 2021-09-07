@@ -3,26 +3,26 @@
     background-color: $color-background;
     border-color: $color-background;
     &:hover {
-      background-color: $grey1;
-      border-color: $grey1;
+      background-color: $color-shade-1;
+      border-color: $color-shade-1;
     }
     &:focus {
-      background-color: $grey1;
-      border-color: $grey1;
+      background-color: $color-shade-1;
+      border-color: $color-shade-1;
       outline: none;
-      box-shadow: 0 0 0 0.125em $accent-focus;
+      box-shadow: 0 0 0 0.125em $color-accent-lighter;
     }
     &:disabled {
       background-color: $color-background;
       border-color: $color-background;
       & .cmp-button__text {
-        color: $grey2;
+        color: $color-shade-2;
       }
     }
   }
 
   .cmp-button__text {
-    color: $grey4;
+    color: $color-shade-4;
   }
 
   .cmp-button__icon {

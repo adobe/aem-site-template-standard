@@ -9,8 +9,8 @@
 .cmp-accordion__button {
   padding: 0.5625rem 1rem 0.6875rem 1rem;
   background-color: $color-background;
-  border: 0.125em solid $transparent;
-  border-bottom-color: $grey1;
+  border: 0.125em solid $color-transparent;
+  border-bottom-color: $color-shade-1;
   outline: none;
   .cmp-accordion__icon {
     &:after {
@@ -19,7 +19,7 @@
       height: 24px;
       margin: 0;
       vertical-align: -25%;
-      background-color: $grey2;
+      background-color: $color-shade-2;
       content: '';
       mask: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZGVmcz48c3R5bGU+LmEsLmJ7ZmlsbDojNjA3ZDhiO30uYXtvcGFjaXR5OjA7fTwvc3R5bGU+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01NjUgLTgwKSI+PHJlY3QgY2xhc3M9ImEiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTY1IDgwKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNLjI5MywxMy4wMjFhMSwxLDAsMCwxLDAtMS40MTRsNC45NS00Ljk1TC4yOTMsMS43MDdBMSwxLDAsMCwxLDEuNzA3LjI5M0w3LjM2NCw1Ljk1YTEsMSwwLDAsMSwwLDEuNDE1TDEuNzA3LDEzLjAyMWExLDEsMCwwLDEtMS40MTUsMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU4My44MjkgODguMTcxKSByb3RhdGUoOTApIi8+PC9nPjwvc3ZnPg==');
       mask-size: cover;
@@ -27,19 +27,19 @@
   }
   &:hover {
     .cmp-accordion__title {
-      color: $text;
+      color: $color-text;
     }
     .cmp-accordion__icon {
       &:after {
-        background-color: $grey3;
+        background-color: $color-shade-3;
       }
     }
   }
   &:focus {
-    border: 0.125em solid $accent-focus;
+    border: 0.125em solid $color-accent-lighter;
     border-radius: 0.25em;
     .cmp-accordion__title {
-      color: $text;
+      color: $color-text;
     }
   }
 }
@@ -52,17 +52,17 @@
     }
   }
   &:focus {
-    border: 0.125em solid $transparent;
-    border-bottom-color: $grey1;
+    border: 0.125em solid $color-transparent;
+    border-bottom-color: $color-shade-1;
     border-radius: 0;
     .cmp-accordion__title {
-      color: $text;
+      color: $color-text;
     }
   }
 }
 
 .cmp-accordion__title {
-  color: $grey3;
+  color: $color-shade-3;
   font-weight: 300;
   font-size: 1rem;
 }

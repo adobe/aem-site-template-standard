@@ -3,7 +3,7 @@
   margin: 0.5em 0.5em;
   & label {
     margin-bottom: 0.5625rem;
-    color: $grey3;
+    color: $color-shade-3;
     font-size: 0.625em;
     text-transform: uppercase;
   }
@@ -14,25 +14,25 @@
   height: 10em;
   padding: 0.5625em 1em 0.6875em 1em;
   font-size: 1em;
-  background-color: $grey1;
-  border: 0.125em solid $grey1;
+  background-color: $color-shade-1;
+  border: 0.125em solid $color-shade-1;
   border-radius: 0.25em;
   &:hover {
     background-color: $color-background;
   }
   &:focus {
-    border-color: $accent-focus;
+    border-color: $color-accent-lighter;
   }
   &:active {
-    color: $text;
+    color: $color-text;
   }
 }
 .cmp-form-text__text {
   height: 1.25em;
   padding: 0.5625em 1em 0.6875em 1em;
   font-size: 1em;
-  background-color: $grey1;
-  border-color: $grey1;
+  background-color: $color-shade-1;
+  border-color: $color-shade-1;
   border-style: solid;
   border-width: 0.125em;
   border-radius: 0.25em;
@@ -40,17 +40,17 @@
     background-color: $color-background;
   }
   &:focus {
-    border-color: $accent-focus;
+    border-color: $color-accent-lighter;
   }
   &:active {
-    color: $text;
+    color: $color-text;
   }
   //&:invalid {
   //  border-color: $error;
-  //  color: $text;
+  //  color: $color-text;
   //}
   //&:valid {
   //  border-color: $success;
-  //  color: $text;
+  //  color: $color-text;
   //}
 }

@@ -15,7 +15,7 @@
 // == text above drop down
 .cmp-form-options__label {
   margin-bottom: 0.5625rem;
-  color: $grey3;
+  color: $color-shade-3;
   font-size: 0.625em;
   text-transform: uppercase;
 }
@@ -34,9 +34,9 @@
 .select-selected {
   height: 1.25em;
   padding: 0.5625em 1em 0.6875em 1em;
-  color: $grey4;
+  color: $color-shade-4;
   background-color: $color-background;
-  border: 0.0625em solid $grey2;
+  border: 0.0625em solid $color-shade-2;
   border-radius: 0.25em;
   cursor: pointer;
   &:after {
@@ -46,7 +46,7 @@
     height: 24px;
     margin: 0;
     vertical-align: -25%;
-    background-color: $grey2;
+    background-color: $color-shade-2;
     content: '';
     mask: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZGVmcz48c3R5bGU+LmEsLmJ7ZmlsbDojNjA3ZDhiO30uYXtvcGFjaXR5OjA7fTwvc3R5bGU+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01NjUgLTgwKSI+PHJlY3QgY2xhc3M9ImEiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTY1IDgwKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNLjI5MywxMy4wMjFhMSwxLDAsMCwxLDAtMS40MTRsNC45NS00Ljk1TC4yOTMsMS43MDdBMSwxLDAsMCwxLDEuNzA3LjI5M0w3LjM2NCw1Ljk1YTEsMSwwLDAsMSwwLDEuNDE1TDEuNzA3LDEzLjAyMWExLDEsMCwwLDEtMS40MTUsMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU4My44MjkgODguMTcxKSByb3RhdGUoOTApIi8+PC9nPjwvc3ZnPg==');
     mask-size: cover;
@@ -55,14 +55,14 @@
     margin: -0.0625em;
     border-width: 0.125em;
     &:after {
-      background-color: $grey3;
+      background-color: $color-shade-3;
     }
   }
 }
 
 .select-arrow-active {
   margin: -0.0625em;
-  border: 0.125em solid $accent-hover;
+  border: 0.125em solid $color-accent-darker;
   &:after {
     display: inline-block;
     float: right;
@@ -70,7 +70,7 @@
     height: 24px;
     margin: 0;
     vertical-align: -25%;
-    background-color: $grey3;
+    background-color: $color-shade-3;
     content: '';
     mask: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZGVmcz48c3R5bGU+LmEsLmJ7ZmlsbDojNjA3ZDhiO30uYXtvcGFjaXR5OjA7fTwvc3R5bGU+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01MjUgLTgwKSI+PHJlY3QgY2xhc3M9ImEiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTI1IDgwKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNLjI5MywxMy4wMjFhMSwxLDAsMCwxLDAtMS40MTVsNC45NS00Ljk1TC4yOTMsMS43MDdBMSwxLDAsMCwxLDEuNzA3LjI5M0w3LjM2NCw1Ljk1YTEsMSwwLDAsMSwwLDEuNDE0TDEuNzA3LDEzLjAyMWExLDEsMCwwLDEtMS40MTUsMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUzMC41MTUgOTUuODI4KSByb3RhdGUoLTkwKSIvPjwvZz48L3N2Zz4=');
     mask-size: cover;
@@ -101,14 +101,14 @@
   cursor: pointer;
   &:not(.same-as-selected) {
     &:hover {
-      background-color: $grey1;
+      background-color: $color-shade-1;
     }
   }
 }
 
 .same-as-selected {
-  color: $text-on-background;
-  background-color: $accent;
+  color: $color-text-inverted;
+  background-color: $color-accent;
   &::after {
     display: inline-block;
     float: right;
@@ -116,7 +116,7 @@
     height: 24px;
     margin-right: 0.5em;
     vertical-align: -25%;
-    background-color: $text-on-background;
+    background-color: $color-text-inverted;
     content: '';
     mask: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZGVmcz48c3R5bGU+LmEsLmJ7ZmlsbDojMjY4ZTZjO30uYXtvcGFjaXR5OjA7fTwvc3R5bGU+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MDMgLTgwKSI+PHJlY3QgY2xhc3M9ImEiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzAzIDgwKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNNC45MzIsMjY5LjlhMSwxLDAsMCwxLS44NjQtLjQ2N0wuNzA3LDI2Ni4wNzJhMSwxLDAsMSwxLDEuNDE0LTEuNDE1bDIuODExLDIuODExLDcuNzYxLTcuNzYxYTEsMSwwLDEsMSwxLjQxNCwxLjQxNUw1LjgsMjY5LjQzMmExLDEsMCwwLDEtLjg0Ny40NjhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3MDcuNTg2IC0xNzIuNjU3KSIvPjwvZz48L3N2Zz4=');
     mask-size: cover;
@@ -136,21 +136,21 @@
   &:hover {
     .cmp-form-options__field--checkbox {
       background-color: $color-background;
-      border-color: $grey2;
+      border-color: $color-shade-2;
     }
     .cmp-form-options__field--radio {
       background-color: $color-background;
-      border-color: $grey2;
+      border-color: $color-shade-2;
     }
   }
   &:checked {
     .cmp-form-options__field--checkbox {
       background-color: $color-background;
-      border-color: $grey2;
+      border-color: $color-shade-2;
     }
     .cmp-form-options__field--radio {
       background-color: $color-background;
-      border-color: $grey2;
+      border-color: $color-shade-2;
     }
   }
 }
@@ -161,8 +161,8 @@
   width: 1.5em;
   height: 1.5em;
   margin: 0.5em 0.375em 0.5em 1em;
-  background-color: $grey1;
-  border-color: $grey1;
+  background-color: $color-shade-1;
+  border-color: $color-shade-1;
   border-width: 0.25em;
   border-radius: 0.25em;
 }
@@ -171,8 +171,8 @@
 .cmp-form-options__field--radio {
   width: 1.5em;
   height: 1.5em;
-  background-color: $grey1;
-  border-color: $grey1;
+  background-color: $color-shade-1;
+  border-color: $color-shade-1;
   border-width: 0.25em;
   border-radius: 0.25em;
 }
@@ -180,7 +180,7 @@
 // == text next to checkbox
 .cmp-form-options__field-description {
   margin: 0.5625em 1em 0.6875em 0.375em;
-  color: $text;
+  color: $color-text;
   vertical-align: super;
 }
 

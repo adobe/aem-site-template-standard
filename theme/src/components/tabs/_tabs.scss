@@ -8,19 +8,19 @@
   height: 2.625em;
   margin: 0;
   padding: 0.5625em 1em 0.6875em 1em;
-  color: $grey3;
+  color: $color-shade-3;
   font-size: 1em;
   outline: none;
   &:hover {
-    color: $text;
+    color: $color-text;
   }
   //&:focus {
   //  border-radius: 0.25em;
-  //  border: 0.125em solid $accent-focus;
+  //  border: 0.125em solid $color-accent-lighter;
   //}
 }
 .cmp-tabs__tab--active {
-  color: $text;
+  color: $color-text;
   border: none;
   &:focus {
     //border-radius: 0;

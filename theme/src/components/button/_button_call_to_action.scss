@@ -1,28 +1,28 @@
 .call-to-action {
   .cmp-button {
-    background-color: $accent;
-    border-color: $accent;
+    background-color: $color-accent;
+    border-color: $color-accent;
     &:hover {
-      background-color: $accent-hover;
-      border-color: $accent-hover;
+      background-color: $color-accent-darker;
+      border-color: $color-accent-darker;
     }
     &:focus {
-      background-color: $accent-focus;
+      background-color: $color-accent-lighter;
       border-color: $color-background;
       outline: none;
-      box-shadow: 0 0 0 0.125em $accent-focus;
+      box-shadow: 0 0 0 0.125em $color-accent-lighter;
     }
     &:disabled {
-      background-color: $grey1;
-      border-color: $grey1;
+      background-color: $color-shade-1;
+      border-color: $color-shade-1;
       & .cmp-button__text {
-        color: $grey2;
+        color: $color-shade-2;
       }
     }
   }
 
   .cmp-button__text {
-    color: $text-on-background;
+    color: $color-text-inverted;
   }
 
   .cmp-button__icon {

@@ -56,50 +56,50 @@
 .cmp-teaser__action-link {
   margin-right: 0.8em;
   padding: 0.5625em 1em 0.6875em 1em;
-  color: $text-on-background;
+  color: $color-text-inverted;
   font-weight: 300;
   text-decoration: none;
   border-radius: 1.56em;
 }
 
 .cmp-teaser__action-link:first-child {
-  background-color: $accent;
-  border: 0.125em solid $accent;
+  background-color: $color-accent;
+  border: 0.125em solid $color-accent;
 
   &:hover {
-    background-color: $accent-hover;
-    border-color: $accent-hover;
+    background-color: $color-accent-darker;
+    border-color: $color-accent-darker;
   }
   &:focus {
-    background-color: $accent-focus;
+    background-color: $color-accent-lighter;
     border-color: $color-background;
     outline: none;
-    box-shadow: 0 0 0 0.125em $accent-focus;
+    box-shadow: 0 0 0 0.125em $color-accent-lighter;
   }
   &:disabled {
-    background-color: $grey1;
-    border-color: $grey1;
+    background-color: $color-shade-1;
+    border-color: $color-shade-1;
   }
 }
 
 .cmp-teaser__action-link:not(:first-child) {
-  color: $text-on-background;
+  color: $color-text-inverted;
   background-color: rgba(0, 0, 0, 0);
   border: 0.125em solid $color-background;
 
   &:hover {
-    color: $text;
+    color: $color-text;
     background-color: $color-background;
   }
   &:focus {
-    color: $text-on-background;
+    color: $color-text-inverted;
     background-color: rgba(0, 0, 0, 0);
     border: 0.125em solid $color-background;
     outline: none;
-    box-shadow: 0 0 0 0.125em $accent-focus;
+    box-shadow: 0 0 0 0.125em $color-accent-lighter;
   }
   &:disabled {
-    color: $grey1;
-    border-color: $grey1;
+    color: $color-shade-1;
+    border-color: $color-shade-1;
   }
 }
