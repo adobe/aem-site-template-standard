@@ -25,6 +25,17 @@
                 type="text/javascript"
             />
         </javascript>
+        <favicon
+                jcr:primaryType="nt:unstructured"
+                element="link"
+                location="header">
+            <attributes
+                    jcr:primaryType="nt:unstructured"
+                    rel="icon"
+                    href="/resources/images/favicon.png"
+                    type="image/png"
+            />
+        </favicon>
     </com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig>
     <com.adobe.cq.wcm.core.components.internal.DataLayerConfig
         jcr:primaryType="nt:unstructured"
