@@ -12,7 +12,7 @@
         "live": "npm-run-all -p compile proxy"
     },
     "devDependencies": {
-        "@adobe/aem-site-theme-builder": "5.0.0",
+        "@adobe/aem-site-theme-builder": "5.1.1",
         "autoprefixer": "^10.3.0",
         "browser-sync": "^2.26.13",
         "clean-webpack-plugin": "^3.0.0",
