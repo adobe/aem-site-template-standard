@@ -10,8 +10,9 @@
             location="header">
             <attributes
                 jcr:primaryType="nt:unstructured"
+                as="style"
                 href="/css/theme.css"
-                rel="stylesheet"
+                rel="preload stylesheet"
                 type="text/css"
             />
         </css>
@@ -21,6 +22,7 @@
             location="header">
             <attributes
                 jcr:primaryType="nt:unstructured"
+                async="true"
                 src="/js/theme.js"
                 type="text/javascript"
             />
