@@ -18,6 +18,7 @@
     ],
     "docsUrl": "",
     "showcaseUrl": "",
-    "sourceRepositoryUrl": "https://github.com/adobe/aem-site-template-standard"
+    "sourceRepositoryUrl": "https://github.com/adobe/aem-site-template-standard",
+    "openItem": "{Path}/en/home"
   }
 }
