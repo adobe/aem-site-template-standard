@@ -11,7 +11,7 @@
             <attributes
                 jcr:primaryType="nt:unstructured"
                 as="style"
-                href="/css/theme.css"
+                href="/theme.css"
                 rel="preload stylesheet"
                 type="text/css"
             />
@@ -23,7 +23,7 @@
             <attributes
                 jcr:primaryType="nt:unstructured"
                 async="true"
-                src="/js/theme.js"
+                src="/theme.js"
                 type="text/javascript"
             />
         </javascript>

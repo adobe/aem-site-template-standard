@@ -81,6 +81,10 @@ buildNumber.properties
 ### Visual Studio ###
 .vscode
 
+### Parcel ###
+.parcel-cache
+
+### Node ###
 node_modules
 npm-debug.log
 
