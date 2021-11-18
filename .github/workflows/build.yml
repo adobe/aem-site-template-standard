@@ -1,0 +1,29 @@
+name: Build Site Template
+
+on: 
+  push:
+  pull_request:
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Audit NPM
+        run: npm audit
+
+      - name: Install NPM dependencies
+        run: npm ci
+
+      - name: Set up Java
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11
+
+      - name: Build Site Template
+        run: npm run build
