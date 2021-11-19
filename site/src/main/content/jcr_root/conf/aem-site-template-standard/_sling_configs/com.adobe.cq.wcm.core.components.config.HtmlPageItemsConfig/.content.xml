@@ -3,92 +3,65 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         jcr:primaryType="cq:PageContent"
-        sling:configPropertyInherit="{Boolean}false"
         prefixPath="/content/aem-site-template-standard.theme/_default">
         <items
-            jcr:primaryType="nt:unstructured"
-            sling:configCollectionInherit="{Boolean}true"
-            sling:resourceType="nt:unstructured">
+            jcr:primaryType="nt:unstructured">
             <css
                 jcr:primaryType="nt:unstructured"
-                sling:configPropertyInherit="{Boolean}false"
-                sling:resourceType="nt:unstructured"
                 element="link"
                 location="header">
                 <attributes
-                    jcr:primaryType="nt:unstructured"
-                    sling:configCollectionInherit="{Boolean}true"
-                    sling:resourceType="nt:unstructured">
+                    jcr:primaryType="nt:unstructured">
                     <href
                         jcr:primaryType="nt:unstructured"
-                        sling:configPropertyInherit="{Boolean}false"
-                        sling:resourceType="nt:unstructured"
                         name="href"
                         value="/css/theme.css"/>
                     <rel
                         jcr:primaryType="nt:unstructured"
-                        sling:configPropertyInherit="{Boolean}false"
-                        sling:resourceType="nt:unstructured"
                         name="rel"
-                        value="stylesheet"/>
+                        value="stylesheet"/>                    
                     <type
                         jcr:primaryType="nt:unstructured"
-                        sling:configPropertyInherit="{Boolean}false"
-                        sling:resourceType="nt:unstructured"
                         name="type"
                         value="text/css"/>
                 </attributes>
             </css>
             <javascript
                 jcr:primaryType="nt:unstructured"
-                sling:configPropertyInherit="{Boolean}false"
-                sling:resourceType="nt:unstructured"
                 element="script"
                 location="header">
                 <attributes
                     jcr:primaryType="nt:unstructured"
-                    sling:configCollectionInherit="{Boolean}true"
-                    sling:resourceType="nt:unstructured">
                     <src
                         jcr:primaryType="nt:unstructured"
-                        sling:configPropertyInherit="{Boolean}false"
-                        sling:resourceType="nt:unstructured"
                         name="src"
                         value="/js/theme.js"/>
+                    <async
+                        jcr:primaryType="nt:unstructured"
+                        name="async"
+                        value="true"/>
                     <type
                         jcr:primaryType="nt:unstructured"
-                        sling:configPropertyInherit="{Boolean}false"
-                        sling:resourceType="nt:unstructured"
                         name="type"
                         value="text/javascript"/>
                 </attributes>
             </javascript>
             <favicon
                 jcr:primaryType="nt:unstructured"
-                sling:configPropertyInherit="{Boolean}false"
-                sling:resourceType="nt:unstructured"
                 element="link"
                 location="header">
                 <attributes
-                    jcr:primaryType="nt:unstructured"
-                    sling:configCollectionInherit="{Boolean}true"
-                    sling:resourceType="nt:unstructured">
+                    jcr:primaryType="nt:unstructured">
                     <href
                         jcr:primaryType="nt:unstructured"
-                        sling:configPropertyInherit="{Boolean}false"
-                        sling:resourceType="nt:unstructured"
                         name="href"
                         value="/resources/images/favicon.png"/>
                     <rel
                         jcr:primaryType="nt:unstructured"
-                        sling:configPropertyInherit="{Boolean}false"
-                        sling:resourceType="nt:unstructured"
                         name="rel"
                         value="icon"/>
                     <type
                         jcr:primaryType="nt:unstructured"
-                        sling:configPropertyInherit="{Boolean}false"
-                        sling:resourceType="nt:unstructured"
                         name="type"
                         value="image/png"/>
                 </attributes>
