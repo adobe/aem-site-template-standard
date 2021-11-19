@@ -1,6 +1,6 @@
 
 // Stylesheets
-import "./main.scss";
+import "./theme.scss";
 import "./resources/images/favicon.png"
 
 // Component Javascript

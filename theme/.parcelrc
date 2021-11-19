@@ -1,4 +1,3 @@
-/* .parcelrc */
 {
     "extends": "@parcel/config-default",
     "namers": [ "parcel-namer-rewrite" ]
