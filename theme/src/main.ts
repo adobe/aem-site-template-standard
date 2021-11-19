@@ -1,6 +1,7 @@
 
 // Stylesheets
 import "./main.scss";
+import "./resources/images/favicon.png"
 
 // Component Javascript
 import "./components/experiencefragment/change_flag.js";
