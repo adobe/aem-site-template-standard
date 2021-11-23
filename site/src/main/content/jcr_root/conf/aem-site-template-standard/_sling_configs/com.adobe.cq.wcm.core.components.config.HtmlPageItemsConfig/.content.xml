@@ -12,6 +12,10 @@
                 location="header">
                 <attributes
                     jcr:primaryType="nt:unstructured">
+                    <as
+                        jcr:primaryType="nt:unstructured"
+                        name="as"
+                        value="style"/>
                     <href
                         jcr:primaryType="nt:unstructured"
                         name="href"
@@ -19,7 +23,7 @@
                     <rel
                         jcr:primaryType="nt:unstructured"
                         name="rel"
-                        value="stylesheet"/>                    
+                        value="preload stylesheet"/>
                     <type
                         jcr:primaryType="nt:unstructured"
                         name="type"
@@ -31,7 +35,7 @@
                 element="script"
                 location="header">
                 <attributes
-                    jcr:primaryType="nt:unstructured"
+                    jcr:primaryType="nt:unstructured">
                     <src
                         jcr:primaryType="nt:unstructured"
                         name="src"
