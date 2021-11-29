@@ -25,3 +25,6 @@ jobs:
 
       - name: Build Site Template
         run: npm run build
+
+      - name: Build Site Template Stub
+        run: npm run stub

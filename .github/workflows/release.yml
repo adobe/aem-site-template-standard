@@ -43,6 +43,9 @@ jobs:
       - name: Build Site Template (using bumped version)
         run: npm run build
 
+      - name: Build Site Template Stub
+        run: npm run stub
+
       - name: Read package.json
         id: package
         uses: juliangruber/read-file-action@v1
