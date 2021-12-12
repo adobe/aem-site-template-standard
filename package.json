@@ -1,24 +1,31 @@
 {
-  "name": "aem-site-template-standard",
-  "version": "1.1.0",
-  "description": "Standard AEM Site Template used as a starter template for general purpose websites",
+  "name": "tailwind-site-template",
+  "version": "0.0.6",
+  "description": "AEM Site Template that works with Tailwind",
   "license": "MIT License, Copyright 2020 Adobe Systems Incorporated",
   "scripts": {
     "build": "aem-site-template-builder",
-    "deploy": "curl -u admin:admin -F file=@aem-site-template-standard-latest.zip http://localhost:4502/conf/global/site-templates.import.html"
+    "deploy": "curl -u admin:admin -F file=@tailwind-site-template-latest.zip http://localhost:4502/conf/global/site-templates.import.html"
   },
   "devDependencies": {
     "@adobe/aem-site-template-builder": "2.2.2"
   },
   "siteTemplate": {
-    "title": "Standard AEM Site Template",
+    "title": "Tailwind Site Template",
     "createdBy": "Adobe",
     "useCases": [
-      "General purpose sites, corporate marketing sites, landing pages, blog sites, content marketing"
+      "We need freedom of speech how are we otherwise to recognise the idiots!"
     ],
     "docsUrl": "",
     "showcaseUrl": "",
-    "sourceRepositoryUrl": "https://github.com/adobe/aem-site-template-standard",
+    "sourceRepositoryUrl": "https://github.com/adobe/tailwind-site-template/tree/garageweek/tailwind",
     "openItem": "{Path}/en/home"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "postcss-import": "^14.0.2",
+    "postcss-mixins": "^9.0.1",
+    "postcss-nested": "^5.0.6",
+    "postcss-simple-vars": "^6.0.3"
   }
 }

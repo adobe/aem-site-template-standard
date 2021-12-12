@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/aem-site-template-standard" mode="merge"/>
-    <filter root="/content/aem-site-template-standard" mode="merge"/>
-    <filter root="/content/dam/aem-site-template-standard" mode="merge"/>
-    <filter root="/content/experience-fragments/aem-site-template-standard" mode="merge"/>
+    <filter root="/conf/tailwind-site-template" mode="merge"/>
+    <filter root="/content/tailwind-site-template" mode="merge"/>
+    <filter root="/content/dam/tailwind-site-template" mode="merge"/>
+    <filter root="/content/experience-fragments/tailwind-site-template" mode="merge"/>
 </workspaceFilter>

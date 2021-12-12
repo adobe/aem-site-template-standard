@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:template="/conf/tailwind-site-template/settings/wcm/templates/tailwind-template"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="core/wcm/components/page/v2/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/container/v1/container"
+            layout="simple">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="core/wcm/components/container/v1/container"
+                editable="{Boolean}true"
+                layout="simple"/>
+        </root>
+    </jcr:content>
+</jcr:root>

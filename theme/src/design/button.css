@@ -1,0 +1,22 @@
+/* default button */
+.cmp-button , .cmp-teaser__action-link{
+    @apply
+    m-4
+    px-4 py-2
+    rounded-lg
+    shadow-md
+}
+
+/* primary button */
+.primary .cmp-button {
+    @apply 
+    text-skin-btn-primary
+    bg-skin-primary
+}
+
+/* secondary button */
+.secondary .cmp-button {
+    @apply 
+    text-skin-btn-secondary
+    bg-skin-secondary
+}

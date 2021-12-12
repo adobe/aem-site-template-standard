@@ -21,7 +21,7 @@
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
     <groupId>com.adobe.aem.guides</groupId>
-    <artifactId>aem-site-template-standard.site</artifactId>
+    <artifactId>tailwind-site-template.site</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>content-package</packaging>
     <name>Standard AEM Site Template</name>
@@ -42,7 +42,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <group>com.adobe.aem.guides</group>
-                    <name>aem-site-template-standard.site</name>
+                    <name>tailwind-site-template.site</name>
                     <packageType>content</packageType>
                     <accessControlHandling>merge</accessControlHandling>
                     <properties>

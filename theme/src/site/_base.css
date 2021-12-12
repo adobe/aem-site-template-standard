@@ -1,0 +1,31 @@
+:root {    
+    --btn-primary-text: #eeeeee;
+    --btn-secondary-text: #ffffff;
+    --btn-primary: #A0B4A9;
+    --btn-secondary: #d0C1B3;
+}    
+
+.theme-red {
+    --btn-primary-text: #ffeeee;
+    --btn-secondary-text: #ffffff;
+    --btn-primary: #ffB488;
+    --btn-secondary: #ffC100;
+}
+
+.theme-green {    
+    --btn-primary-text: #eeffee;
+    --btn-secondary-text: #ffffff;
+    --btn-primary: #A0af09;
+    --btn-secondary: #d0af03;
+}    
+
+.theme-blue {    
+    --btn-primary-text: #eeeeff;
+    --btn-secondary-text: #ffffff;
+    --btn-primary: #A0B4ff;
+    --btn-secondary: #d0C1ff;
+}    
+
+html {
+    @apply font-sans 
+}
