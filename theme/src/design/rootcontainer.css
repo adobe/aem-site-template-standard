@@ -1,92 +1,75 @@
-.root.container {
-    @apply m-auto
+/* The matching css rules for the grid columns */
+.css-grid-cols-1.root > .cmp-container  {
+    @apply
+    grid-cols-1
 }
-.root > .cmp-container {
-    @apply block
+.css-grid-cols-2.root >  .cmp-container  {
+    @apply
+    grid-cols-2
 }
-.root > .cmp-container > .container > .cmp-container {
-    @apply grid
-    bg-blue-300
+.css-grid-cols-3.root > .cmp-container  {
+    @apply
+    grid-cols-3
 }
+.css-grid-cols-4.root > .cmp-container  {
+    @apply
+    grid-cols-4
+}
+.css-grid-cols-5.root > .cmp-container  {
+    @apply
+    grid-cols-5
+}
+.css-grid-cols-6.root > .cmp-container  {
+    @apply
+    grid-cols-6
+}
+.css-grid-cols-7.root > .cmp-container  {
+    @apply
+    grid-cols-7
+}
+.css-grid-cols-8.root > .cmp-container  {
+    @apply
+    grid-cols-8
+}
+.css-grid-cols-9.root > .cmp-container  {
+    @apply
+    grid-cols-9
+}
+.css-grid-cols-10.root > .cmp-container  {
+    @apply
+    grid-cols-10
+}
+.css-grid-cols-11.root > .cmp-container  {
+    @apply
+    grid-cols-11
+}
+.css-grid-cols-12.root > .cmp-container  {
+    @apply
+    grid-cols-12
+} 
 
-
-.root > .cmp-container >  .css-grid-cols-1 > .cmp-container {
-    @apply grid-cols-1    
-}
-.root > .cmp-container >  .css-grid-cols-2 > .cmp-container {
-    @apply grid-cols-2    
-}
-.root > .cmp-container >  .css-grid-cols-3 > .cmp-container {
-    @apply grid-cols-3
-}
-.root > .cmp-container >  .css-grid-cols-4 > .cmp-container {
-    @apply grid-cols-4 
-}
-
-
-.root > .cmp-container >  .sm-grid-cols-1 > .cmp-container {
-    @apply sm:grid-cols-1    
-}
-.root > .cmp-container >  .sm-grid-cols-2 > .cmp-container {
-    @apply sm:grid-cols-2    
-}
-.root > .cmp-container >  .sm-grid-cols-3 > .cmp-container {
-    @apply sm:grid-cols-3
-}
-.root > .cmp-container >  .sm-grid-cols-4 > .cmp-container {
-    @apply sm:grid-cols-4
-}
-
-
-.root > .cmp-container >  .md-grid-cols-3 > .cmp-container {
-    @apply md:grid-cols-3    
-}
-.root > .cmp-container >  .md-grid-cols-4 > .cmp-container {
-    @apply md:grid-cols-4    
-}
-.root > .cmp-container >  .md-grid-cols-5 > .cmp-container {
-    @apply md:grid-cols-5
-}
-.root > .cmp-container >  .md-grid-cols-6 > .cmp-container {
-    @apply md:grid-cols-6
-}
-
-
-.root > .cmp-container >  .lg-grid-cols-4 > .cmp-container {
-    @apply lg:grid-cols-4    
-}
-.root > .cmp-container >  .lg-grid-cols-5 > .cmp-container {
-    @apply lg:grid-cols-5    
-}
-.root > .cmp-container >  .lg-grid-cols-6 > .cmp-container {
-    @apply lg:grid-cols-6
-}
-.root > .cmp-container >  .lg-grid-cols-7 > .cmp-container {
-    @apply lg:grid-cols-7
-}
-.root > .cmp-container >  .lg-grid-cols-8 > .cmp-container {
-    @apply lg:grid-cols-8
-}
-
-
-.root > .cmp-container >  .xl-grid-cols-6 > .cmp-container {
-    @apply xl:grid-cols-6    
-}
-.root > .cmp-container >  .xl-grid-cols-7 > .cmp-container {
-    @apply xl:grid-cols-7
-}
-.root > .cmp-container >  .xl-grid-cols-8 > .cmp-container {
-    @apply xl:grid-cols-8
-}
-.root > .cmp-container >  .xl-grid-cols-9 > .cmp-container {
-    @apply xl:grid-cols-9
-}
-.root > .cmp-container >  .xl-grid-cols-10 > .cmp-container {
-    @apply xl:grid-cols-10
-}
-.root > .cmp-container >  .xl-grid-cols-11 > .cmp-container {
-    @apply xl:grid-cols-11
-}
-.root > .cmp-container >  .xl-grid-cols-12 > .cmp-container {
-    @apply md:grid-cols-12
-}
+/* Grid rows */
+.css-grid-rows-1.root > .cmp-container  {
+    @apply
+    grid-rows-1
+} 
+.css-grid-rows-2.root > .cmp-container  {
+    @apply
+    grid-rows-2
+} 
+.css-grid-rows-3.root > .cmp-container  {
+    @apply
+    grid-rows-3
+} 
+.css-grid-rows-4.root > .cmp-container  {
+    @apply
+    grid-rows-4
+} 
+.css-grid-rows-5.root > .cmp-container  {
+    @apply
+    grid-rows-5
+} 
+.css-grid-rows-6.root > .cmp-container  {
+    @apply
+    grid-rows-6
+} 

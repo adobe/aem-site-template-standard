@@ -1,0 +1,6 @@
+.card > .cmp-container {
+    @apply
+    bg-skin-primary
+    h-32
+    rounded-xl
+}

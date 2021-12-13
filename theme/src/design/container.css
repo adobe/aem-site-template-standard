@@ -1,195 +1,81 @@
-/** All Container are grid container **/
-.cmp-container {
+/** Container **/
+.cmp-container  {
     @apply
     grid
-    bg-red-400
-    rounded
-    col-auto
 }
 
-/* span */
-.css-col-span-1   {
-    @apply col-span-1
+/* The matching css rules for the grid columns */
+.css-grid-cols-1 > .cmp-container  {
+    @apply
+    grid-cols-1
 }
-.css-col-span-2   {
-    @apply col-span-2
-    bg-green-500
+.css-grid-cols-2 >  .cmp-container  {
+    @apply
+    grid-cols-2
 }
-.css-col-span-3   {
-    @apply col-span-3
+.css-grid-cols-3 > .cmp-container  {
+    @apply
+    grid-cols-3
 }
-.css-col-span-4   {
-    @apply col-span-4
+.css-grid-cols-4 > .cmp-container  {
+    @apply
+    grid-cols-4
 }
-/* start */
-.css-col-start-1  {
-    @apply col-start-1
+.css-grid-cols-5 > .cmp-container  {
+    @apply
+    grid-cols-5
 }
-.css-col-start-2  {
-    @apply col-start-2
+.css-grid-cols-6 > .cmp-container  {
+    @apply
+    grid-cols-6
 }
-.css-col-start-3   {
-    @apply col-start-3
+.css-grid-cols-7 > .cmp-container  {
+    @apply
+    grid-cols-7
 }
-.css-col-start-4   {
-    @apply col-start-4
+.css-grid-cols-8 > .cmp-container  {
+    @apply
+    grid-cols-8
 }
-
-/* The css rules grid columns */
-.cmp-container > .css-grid-cols-1 > .cmp-container  {
-    @apply grid-cols-1
-} 
-.cmp-container > .css-grid-cols-2 > .cmp-container  {
-    @apply grid-cols-2
+.css-grid-cols-9 > .cmp-container  {
+    @apply
+    grid-cols-9
 }
-.cmp-container > .css-grid-cols-3 > .cmp-container    {
-    @apply grid-cols-3
+.css-grid-cols-10 > .cmp-container  {
+    @apply
+    grid-cols-10
 }
-.cmp-container > .css-grid-cols-4 > .cmp-container  {
-    @apply grid-cols-4
+.css-grid-cols-11 > .cmp-container  {
+    @apply
+    grid-cols-11
 }
-.cmp-container > .css-grid-cols-5 > .cmp-container  {
-    @apply grid-cols-5
-}
-.cmp-container > .css-grid-cols-6 > .cmp-container  {
-    @apply grid-cols-6
-}
-.cmp-container > .css-grid-cols-7 > .cmp-container  {
-    @apply grid-cols-7
-}
-.cmp-container > .css-grid-cols-8 > .cmp-container  {
-    @apply grid-cols-8
-}
-.cmp-container > .css-grid-cols-9 > .cmp-container  {
-    @apply grid-cols-9
-}
-.cmp-container > .css-grid-cols-10 > .cmp-container  {
-    @apply grid-cols-10
-}
-.cmp-container > .css-grid-cols-11 > .cmp-container  {
-    @apply grid-cols-11
-}
-.cmp-container > .css-grid-cols-12 > .cmp-container  {
-    @apply grid-cols-12
+.css-grid-cols-12 > .cmp-container  {
+    @apply
+    grid-cols-12
 } 
 
-/* Possible grit rows */
-.cmp-container > .css-grid-rows-1 > .cmp-container  {
-    @apply grid-rows-1
+/* Grid rows */
+.css-grid-rows-1 > .cmp-container  {
+    @apply
+    grid-rows-1
 } 
-.cmp-container > .css-grid-rows-2 > .cmp-container  {
-    @apply grid-rows-2
+.css-grid-rows-2 > .cmp-container  {
+    @apply
+    grid-rows-2
 } 
-.cmp-container > .css-grid-rows-3 > .cmp-container  {
-    @apply grid-rows-3
+.css-grid-rows-3 > .cmp-container  {
+    @apply
+    grid-rows-3
 } 
-.cmp-container > .css-grid-rows-4 > .cmp-container  {
-    @apply grid-rows-4
+.css-grid-rows-4 > .cmp-container  {
+    @apply
+    grid-rows-4
 } 
-.cmp-container > .css-grid-rows-5 > .cmp-container  {
-    @apply grid-rows-5
+.css-grid-rows-5 > .cmp-container  {
+    @apply
+    grid-rows-5
 } 
-.cmp-container > .css-grid-rows-6 > .cmp-container  {
-    @apply grid-rows-6
-} 
-
-/* Possible gaps */
-.cmp-container > .css-grid-gap-1 > .cmp-container  {
-    @apply gap-1
-} 
-.cmp-container > .css-grid-gap-2 > .cmp-container  {
-    @apply gap-2
-} 
-.cmp-container > .css-grid-gap-3 > .cmp-container  {
-    @apply gap-3
-} 
-.cmp-container > .css-grid-gap-4 > .cmp-container  {
-    @apply gap-4
-} 
-.cmp-container > .css-grid-gap-5 > .cmp-container  {
-    @apply gap-5
-} 
-.cmp-container > .css-grid-gap-6 > .cmp-container  {
-    @apply gap-6
-} 
-.cmp-container > .css-grid-gap-7 > .cmp-container  {
-    @apply gap-7
-} 
-.cmp-container > .css-grid-gap-8 > .cmp-container  {
-    @apply gap-8
-} 
-.cmp-container > .css-grid-gap-9 > .cmp-container  {
-    @apply gap-9
-} 
-.cmp-container > .css-grid-gap-10 > .cmp-container  {
-    @apply gap-10
-} 
-.cmp-container > .css-grid-gap-11 > .cmp-container  {
-    @apply gap-11
-} 
-.cmp-container > .css-grid-gap-12 > .cmp-container  {
-    @apply gap-12
-} 
-.cmp-container > .css-grid-gap-14 > .cmp-container  {
-    @apply gap-14
-} 
-.cmp-container > .css-grid-gap-16 > .cmp-container  {
-    @apply gap-16
-} 
-.cmp-container > .css-grid-gap-20 > .cmp-container  {
-    @apply gap-20
-} 
-.cmp-container > .css-grid-gap-24 > .cmp-container  {
-    @apply gap-24
-} 
-
-/* Container Direction */
-.cmp-container > .css-grid-flow-row > .cmp-container  {
-    @apply grid-flow-row
-} 
-.cmp-container > .css-grid-flow-row-dense > .cmp-container  {
-    @apply grid-flow-row-dense
-} 
-.cmp-container > .css-grid-flow-col > .cmp-container  {
-    @apply grid-flow-col
-} 
-.cmp-container > .css-grid-flow-col-dense > .cmp-container  {
-    @apply grid-flow-col-dense
-} 
-
-/* alignment along main axis */
-.cmp-container > .css-grid-justify-start > .cmp-container  {
-    @apply justify-start
-} 
-.cmp-container > .css-grid-justify-end > .cmp-container  {
-    @apply justify-end
-} 
-.cmp-container > .css-grid-justify-center > .cmp-container  {
-    @apply justify-center
-} 
-.cmp-container > .css-grid-justify-between > .cmp-container  {
-    @apply justify-between
-} 
-.cmp-container > .css-grid-justify-around > .cmp-container  {
-    @apply justify-around
-} 
-.cmp-container > .css-grid-justify-evenly > .cmp-container  {
-    @apply justify-evenly
-} 
-
-/* alignment along cross axis */
-.cmp-container > .css-grid-items-stretch > .cmp-container  {
-    @apply items-stretch
-} 
-.cmp-container > .css-grid-items-end > .cmp-container  {
-    @apply items-end
-} 
-.cmp-container > .css-grid-items-center > .cmp-container  {
-    @apply items-center
-} 
-.cmp-container > .css-grid-items-baseline > .cmp-container  {
-    @apply items-baseline
-} 
-.cmp-container > .css-grid-items-start > .cmp-container  {
-    @apply items-start
+.css-grid-rows-6 > .cmp-container  {
+    @apply
+    grid-rows-6
 } 
