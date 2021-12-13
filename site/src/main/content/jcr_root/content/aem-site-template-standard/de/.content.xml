@@ -12,7 +12,6 @@
         jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="German"
-        jcr:uuid="e7d3726a-dd3c-4a2b-9661-f59f2061ce05"
         sling:resourceType="core/wcm/components/page/v2/page"
         facebookAppId="123456"
         pageTitle="My Site"
