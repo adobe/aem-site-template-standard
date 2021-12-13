@@ -13,8 +13,10 @@
 @import 'design/fonts.css';
 
 /* the template designs */
-@import 'design/rootcontainer.css';
 @import 'design/container.css';
+@import 'design/rootcontainer.css';
 @import 'design/button.css';
-
+@import 'design/teaser.css';
+@import 'design/text.css';
+ 
 
