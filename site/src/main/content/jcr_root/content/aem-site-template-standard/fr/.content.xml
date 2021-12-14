@@ -12,7 +12,6 @@
         jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="French"
-        jcr:uuid="09663c0d-dda1-48eb-bb84-b40ac22469b9"
         sling:resourceType="core/wcm/components/page/v2/page"
         facebookAppId="123456"
         pageTitle="My Site"

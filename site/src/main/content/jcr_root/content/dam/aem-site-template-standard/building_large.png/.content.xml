@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:mixinTypes="[mix:referenceable]"
-    jcr:primaryType="dam:Asset"
-    jcr:uuid="42da45e4-ab2c-4e16-baa7-9cc6b64ce635">
+    jcr:primaryType="dam:Asset">
     <jcr:content
         dam:assetState="processed"
         dam:processingId="28e4fb6f-70b0-4750-ab41-6fdd83ed2a85"

@@ -8,7 +8,6 @@
         jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Sample Article 4"
-        jcr:uuid="113160db-24fa-47aa-9cf9-6fd1e112bd7b"
         sling:resourceType="core/wcm/components/page/v2/page"
         socialMedia="[facebook,pinterest]">
         <root
