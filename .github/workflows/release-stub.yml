@@ -1,6 +1,9 @@
 # Creates a Site Template Release 
 
-name: Build and release Site Template Stub
+name: Build Stub and release Site Template Stub
+
+on: 
+  workflow_dispatch:
 
 jobs:
   build_and_release:
