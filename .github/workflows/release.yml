@@ -19,12 +19,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      
+
       - name: Set up Java
         uses: actions/setup-java@v1
         with:
           java-version: 11
-      
+
       - name: Install NPM dependencies
         run: npm install
 
@@ -42,9 +42,6 @@ jobs:
 
       - name: Build Site Template (using bumped version)
         run: npm run build
-
-      - name: Build Site Template Stub
-        run: npm run stub
 
       - name: Read package.json
         id: package
@@ -68,7 +65,7 @@ jobs:
           release_name: ${{ steps.packageJson.outputs.NAME }}-${{ steps.packageJson.outputs.VERSION }}
           draft: false
           prerelease: true
-      
+
       - name: Upload Release Asset
         id: upload-release-asset 
         uses: actions/upload-release-asset@v1
@@ -79,7 +76,7 @@ jobs:
           asset_path: ./${{ steps.packageJson.outputs.NAME }}-${{ steps.packageJson.outputs.VERSION }}.zip
           asset_name: ${{ steps.packageJson.outputs.NAME }}-${{ steps.packageJson.outputs.VERSION }}.zip
           asset_content_type: application/zip
-          
+
       - name: Update Site Theme E2E Repo
         run: |
           curl -H "Accept: application/vnd.github.v3+json" \
