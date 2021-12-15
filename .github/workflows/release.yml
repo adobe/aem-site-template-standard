@@ -2,7 +2,7 @@
 
 name: Build and release Site Template
 
-on: 
+on:
   workflow_dispatch:
     inputs:
       semantic_version:

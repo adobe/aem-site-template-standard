@@ -2,7 +2,7 @@
 
 name: Build and release Stub
 
-on: 
+on:
   workflow_dispatch:
 
 jobs:
@@ -44,7 +44,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v${{ steps.packageJson.outputs.VERSION }}-stub
+          tag_name: ${{ steps.packageJson.outputs.NAME }}-${{ steps.packageJson.outputs.VERSION }}-stub
           release_name: ${{ steps.packageJson.outputs.NAME }}-stub-${{ steps.packageJson.outputs.VERSION }}
           draft: false
           prerelease: true
