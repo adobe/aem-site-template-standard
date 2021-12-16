@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
-        cq:lastModified="{Date}2021-12-12T20:23:10.012+01:00"
+        cq:lastModified="{Date}2021-12-16T16:24:07.535+01:00"
         cq:lastModifiedBy="admin"
-        cq:templateType="/conf/test14/settings/wcm/template-types/page"
+        cq:templateType="/conf/tailwind-site-template/settings/wcm/template-types/page"
         jcr:primaryType="cq:PageContent"
         jcr:title="Tailwind Template"
-        status="draft"/>
+        status="enabled"/>
 </jcr:root>

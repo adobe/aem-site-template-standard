@@ -1,0 +1,5 @@
+.cmp-container[aria-label="rentaloffer"]  {
+    @apply
+    bg-green-400
+}
+ 

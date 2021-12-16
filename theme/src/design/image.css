@@ -1,0 +1,7 @@
+.cmp-image {}
+.cmp-image__link {}
+.cmp-image__image {
+    @apply rounded-xl
+    object-cover
+}
+.cmp-image__title {}

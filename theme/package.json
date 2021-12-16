@@ -1,6 +1,6 @@
 {
     "name": "tailwind-site-template-theme",
-    "version": "0.0.18",
+    "version": "0.0.1",
     "description": "Standard AEM site theme",
     "license": "MIT License, Copyright 2020 Adobe Systems Incorporated",
     "scripts": {

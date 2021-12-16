@@ -7,7 +7,7 @@
         cq:redirectTarget="/content/tailwind-site-template/en"
         cq:template="/conf/tailwind-site-template/settings/wcm/templates/tailwind-template"
         jcr:primaryType="cq:PageContent"
-        jcr:title="My Site"
+        jcr:title="tailwind"
         sling:configRef="/conf/tailwind-site-template"
         sling:redirect="{Boolean}true"
         sling:redirectStatus="{Long}302"

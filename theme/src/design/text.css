@@ -1,14 +1,5 @@
 .cmp-text {
     @apply 
-    mt-3 mx-0 mb-0 
-    font-normal 
+    font-sans 
     text-base
-    bg-skin-primary
-    rounded-xl
-    p-6
-    w-auto
-    max-h-full
 }
-
-.cmp-text {}
-.cmp-text__paragraph {}

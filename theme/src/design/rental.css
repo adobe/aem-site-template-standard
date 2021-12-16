@@ -1,0 +1,134 @@
+.rental {
+    > .cmp-container {
+        @apply
+        grid
+        relative
+        grid-cols-1 lg:grid-cols-2
+        gap-4 lg:gap-12
+        m-4;  
+        > .images{
+            @apply lg:col-start-2 lg:row-start-1;
+            > .cmp-container {
+                @apply 
+                grid 
+                gap-3
+                sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-2;
+                > .image1 { 
+                    @apply md:col-span-2;
+                    > .cmp-image {
+                        > img {
+                            @apply 
+                            w-full 
+                            h-60 sm:h-48
+                            object-cover
+                        }
+                    }                    
+                }
+                > .image2 { 
+                    @apply md:col-span-1 ;
+                    > .cmp-image {
+                        > img {
+                            @apply 
+                            hidden sm:block
+                            sm:h-48 md:h-48
+                            object-cover
+                        }    
+                    }                    
+                }
+                > .image3 { 
+                    @apply md:col-span-1;
+                    > .cmp-image {
+                        > img {
+                            @apply 
+                            hidden
+                            md:block
+                            md:h-48
+                            object-cover
+                        }
+                    }                    
+                }
+            }
+        }  
+        > .content {
+            @apply lg:self-center;
+            > .cmp-container{
+                @apply
+                grid 
+                top-44 sm:top-0
+                w-full        
+                sm:grid-cols-2 lg:grid-cols-1
+                absolute sm:relative;
+                > .info {
+                    @apply mb-4;
+                    > .cmp-container {
+                        @apply 
+                        grid 
+                        grid-cols-2;
+                        grid-template-columns:120px;
+                        grid-template-rows: max-content;    
+                        > .subtitle {
+                            @apply col-start-1;
+                            > .cmp-text {
+                                @apply col-span-2
+                                text-white sm:text-gray-500
+                                font-bold sm:font-semibold 
+                                text-base
+                                pl-2 sm:pl-0;    
+                            } 
+                        }
+                        > .maintitle {
+                            @apply col-start-1 col-span-2;
+                            > .cmp-text {
+                                @apply
+                                text-white sm:text-gray-900
+                                font-bold
+                                text-lg md:text-2xl lg:text-xl
+                                mb-6 sm:mb-2               
+                                pl-2 sm:pl-0    
+                            }
+                        }
+                        > .likes {
+                            @apply col-start-1;
+                            > .cmp-text {
+                                @apply
+                                text-indigo-400
+                                font-light
+                                text-sm                                 
+                            }
+                        }
+                        > .location {
+                            @apply col-start-2;
+                            > .cmp-text {
+                                @apply 
+                                text-gray-500
+                                font-semibold
+                                text-sm 
+                                col-start-2                                
+                            }
+                        }
+                    }                    
+                }
+                > .availability {                    
+                    @apply sm:justify-self-end lg:justify-self-start
+                    sm:self-center 
+                    mb-4;
+                    > .cmp-button{
+                        @apply 
+                        bg-indigo-700
+                        font-semibold
+                        text-white                
+                    }
+                }
+                > .description {
+                    @apply sm:col-span-2;
+                    .cmp-text {
+                        @apply text-gray-500
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

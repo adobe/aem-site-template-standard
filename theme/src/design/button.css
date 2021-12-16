@@ -1,7 +1,6 @@
 /* default button */
 .cmp-button , .cmp-teaser__action-link{
     @apply
-    m-2
     px-4 py-2
     rounded-lg
     shadow-md

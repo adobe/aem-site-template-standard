@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:template="/conf/test14/settings/wcm/templates/tailwind-template"
+        cq:lastModified="{Date}2021-12-16T10:53:42.433+01:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/tailwind-site-template/settings/wcm/templates/tailwind-template"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="core/wcm/components/page/v2/page">
         <root
+            cq:styleIds="[7839334349060,6539334388112,6139334388112,5639334389425,8239334349060]"
+            jcr:lastModified="{Date}2021-12-16T10:50:53.261+01:00"
+            jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="core/wcm/components/container/v1/container">
-            <container
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="core/wcm/components/container/v1/container"
-                layout="simple"/>
-        </root>
-        <image/>
+            sling:resourceType="core/wcm/components/container/v1/container"
+            layout="simple"/>
     </jcr:content>
 </jcr:root>

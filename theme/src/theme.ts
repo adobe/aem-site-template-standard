@@ -3,6 +3,6 @@ import "./theme.css";
 import "./resources/images/favicon.png"
 
 // Component Javascript
-import "./corecomponents/experiencefragment/change_flag.js";
-import "./corecomponents/form-options/form_dropdown.js";
-import "./corecomponents/progressbar/progressbar.js";
+import "./documentation/experiencefragment/change_flag.js";
+import "./documentation/form-options/form_dropdown.js";
+import "./documentation/progressbar/progressbar.js";

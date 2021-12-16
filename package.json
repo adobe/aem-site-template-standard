@@ -1,6 +1,6 @@
 {
   "name": "tailwind-site-template",
-  "version": "0.0.10",
+  "version": "0.0.38",
   "description": "AEM Site Template that works with Tailwind",
   "license": "MIT License, Copyright 2020 Adobe Systems Incorporated",
   "scripts": {
@@ -14,7 +14,7 @@
     "title": "Tailwind Site Template",
     "createdBy": "Adobe",
     "useCases": [
-      "We need freedom of speech how are we otherwise to recognise the idiots!"
+      "One Template to rule, One Template to find them, One Template to bring them, and in darkness bind them."
     ],
     "docsUrl": "",
     "showcaseUrl": "",

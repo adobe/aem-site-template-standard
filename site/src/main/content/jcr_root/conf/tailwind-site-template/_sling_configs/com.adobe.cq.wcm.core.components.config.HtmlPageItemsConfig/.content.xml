@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
         jcr:primaryType="cq:PageContent"
-        prefixPath="/content/tailwind-site-template.theme/_default">
-        <items
-            jcr:primaryType="nt:unstructured">
+        prefixPath="/content/tailwind.theme/_default">
+        <items jcr:primaryType="nt:unstructured">
             <css
                 jcr:primaryType="nt:unstructured"
                 element="link"
                 location="header">
-                <attributes
-                    jcr:primaryType="nt:unstructured">
+                <attributes jcr:primaryType="nt:unstructured">
                     <href
                         jcr:primaryType="nt:unstructured"
                         name="href"
@@ -30,8 +28,7 @@
                 jcr:primaryType="nt:unstructured"
                 element="script"
                 location="header">
-                <attributes
-                    jcr:primaryType="nt:unstructured">
+                <attributes jcr:primaryType="nt:unstructured">
                     <src
                         jcr:primaryType="nt:unstructured"
                         name="src"
@@ -50,8 +47,7 @@
                 jcr:primaryType="nt:unstructured"
                 element="link"
                 location="header">
-                <attributes
-                    jcr:primaryType="nt:unstructured">
+                <attributes jcr:primaryType="nt:unstructured">
                     <href
                         jcr:primaryType="nt:unstructured"
                         name="href"
