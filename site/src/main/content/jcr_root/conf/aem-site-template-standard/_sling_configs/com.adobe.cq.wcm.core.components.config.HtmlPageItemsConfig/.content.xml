@@ -19,7 +19,7 @@
                     <href
                         jcr:primaryType="nt:unstructured"
                         name="href"
-                        value="/css/theme.css"/>
+                        value="/theme.css"/>
                     <rel
                         jcr:primaryType="nt:unstructured"
                         name="rel"
@@ -39,7 +39,7 @@
                     <src
                         jcr:primaryType="nt:unstructured"
                         name="src"
-                        value="/js/theme.js"/>
+                        value="/theme.js"/>
                     <async
                         jcr:primaryType="nt:unstructured"
                         name="async"

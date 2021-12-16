@@ -1,0 +1,36 @@
+
+//== Font loading
+
+@mixin fontface($name, $file, $weight: normal, $style: normal) {
+    @font-face {
+        font-weight: $weight;
+        font-family: '#{$name}';
+        font-style: $style;
+        src: url('resources/fonts/#{$file}.ttf') format('truetype');
+    }
+}
+
+@include fontface(defaultFont, 'SourceSansPro/SourceSansPro-Black', bolder);
+@include fontface(defaultFont, 'SourceSansPro/SourceSansPro-BlackItalic', bolder, italic);
+@include fontface(defaultFont, 'SourceSansPro/SourceSansPro-Bold', bolder);
+@include fontface(defaultFont, 'SourceSansPro/SourceSansPro-BoldItalic', bolder, italic);
+@include fontface(defaultFont, 'SourceSansPro/SourceSansPro-ExtraLight', lighter);
+@include fontface(defaultFont, 'SourceSansPro/SourceSansPro-ExtraLightItalic', lighter, italic);
+@include fontface(defaultFont, 'SourceSansPro/SourceSansPro-Italic', normal, italic);
+@include fontface(defaultFont, 'SourceSansPro/SourceSansPro-Light', lighter);
+@include fontface(defaultFont, 'SourceSansPro/SourceSansPro-LightItalic', lighter, italic);
+@include fontface(defaultFont, 'SourceSansPro/SourceSansPro-Regular', normal);
+@include fontface(defaultFont, 'SourceSansPro/SourceSansPro-SemiBold', bold);
+@include fontface(defaultFont, 'SourceSansPro/SourceSansPro-SemiBoldItalic', bold, italic);
+@include fontface(titleFont, 'SourceSerifPro/SourceSerifPro-Black', bolder);
+@include fontface(titleFont, 'SourceSerifPro/SourceSerifPro-BlackItalic', bolder, italic);
+@include fontface(titleFont, 'SourceSerifPro/SourceSerifPro-Bold', bolder);
+@include fontface(titleFont, 'SourceSerifPro/SourceSerifPro-BoldItalic', bolder, italic);
+@include fontface(titleFont, 'SourceSerifPro/SourceSerifPro-ExtraLight', lighter);
+@include fontface(titleFont, 'SourceSerifPro/SourceSerifPro-ExtraLightItalic', lighter, italic);
+@include fontface(titleFont, 'SourceSerifPro/SourceSerifPro-Italic', normal, italic);
+@include fontface(titleFont, 'SourceSerifPro/SourceSerifPro-Light', lighter);
+@include fontface(titleFont, 'SourceSerifPro/SourceSerifPro-LightItalic', lighter, italic);
+@include fontface(titleFont, 'SourceSerifPro/SourceSerifPro-Regular', normal);
+@include fontface(titleFont, 'SourceSerifPro/SourceSerifPro-SemiBold', bold);
+@include fontface(titleFont, 'SourceSerifPro/SourceSerifPro-SemiBoldItalic', bold, italic);
