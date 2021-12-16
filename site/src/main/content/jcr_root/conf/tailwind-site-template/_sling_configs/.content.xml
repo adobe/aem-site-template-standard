@@ -11,8 +11,4 @@
         clientId="28b07c6be4d544f188dc2f36e33b196b"
         reportSuiteId=""/>
     <com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/>
-    <com.adobe.aem.wcm.site.manager.config.SiteConfig
-        jcr:primaryType="nt:unstructured"
-        siteTemplatePath="/conf/global/site-templates/tailwind-site-template-0.0.35"
-        themePackageName="tailwind-theme"/>
 </jcr:root>

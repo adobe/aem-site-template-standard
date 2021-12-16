@@ -1,6 +1,6 @@
 {
   "name": "tailwind-site-template",
-  "version": "0.0.38",
+  "version": "0.0.40",
   "description": "AEM Site Template that works with Tailwind",
   "license": "MIT License, Copyright 2020 Adobe Systems Incorporated",
   "scripts": {

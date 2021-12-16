@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         jcr:primaryType="cq:PageContent"
-        prefixPath="/content/tailwind.theme/_default">
+        prefixPath="/content/tailwind-site-template.theme/_default">
         <items jcr:primaryType="nt:unstructured">
             <css
                 jcr:primaryType="nt:unstructured"
