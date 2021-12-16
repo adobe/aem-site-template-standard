@@ -7,7 +7,6 @@
         jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Contact Us"
-        jcr:uuid="663e10d4-7005-49c3-ad52-073e7ccf98be"
         sling:resourceType="core/wcm/components/page/v2/page">
         <root
             jcr:primaryType="nt:unstructured"

@@ -1,6 +1,6 @@
 {
   "name": "aem-site-template-standard",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Standard AEM Site Template used as a starter template for general purpose websites",
   "license": "MIT License, Copyright 2020 Adobe Systems Incorporated",
   "scripts": {
@@ -9,7 +9,7 @@
     "deploy": "curl -u admin:admin -F file=@aem-site-template-standard-latest.zip http://localhost:4502/conf/global/site-templates.import.html"
   },
   "devDependencies": {
-    "@adobe/aem-site-template-builder": "2.2.1"
+    "@adobe/aem-site-template-builder": "2.2.2"
   },
   "siteTemplate": {
     "title": "Standard AEM Site Template",
