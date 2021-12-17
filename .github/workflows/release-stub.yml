@@ -20,6 +20,10 @@ jobs:
         with:
           java-version: 11
 
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '16'
+
       - name: Install NPM dependencies
         run: npm install
 
