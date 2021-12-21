@@ -1,0 +1,65 @@
+# Creates a Site Template Stub Release 
+
+name: Build and release Stub
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build_and_release:
+    name: Build and release
+    runs-on: ubuntu-latest
+
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Java
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '16'
+
+      - name: Install NPM dependencies
+        run: npm install
+
+      - name: Build Site Template Stub
+        run: npm run stub
+
+      - name: Read package.json
+        id: package
+        uses: juliangruber/read-file-action@v1
+        with:
+          path: ./package.json
+
+      - name: Extract name and version from package.json
+        id: packageJson
+        run: |
+          echo ::set-output name=NAME::$(echo '${{ steps.package.outputs.content }}' | jq -r '.name')
+          echo ::set-output name=VERSION::$(echo '${{ steps.package.outputs.content }}' | jq -r '.version')
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.packageJson.outputs.NAME }}-${{ steps.packageJson.outputs.VERSION }}-stub
+          release_name: ${{ steps.packageJson.outputs.NAME }}-stub-${{ steps.packageJson.outputs.VERSION }}
+          draft: false
+          prerelease: true
+
+      - name: Upload Release Asset
+        id: upload-release-asset 
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} 
+          asset_path: ./${{ steps.packageJson.outputs.NAME }}-${{ steps.packageJson.outputs.VERSION }}-stub.zip
+          asset_name: ${{ steps.packageJson.outputs.NAME }}-${{ steps.packageJson.outputs.VERSION }}-stub.zip
+          asset_content_type: application/zip

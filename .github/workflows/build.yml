@@ -12,6 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '16'
+
       - name: Audit NPM
         run: npm audit
 
@@ -25,3 +29,6 @@ jobs:
 
       - name: Build Site Template
         run: npm run build
+
+      - name: Build Site Template Stub
+        run: npm run stub
