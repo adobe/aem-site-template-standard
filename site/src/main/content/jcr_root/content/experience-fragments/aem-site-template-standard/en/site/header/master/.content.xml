@@ -16,7 +16,7 @@
             layout="responsiveGrid">
             <image
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="core/wcm/components/image/v2/image"
+                sling:resourceType="core/wcm/components/image/v3/image"
                 fileReference="/content/dam/aem-site-template-standard/Group 3458@2x.png">
                 <cq:responsive jcr:primaryType="nt:unstructured">
                     <default
@@ -27,7 +27,7 @@
             </image>
             <navigation
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="core/wcm/components/navigation/v1/navigation"
+                sling:resourceType="core/wcm/components/navigation/v2/navigation"
                 collectAllPages="true"
                 disableShadowing="false"
                 navigationRoot="/content/aem-site-template-standard/en"
@@ -52,7 +52,7 @@
             </search>
             <languagenavigation
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="core/wcm/components/languagenavigation/v1/languagenavigation"
+                sling:resourceType="core/wcm/components/languagenavigation/v2/languagenavigation"
                 navigationRoot="/content/aem-site-template-standard"
                 structureDepth="1">
                 <cq:responsive jcr:primaryType="nt:unstructured">

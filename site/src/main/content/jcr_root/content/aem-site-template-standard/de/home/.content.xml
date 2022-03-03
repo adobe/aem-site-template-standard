@@ -7,7 +7,7 @@
         jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Home"
-        sling:resourceType="core/wcm/components/page/v2/page">
+        sling:resourceType="core/wcm/components/page/v3/page">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="core/wcm/components/container/v1/container">
@@ -16,7 +16,7 @@
                 sling:resourceType="core/wcm/components/container/v1/container">
                 <title
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="core/wcm/components/title/v2/title"/>
+                    sling:resourceType="core/wcm/components/title/v3/title"/>
                 <container
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="core/wcm/components/container/v1/container"
@@ -25,7 +25,7 @@
                         jcr:description="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p>&#xd;&#xa;"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="This is a Teaser"
-                        sling:resourceType="core/wcm/components/teaser/v1/teaser"
+                        sling:resourceType="core/wcm/components/teaser/v2/teaser"
                         actionsEnabled="true"
                         descriptionFromPage="false"
                         fileReference="/content/dam/aem-site-template-standard/Image@2x.png"
@@ -52,7 +52,7 @@
                     <title
                         cq:styleIds="[1612896635178]"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="core/wcm/components/title/v2/title"
+                        sling:resourceType="core/wcm/components/title/v3/title"
                         type="h2">
                         <cq:responsive jcr:primaryType="nt:unstructured">
                             <default
@@ -83,7 +83,7 @@
                         jcr:description="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p>&#xd;&#xa;"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="This is a Teaser"
-                        sling:resourceType="core/wcm/components/teaser/v1/teaser"
+                        sling:resourceType="core/wcm/components/teaser/v2/teaser"
                         actionsEnabled="true"
                         descriptionFromPage="false"
                         fileReference="/content/dam/aem-site-template-standard/building_large.png"
@@ -112,7 +112,7 @@
                         jcr:description="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p>&#xd;&#xa;"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="This is a Teaser"
-                        sling:resourceType="core/wcm/components/teaser/v1/teaser"
+                        sling:resourceType="core/wcm/components/teaser/v2/teaser"
                         actionsEnabled="true"
                         descriptionFromPage="false"
                         fileReference="/content/dam/aem-site-template-standard/building_large.png"
