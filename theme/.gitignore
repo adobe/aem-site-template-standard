@@ -4,3 +4,9 @@ node/
 node_modules/
 npm-debug.log
 dist/
+
+# dont include parcel cache into the final theme.zip file
+.parcel-cache
+
+# make sure no .env file is present in the theme.zip file - AEM adds this file when downloading the theme
+.env
