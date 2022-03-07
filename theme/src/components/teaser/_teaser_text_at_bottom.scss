@@ -2,6 +2,8 @@
   .cmp-teaser {
     position: initial;
     margin: 2.5em 0.5em 0.5em 0.5em;
+    display: flex;
+    flex-direction: column-reverse;
   }
   .cmp-teaser__image {
     position: relative;
@@ -28,6 +30,7 @@
     transform: none;
   }
   .cmp-teaser__pretitle {
+    margin: 0;
     color: $color-shade-3;
     font-weight: 300;
     font-size: 0.625em;

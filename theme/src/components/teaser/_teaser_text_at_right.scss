@@ -2,6 +2,7 @@
   .cmp-teaser {
     position: static;
     display: flex;
+    flex-direction: row-reverse;
     margin: 0.75em 0.5em;
   }
   .cmp-teaser__image {
