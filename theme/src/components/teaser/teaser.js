@@ -58,12 +58,3 @@ function onDocumentReady(callback) {
         document.addEventListener('DOMContentLoaded', callback);
     }
 }
-
-
-
-
-
-
-
-
-
