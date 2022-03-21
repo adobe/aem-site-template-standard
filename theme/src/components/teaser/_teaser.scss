@@ -103,3 +103,13 @@
     border-color: $color-shade-1;
   }
 }
+
+.cmp-teaser__no-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+  .cmp-teaser__pretitle, .cmp-teaser__title, .cmp-teaser__title-link, .cmp-teaser__description  {
+    color: #000000;
+  }
+}
