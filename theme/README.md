@@ -27,4 +27,4 @@ npm install
 npm run live
 ```
 
-4. Once your is work completed, check your changes into your [git repository](https://www.adobe.com/go/qsc_retrieve_git_access) and [deploy your customized theme](https://www.adobe.com/go/qsc_deploy_theme).
+4. Once your work is completed, check your changes into your [git repository](https://www.adobe.com/go/qsc_retrieve_git_access) and [deploy your customized theme](https://www.adobe.com/go/qsc_deploy_theme).
