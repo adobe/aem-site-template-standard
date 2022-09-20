@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:template="/conf/aem-site-template-standard/settings/wcm/templates/article-page"
+        cq:template="/conf/aem-site-template-standard/settings/wcm/templates/content-page"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="core/wcm/components/page/v3/page">
         <root
