@@ -6,7 +6,7 @@ This theme can be modified to customize the visual appearance of sites created f
 
 ## Suported Node version(s)
 
-By default Cloud Manager will use Node 14 to execute the Front-End Pipeline. Versions 12 and 16 are also available for the pipeline and can be selected by using the `CM_CUSTOM_VAR_NODE_VERSION` environment variable.
+By default Cloud Manager will use Node 14 to execute the Front-End Pipeline. Versions 12 and 16 are also available for the pipeline and can be selected by using the `NODE_VERSION` [CM pipeline variable](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/project-creation/build-environment.html?lang=en#pipeline-variables).
 
 ## Structure
 
