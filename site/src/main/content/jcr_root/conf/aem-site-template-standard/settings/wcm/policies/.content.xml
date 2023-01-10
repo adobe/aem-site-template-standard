@@ -15,7 +15,7 @@
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Generic Page"
                                 sling:resourceType="wcm/core/components/policy/policy"
-                                clientlibs="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v3,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.commons.datalayer.v1]">
+                                clientlibs="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v3,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.embed.v1,core.wcm.components.commons.datalayer.v1]">
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
                             </policy_default>
                             <policy_contact_us
@@ -24,7 +24,7 @@
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Contact Us"
                                 sling:resourceType="wcm/core/components/policy/policy"
-                                clientlibs="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v3,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.commons.datalayer.v1]">
+                                clientlibs="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v3,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.embed.v1,core.wcm.components.commons.datalayer.v1]">
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
                             </policy_contact_us>
                             <policy_article
@@ -33,7 +33,7 @@
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Article Page"
                                 sling:resourceType="wcm/core/components/policy/policy"
-                                clientlibs="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v3,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.commons.datalayer.v1]">
+                                clientlibs="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v3,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.embed.v1,core.wcm.components.commons.datalayer.v1]">
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
                             </policy_article>
                             <policy_home
@@ -41,7 +41,7 @@
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Home page"
                                 sling:resourceType="wcm/core/components/policy/policy"
-                                clientlibs="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v3,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.commons.datalayer.v1]">
+                                clientlibs="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v3,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.embed.v1,core.wcm.components.commons.datalayer.v1]">
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
                             </policy_home>
                         </page>
@@ -695,7 +695,7 @@
                         jcr:primaryType="nt:unstructured"
                         jcr:title="XF page"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        clientlibs="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v3,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.commons.datalayer.v1]">
+                        clientlibs="[core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v3,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.embed.v1,core.wcm.components.commons.datalayer.v1]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </policy_default>
                 </xfpage>
