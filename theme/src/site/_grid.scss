@@ -124,3 +124,31 @@
     display: none;
   }
 }
+
+//=================== Media queries ===================
+
+@media (max-width: 767px) {
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--4 {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--offset--default--1 {
+      margin-left: 0 !important; 
+  }
+}
+
+@media (max-width: 767px) {
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--8 {
+      width: 100% !important; 
+      margin-top: -1.5em;
+  }
+}
+
+@media (max-width: 767px) {
+  .aem-Grid.aem-Grid--default--10 > .aem-GridColumn.aem-GridColumn--default--10 {
+      margin-top: -3em; 
+      margin-bottom: -1em;
+  }
+}
