@@ -8,6 +8,15 @@
     margin: auto 0.5em;
   }
 
+  //=================== Media queries ===================
+
+  @media (max-width: 767px) {
+    .cmp-image{
+     min-width: 100px;
+     margin-left: -0.5em;
+    }
+  }
+
   //=================== Grid layout ===================
 
   & .cmp-container {
