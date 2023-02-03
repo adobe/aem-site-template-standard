@@ -457,12 +457,14 @@
                                 allowedRenditionWidths="[320,480,600,800,1024,1200,1600]"
                                 allowUpload="false"
                                 altValueFromDAM="true"
-                                disableLazyLoading="false"
+                                disableLazyLoading="true"
                                 displayPopupTitle="true"
                                 isDecorative="false"
                                 jpegQuality="{Long}85"
                                 titleValueFromDAM="true"
-                                uuidDisabled="true">
+                                uuidDisabled="true"
+                                enableAssetDelivery="true"
+                                enableDmFeatures="true">
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
                                 <plugins jcr:primaryType="nt:unstructured">
                                     <crop
