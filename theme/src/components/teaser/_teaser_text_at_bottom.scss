@@ -118,4 +118,13 @@
       border-color: $color-shade-1;
     }
   }
+
+  //=================== Media queries ===================
+
+  @media (max-width: 767px) {
+    .cmp-teaser__action-link {
+      padding: 0.1em 0.7em;
+      width: 7em;
+    }
+  }
 }
