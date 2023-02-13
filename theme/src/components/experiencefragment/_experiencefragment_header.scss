@@ -24,15 +24,13 @@
 
 @media (max-width: 767px) {
   #main-header {
-    padding-top: 0;
-    padding-bottom: 0;
-
     > .aem-Grid {
-      display: grid;
+      display: flex;
       padding-left: 0;
       padding-right: 20px;
-      align-items: flex-start;
-      grid-template-rows: auto auto 1fr;
+      height: 100vh;
+      padding-bottom: 20px;
+      flex-direction: column;
     }
 
     #mobile-header-button {
@@ -67,6 +65,7 @@
         height: 40px;
         vertical-align: middle;
         background-size: 30px 30px;
+        margin-left: -15px;
         content: "";
       }
     }
@@ -118,7 +117,6 @@
     min-width: 100px;
   }
 
-
   @media (max-width: 767px) {
     .cmp-image {
       min-width: 140px;
@@ -141,16 +139,18 @@
   @media (max-width: 767px) {
     .search {
       order: 1;
-      margin-top: 20px;
+      margin-top: 50px;
+      flex: 1;
     }
     .navigation {
       order: 2;
-      margin-top: 60px;
+      flex: 6;
     }
     .languagenavigation {
       order: 3;
-      margin-top: 500px;
       padding-right: 1em;
+      padding-bottom: 30px;
+      flex: 0 0 auto;
     }
 
     .cmp-navigation {
