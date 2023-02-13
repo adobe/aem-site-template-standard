@@ -1,3 +1,9 @@
 .homepage-content-container {
   margin-top: 2.5em;
 }
+
+@media (max-width: 767px) {
+  .homepage-content-container {
+    margin-top: 0;
+  }
+}
