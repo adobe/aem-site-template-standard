@@ -125,6 +125,14 @@
     .cmp-teaser__action-link {
       padding: 0.1em 0.7em;
       width: 7em;
+      font-weight: bold;
     }
   }
+
+  @media (max-width: 767px) {
+    .cmp-teaser {
+      margin: 0 !important;
+    }
+  }
+
 }
