@@ -6,6 +6,7 @@ const xfHeader = () => {
   );
 
   $btn.id = "mobile-header-button";
+  $btn.setAttribute("aria-label", "Toggle Navigation");
   $header.appendChild($btn);
 
   $elements.forEach((el) => el.classList.add("hide"));
