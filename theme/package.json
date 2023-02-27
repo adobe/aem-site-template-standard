@@ -1,6 +1,6 @@
 {
     "name": "aem-site-template-standard-theme",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Standard AEM site theme",
     "license": "MIT License, Copyright 2020 Adobe Systems Incorporated",
     "scripts": {
@@ -11,15 +11,15 @@
     },
     "devDependencies": {
         "@adobe/aem-site-theme-builder": "5.2.1",
-        "@parcel/transformer-sass": "^2.0.1",
+        "@parcel/transformer-sass": "^2.7.0",
         "autoprefixer": "^10.3.7",
         "browser-sync": "^2.26.13",
         "install": "^0.13.0",
         "normalize.css": "^8.0.1",
         "npm": "^8.1.4",
         "npm-run-all": "^4.1.5",
-        "parcel": "^2.0.1",
-        "parcel-namer-rewrite": "^2.0.0-rc.1",
+        "parcel": "^2.7.0",
+        "parcel-namer-rewrite": "^2.0.0-rc.2",
         "postcss": "^8.3.11",
         "rimraf": "^3.0.2",
         "typescript": "^4.5.2"
