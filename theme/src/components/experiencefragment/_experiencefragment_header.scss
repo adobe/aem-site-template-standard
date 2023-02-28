@@ -20,6 +20,10 @@
   #mobile-header-button {
     display: none;
   }
+
+  .languagenavigation {
+    margin-left: 1rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -152,6 +156,7 @@
       padding-right: 1em;
       padding-bottom: 30px;
       flex: 0 0 auto;
+      margin-left: none;
     }
 
     .cmp-navigation {
