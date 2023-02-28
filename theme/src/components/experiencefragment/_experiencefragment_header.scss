@@ -114,7 +114,8 @@
 
   .cmp-image {
     margin: auto -2em;
-    min-width: 100px;
+    min-width: 100px; 
+    width: 160px;
   }
 
   @media (max-width: 767px) {
@@ -123,7 +124,7 @@
       margin-top: 20px;
       position: absolute;
       top: 0;
-      left: 46%;
+      left: 42%;
     }
   }
 
