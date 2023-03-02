@@ -74,7 +74,11 @@
                                 jcr:title="Content Teaser"
                                 sling:resourceType="wcm/core/components/policy/policy"
                                 showTitleType="false"
-                                titleType="h3">
+                                titleType="h3"
+                                enableAssetDelivery="true"
+                                enableDmFeatures="true"
+                                sizes="(max-width: 500px) 50vw, 100vw"
+                                allowedRenditionWidths="[320,480,600,800,1024,1200,1600]">
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
                                 <cq:styleGroups jcr:primaryType="nt:unstructured">
                                     <item0
