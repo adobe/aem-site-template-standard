@@ -5,6 +5,10 @@
   padding: 1.625em 0 1.5625em 0;
   border-top: 0.125em solid $color-shade-1;
 
+  .h6_style .cmp-title__text {
+    margin-left: 5rem;
+  }
+
   .separator {
     display: none;
   }
@@ -44,6 +48,7 @@
       & a {
         color: $color-accent;
         text-decoration: none;
+        white-space: nowrap;
         &:focus {
           color: $color-accent-lighter;
           border: 0.125em solid $color-accent-lighter;
@@ -63,4 +68,8 @@
   }
 }
 
-
+@media (max-width: 767px) {
+  #main-footer .h6_style .cmp-title__text {
+    margin-left: 0;
+  }
+}
