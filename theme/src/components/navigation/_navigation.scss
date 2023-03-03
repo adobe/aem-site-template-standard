@@ -17,6 +17,7 @@
   margin-left: 0.5em;
   & > a {
     padding: 0.5625rem 1rem 0.6875rem 1rem;
+    white-space: nowrap;
   }
   &:hover {
     & > .cmp-navigation__item-link {
