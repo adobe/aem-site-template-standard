@@ -132,7 +132,14 @@
   flex-wrap: wrap;
 }
 
+
 //=================== Media queries ===================
+
+@media (max-width: $breakpoint-mobile) {
+  .aem-Grid.aem-Grid--12.aem-Grid--default--12.aem-Grid--phone--12 {
+  justify-content: center;
+  }
+}
 
 @media (max-width: $breakpoint-mobile) {
   .aem-Grid.aem-Grid--default--10
