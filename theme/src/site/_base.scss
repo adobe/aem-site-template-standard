@@ -5,7 +5,7 @@ body {
   margin: 0;
   color: $color-text;
   font-size: $font-size;
-  font-family: defaultFont, serif;
+  font-family: 'defaultFont', 'defaultFont Fallback';
   line-height: $font-height;
   background: $color-background;
 }
