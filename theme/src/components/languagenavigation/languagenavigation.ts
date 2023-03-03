@@ -64,12 +64,14 @@ const languageNavigation = () => {
     const $toggleButton = document.createElement("button");
     const $activeText = document.createElement("span");
 
-    window.openLanguageNav = () => {
+    const openLanguageNav = () => {
       $el.classList.toggle("open");
-      setTimeout(() => document.addEventListener("click", closeLanguageNav), 1);
+      requestAnimationFrame(() => {
+        document.addEventListener("click", closeLanguageNav);
+      });
     };
 
-    window.closeLanguageNav = (e) => {
+    const closeLanguageNav = (e) => {
       if (!$el.contains(e.target) && e.target !== $toggleButton) {
         $el.classList.remove("open");
       }
