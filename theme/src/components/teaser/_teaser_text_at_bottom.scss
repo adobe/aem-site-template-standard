@@ -124,7 +124,7 @@
 
   //=================== Media queries ===================
 
-  @media (max-width: 767px) {
+  @media (max-width: $breakpoint-mobile) {
     .cmp-teaser__action-link {
       padding: 0.1em 0.7em;
       width: 7em;
@@ -132,7 +132,7 @@
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $breakpoint-mobile) {
     .cmp-teaser {
       margin: 0;
     }

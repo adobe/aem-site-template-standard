@@ -117,7 +117,7 @@
 
 //=================== Media queries ===================
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-mobile) {
   .cmp-teaser__action-link {
     height: 40px;
     width: 100px;

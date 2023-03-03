@@ -68,7 +68,7 @@
   background: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-mobile) {
   .cmp-search__field {
     display: flex;
     height: 2.5em;

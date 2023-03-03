@@ -14,7 +14,7 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-mobile) {
   .root {
     overflow: hidden;
   }
@@ -56,7 +56,7 @@ $max_col: 12;
 }
 
 // Phone breakpoint
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-mobile) {
   .aem-Grid {
     @include generate-grid(phone, $max_col);
   }

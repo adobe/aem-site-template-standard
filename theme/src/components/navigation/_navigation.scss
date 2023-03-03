@@ -87,7 +87,7 @@
 .cmp-navigation__item--active > .cmp-navigation__item-link {
 }
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-mobile) {
   .navigation .cmp-navigation > .cmp-navigation__group {
     flex-direction: column;
     row-gap: 1rem;

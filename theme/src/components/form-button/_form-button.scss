@@ -26,7 +26,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-mobile) {
   .cmp-form-button {
     margin-left: 0.2em;
     float: left;

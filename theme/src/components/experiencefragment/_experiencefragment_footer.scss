@@ -35,7 +35,7 @@
   .cmp-title {
     margin: 0.5em 1em;
     text-align: center;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: $breakpoint-mobile) {
       margin: 1em 1em;
     }
   }
@@ -63,12 +63,12 @@
 
   //=================== Media queries ===================
 
-  @media (max-width: 767px) {
+  @media (max-width: $breakpoint-mobile) {
     margin-top: 0;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-mobile) {
   #main-footer .h6_style .cmp-title__text {
     margin-left: 0;
   }

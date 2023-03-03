@@ -134,7 +134,7 @@
 
 //=================== Media queries ===================
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-mobile) {
   .aem-Grid.aem-Grid--default--10
     > .aem-GridColumn.aem-GridColumn--default--10 {
     margin-top: -3em;

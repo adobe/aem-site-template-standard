@@ -241,19 +241,19 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-mobile) {
   .cmp-languagenavigation__item {
     width: 100%;
     border-radius: 5px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-mobile) {
   .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--2 {
     width: 100%;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-mobile) {
   .cmp-languagenavigation {
     position: relative;
     border-radius: 0.25em;

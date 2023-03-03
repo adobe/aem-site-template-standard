@@ -190,7 +190,7 @@
 .cmp-form-options__multi-drop-down-field {
 }
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-mobile) {
   .cmp-form-options__field-label {
     margin: 0.5em -0.5em;
   }
