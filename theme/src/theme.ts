@@ -13,11 +13,15 @@ const documentReadyFunctions = () => {
   xfHeader();
 };
 
-if (
-  document.readyState === "complete" ||
-  document.readyState === "interactive"
-) {
-  setTimeout(documentReadyFunctions, 1);
-} else {
-  document.addEventListener("DOMContentLoaded", documentReadyFunctions);
-}
+const runDocumentReadyFunctions = () => {
+  if (
+    document.readyState === "complete" ||
+    document.readyState === "interactive"
+  ) {
+    documentReadyFunctions();
+  } else {
+    requestAnimationFrame(runDocumentReadyFunctions);
+  }
+};
+
+runDocumentReadyFunctions();
