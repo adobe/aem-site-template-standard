@@ -20,6 +20,14 @@
     line-gap-override: 0.00%;
     size-adjust: 94.19%;
   }
+
+  @font-face {
+    font-family: 'defaultFont';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('./resources/fonts/SourceSansPro/SourceSansPro-Bold.woff2') format('woff2');
+ }
   
 
 @font-face {
