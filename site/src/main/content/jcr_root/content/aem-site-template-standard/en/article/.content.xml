@@ -40,7 +40,7 @@
                         titleValueFromDAM="false"
                         uuidDisabled="true"
                         enableAssetDelivery="true"
-                        enableDmFeatures="true">
+                        >
                         <cq:responsive jcr:primaryType="nt:unstructured">
                             <default
                                 jcr:primaryType="nt:unstructured"

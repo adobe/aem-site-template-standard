@@ -41,8 +41,7 @@
                         isDecorative="true"
                         titleValueFromDAM="false"
                         uuidDisabled="true"
-                        enableAssetDelivery="true"
-                        enableDmFeatures="true">
+                        enableAssetDelivery="true">
                         <cq:responsive jcr:primaryType="nt:unstructured">
                             <default
                                 jcr:primaryType="nt:unstructured"

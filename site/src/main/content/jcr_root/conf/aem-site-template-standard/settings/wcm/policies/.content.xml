@@ -76,7 +76,6 @@
                                 showTitleType="false"
                                 titleType="h3"
                                 enableAssetDelivery="true"
-                                enableDmFeatures="true"
                                 sizes="(max-width: 500px) 50vw, 100vw"
                                 allowedRenditionWidths="[320,480,600,800,1024,1200,1600]">
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
@@ -468,7 +467,6 @@
                                 titleValueFromDAM="true"
                                 uuidDisabled="true"
                                 enableAssetDelivery="true"
-                                enableDmFeatures="true"
                                 sizes="(max-width: 500px) 50vw, 100vw">
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
                                 <plugins jcr:primaryType="nt:unstructured">
