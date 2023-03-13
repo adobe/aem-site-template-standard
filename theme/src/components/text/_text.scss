@@ -30,7 +30,7 @@
   & blockquote {
     margin: 0.75rem 0;
     font-size: 1.75em;
-    font-family: titleFont, serif;
+    font-family: 'titleFont', 'titleFont Fallback';
     font-style: italic;
     line-height: 2.375rem;
     margin-inline: 0;

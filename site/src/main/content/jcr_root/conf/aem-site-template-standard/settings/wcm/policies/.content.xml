@@ -74,7 +74,10 @@
                                 jcr:title="Content Teaser"
                                 sling:resourceType="wcm/core/components/policy/policy"
                                 showTitleType="false"
-                                titleType="h3">
+                                titleType="h3"
+                                enableAssetDelivery="true"
+                                sizes="(max-width: 500px) 50vw, 100vw"
+                                allowedRenditionWidths="[320,480,600,800,1024,1200,1600]">
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
                                 <cq:styleGroups jcr:primaryType="nt:unstructured">
                                     <item0
@@ -457,12 +460,14 @@
                                 allowedRenditionWidths="[320,480,600,800,1024,1200,1600]"
                                 allowUpload="false"
                                 altValueFromDAM="true"
-                                disableLazyLoading="false"
+                                disableLazyLoading="true"
                                 displayPopupTitle="true"
                                 isDecorative="false"
                                 jpegQuality="{Long}85"
                                 titleValueFromDAM="true"
-                                uuidDisabled="true">
+                                uuidDisabled="true"
+                                enableAssetDelivery="true"
+                                sizes="(max-width: 500px) 50vw, 100vw">
                                 <jcr:content jcr:primaryType="nt:unstructured"/>
                                 <plugins jcr:primaryType="nt:unstructured">
                                     <crop

@@ -5,6 +5,10 @@
   padding: 1.625em 0 1.5625em 0;
   border-top: 0.125em solid $color-shade-1;
 
+  .h6_style .cmp-title__text {
+    margin-left: 5rem;
+  }
+
   .separator {
     display: none;
   }
@@ -31,7 +35,7 @@
   .cmp-title {
     margin: 0.5em 1em;
     text-align: center;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: $breakpoint-mobile) {
       margin: 1em 1em;
     }
   }
@@ -44,6 +48,7 @@
       & a {
         color: $color-accent;
         text-decoration: none;
+        white-space: nowrap;
         &:focus {
           color: $color-accent-lighter;
           border: 0.125em solid $color-accent-lighter;
@@ -54,5 +59,17 @@
         }
       }
     }
+  }
+
+  //=================== Media queries ===================
+
+  @media (max-width: $breakpoint-mobile) {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  #main-footer .h6_style .cmp-title__text {
+    margin-left: 0;
   }
 }

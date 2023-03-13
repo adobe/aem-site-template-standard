@@ -26,7 +26,7 @@
 .aem-Grid::before,
 .aem-Grid::after {
   display: table;
-  content: ' ';
+  content: " ";
 }
 
 .aem-Grid::after {
@@ -122,5 +122,81 @@
   & > .aem-GridColumn.aem-GridColumn--#{$breakPoint}--hide {
     /* hide behavior */
     display: none;
+  }
+}
+
+.aem-Grid.aem-Grid--12.aem-Grid--default--12.aem-Grid--phone--12 {
+  display: flex;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+//=================== Media queries ===================
+
+@media (max-width: $breakpoint-mobile) {
+  .aem-Grid.aem-Grid--12.aem-Grid--default--12.aem-Grid--phone--12 {
+  justify-content: center;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .aem-Grid.aem-Grid--default--10
+    > .aem-GridColumn.aem-GridColumn--default--10 {
+    margin-top: -3em;
+    margin-bottom: -1em;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--8 {
+    width: 100% !important;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--offset--default--1 {
+    margin-left: 0 !important;
+  }
+  .aem-Grid.aem-Grid--10 > .aem-GridColumn.aem-GridColumn--default--4 {
+    width: 100% !important;
+  }
+  .aem-Grid.aem-Grid--default--8
+    > .aem-GridColumn.aem-GridColumn--offset--default--0 {
+    width: 100% !important;
+  }
+
+  .aem-Grid.aem-Grid--default--8
+    > .aem-GridColumn.aem-GridColumn--offset--default--1 {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--6 {
+    width: 100% !important;
+  }
+
+  .aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--6 {
+    width: 100% !important;
+  }
+
+  .aem-Grid.aem-Grid--default--10
+    > .aem-GridColumn.aem-GridColumn--offset--default--1 {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .aem-Grid.aem-Grid--default--10
+    > .aem-GridColumn.aem-GridColumn--offset--default--0 {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .aem-Grid.aem-Grid--default--12
+    > .aem-GridColumn.aem-GridColumn--offset--default--1 {
+    margin-left: 0 !important;
+  }
+
+  .aem-Grid.aem-Grid--default--12
+    > .aem-GridColumn.aem-GridColumn--default--10 {
+    width: 100% !important;
+  }
+
+  .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--10 {
+    width: 100% !important;
   }
 }

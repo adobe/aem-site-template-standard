@@ -44,7 +44,7 @@
     margin-bottom: 1.1875rem;
     color: $color-text;
     font-size: 1.75em;
-    font-family: defaultFont, serif;
+    font-family: 'defaultFont', 'defaultFont Fallback';
     line-height: 2.25rem;
     text-align: start;
     text-decoration: none;
@@ -67,6 +67,8 @@
     justify-content: start;
     margin: 1rem 0;
     padding: 0.125rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
   .cmp-teaser__action-link {
     margin-right: 0.8em;
@@ -75,6 +77,7 @@
     font-weight: 300;
     text-decoration: none;
     border-radius: 1.56em;
+    white-space: nowrap;
   }
 
   .cmp-teaser__action-link:first-child {
@@ -118,4 +121,21 @@
       border-color: $color-shade-1;
     }
   }
+
+  //=================== Media queries ===================
+
+  @media (max-width: $breakpoint-mobile) {
+    .cmp-teaser__action-link {
+      padding: 0.1em 0.7em;
+      width: 7em;
+      font-weight: bold;
+    }
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    .cmp-teaser {
+      margin: 0;
+    }
+  }
+
 }

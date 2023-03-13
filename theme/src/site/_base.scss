@@ -1,13 +1,23 @@
-
 //== Defaults
 
-html, body {
+html,
+body {
   margin: 0;
   color: $color-text;
   font-size: $font-size;
-  font-family: defaultFont, serif;
+  font-family: 'defaultFont', 'defaultFont Fallback';
   line-height: $font-height;
   background: $color-background;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .root {
+    overflow: hidden;
+  }
 }
 
 a {
@@ -46,7 +56,7 @@ $max_col: 12;
 }
 
 // Phone breakpoint
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-mobile) {
   .aem-Grid {
     @include generate-grid(phone, $max_col);
   }

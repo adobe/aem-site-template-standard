@@ -31,7 +31,10 @@
                         fileReference="/content/dam/aem-site-template-standard/Image@2x.png"
                         pretitle="Teasers"
                         textIsRich="true"
-                        titleFromPage="false">
+                        titleFromPage="false"
+                        disableLazyLoading="true"
+                        altValueFromDAM="false"
+                        imageFromPageImage="false">
                         <actions jcr:primaryType="nt:unstructured">
                             <item0
                                 jcr:primaryType="nt:unstructured"

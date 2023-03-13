@@ -40,7 +40,7 @@
   margin-bottom: 1rem;
   color: #ffffff;
   font-size: 2.25em;
-  font-family: titleFont, serif;
+  font-family: 'titleFont', 'titleFont Fallback';
   line-height: 3.0625rem;
   text-align: center;
   text-decoration: none;
@@ -69,6 +69,7 @@
   font-weight: 300;
   text-decoration: none;
   border-radius: 1.56em;
+  white-space: nowrap;
 }
 
 .cmp-teaser__action-link:first-child {
@@ -112,3 +113,21 @@
     border-color: $color-shade-1;
   }
 }
+
+
+//=================== Media queries ===================
+
+@media (max-width: $breakpoint-mobile) {
+  .cmp-teaser__action-link {
+    height: 40px;
+    width: 100px;
+    font-size: smaller;
+    padding: 0.1em;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+}
+
