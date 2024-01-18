@@ -56,8 +56,8 @@ jobs:
       - name: Extract name and version from package.json
         id: packageJson
         run: |
-          echo ::set-output name=NAME::$(echo '${{ steps.package.outputs.content }}' | jq -r '.name')
-          echo ::set-output name=VERSION::$(echo '${{ steps.package.outputs.content }}' | jq -r '.version')
+          echo "NAME=$(echo '${{ steps.package.outputs.content }}' | jq -r '.name')" >> $GITHUB_OUTPUT
+          echo "VERSION=$(echo '${{ steps.package.outputs.content }}' | jq -r '.version')" >> $GITHUB_OUTPUT
 
       - name: Create Release
         id: create_release
