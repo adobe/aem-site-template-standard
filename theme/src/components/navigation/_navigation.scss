@@ -48,7 +48,7 @@
     transition-delay: 0.5s;
   }
 }
-.cmp-navigation__item--level-0:nth-child(2) {
+.cmp-navigation__item--level-0:has(ul) {
   &:after {
     display: inline-block;
     width: 24px;
